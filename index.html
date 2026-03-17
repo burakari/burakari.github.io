@@ -1,10 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-  <title>HMGS Academy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMGS Academy | Hukuk Mesleğine Giriş Sınavı</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --roman-gold: #c5a059;
+            --roman-red: #8b0000;
+            --parchment-bg: #f4e4bc;
+            --marble-white: #f2f2f2;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            color: #333;
+        }
+
+        /* Header / Logo Bölümü */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1552823588-fb7e9c5c1f20?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 5px solid var(--roman-gold);
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--roman-gold);
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            color: white;
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        /* Parşömen Alanı */
+        .parchment-container {
+            max-width: 900px;
+            margin: -50px auto 50px auto;
+            background-color: var(--parchment-bg);
+            padding: 60px;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+            border: 2px solid #d2b48c;
+            position: relative;
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+        }
+
+        /* Roma Sütunu Efekti (Kenarlar) */
+        .parchment-container::before, .parchment-container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 20px;
+            background: linear-gradient(to right, #8b4513, var(--roman-gold), #8b4513);
+            border-radius: 5px;
+        }
+        .parchment-container::before { left: -10px; }
+        .parchment-container::after { right: -10px; }
+
+        .content {
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            color: var(--roman-red);
+            border-bottom: 2px solid var(--roman-gold);
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: var(--roman-red);
+            color: white;
+            text-decoration: none;
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+            margin-top: 30px;
+            border: 2px solid var(--roman-gold);
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: var(--roman-gold);
+            color: var(--roman-red);
+        }
+
+        /* Sosyal Medya */
+        .social-icons {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            color: var(--roman-red);
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--roman-gold);
+            font-family: 'Cinzel', serif;
+        }
+
+        .price-tag {
+            font-size: 2rem;
+            color: #444;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-  <h1>HMGS Academy 🚀</h1>
-  <p>Hakimlik yolculuğun burada başlıyor.</p>
+
+    <header>
+        <h1>HMGS ACADEMY</h1>
+        <div class="subtitle">Iustitia Est Constans Et Perpetua Voluntas</div>
+    </header>
+
+    <div class="parchment-container">
+        <div class="content">
+            <h2>Hukuk Mesleğine Giriş Sınavı Hazırlık</h2>
+            <p>Roma hukukunun sarsılmaz temelleriyle, geleceğin hukukçularını sınava hazırlıyoruz. En güncel ders notları, hap bilgiler ve sınav stratejileri ile yanınızdayız.</p>
+            
+            <div class="price-tag">Özel Ders Notları</div>
+            <p>Eksiksiz, güncel ve profesyonel HMGS notlarımıza hemen ulaşın.</p>
+            
+            <a href="#" class="cta-button">NOTLARI İNCELE & SATIN AL</a>
+
+            <div class="social-icons">
+                <a href="https://youtube.com/@hmgs.academy" target="_blank">🏛 YOUTUBE</a>
+                <a href="https://instagram.com/hmgs.academy" target="_blank">📜 INSTAGRAM</a>
+                <a href="https://tiktok.com/@hmgs.academy" target="_blank">⚔️ TIKTOK</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HMGS Academy - www.hmgsacademy.com <br> "Hukuk, iyinin ve hakkaniyetin sanatıdır."</p>
+    </footer>
+
 </body>
 </html>
