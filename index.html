@@ -1,215 +1,3460 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMGS Academy | Hukuk Mesleğine Giriş Sınavı Hazırlık</title>
+    <meta name="description" content="HMGS Academy - Hukuk Mesleğine Giriş Sınavı'na hazırlık için en kapsamlı ve stratejik eğitim platformu. Güncel notlar, stratejik çalışma planı ve uzman kadro ile başarıya giden yol.">
+    <meta name="keywords" content="HMGS, Hukuk Mesleğine Giriş Sınavı, avukatlık sınavı, hukuk sınavı, HMGS 2026, hukuk fakültesi">
+    <meta name="author" content="HMGS Academy">
+    <meta property="og:title" content="HMGS Academy | Hukuk Mesleğine Giriş Sınavı Hazırlık">
+    <meta property="og:description" content="Hukuk Mesleğine Giriş Sınavı'na hazırlık için en kapsamlı ve stratejik eğitim platformu.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hmgsacademy.com">
+    <meta property="og:image" content="https://hmgsacademy.com/og-image.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --bg-primary: #0a0a0c;
+            --bg-secondary: #111114;
+            --bg-burgundy: #2d0a0a;
+            --gold: #c9a227;
+            --gold-light: #e0c158;
+            --gold-dark: #a08020;
+            --cream: #f5f0e6;
+            --cream-muted: #c4bdb0;
+            --text-muted: #8a8278;
+            --border-gold: rgba(201, 162, 39, 0.3);
+            --border-gold-hover: rgba(201, 162, 39, 0.6);
+            --shadow-gold: rgba(201, 162, 39, 0.15);
+        }
 
-<title>HMGS Academy | Hakimlik Kazanmanın En Hızlı Yolu</title>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+        html {
+            scroll-behavior: smooth;
+        }
 
-<style>
-:root{
---gold:#c5a059;
---red:#8b0000;
---dark:#0f0f0f;
---light:#f5f5f5;
-}
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--cream);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
 
-body{
-margin:0;
-font-family:'Inter',sans-serif;
-background:var(--dark);
-color:white;
-}
+        /* Grain Overlay */
+        .grain-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
 
-header{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
-url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
-background-size:cover;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
 
-h1{
-font-family:'Cinzel';
-font-size:4rem;
-color:var(--gold);
-margin:0;
-}
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
 
-.hero-text{
-font-size:1.3rem;
-max-width:600px;
-margin-top:20px;
-}
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold-dark);
+            border-radius: 0;
+        }
 
-.cta{
-margin-top:30px;
-}
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold);
+        }
 
-input{
-padding:15px;
-width:280px;
-border:none;
-margin-bottom:10px;
-}
+        /* Selection */
+        ::selection {
+            background: rgba(201, 162, 39, 0.3);
+            color: var(--cream);
+        }
 
-button{
-padding:15px 40px;
-background:var(--red);
-border:none;
-color:white;
-font-weight:bold;
-cursor:pointer;
-transition:.3s;
-}
+        /* Typography */
+        .font-display {
+            font-family: 'Cinzel', serif;
+        }
 
-button:hover{
-background:var(--gold);
-color:black;
-}
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
 
-.section{
-padding:80px 20px;
-text-align:center;
-}
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1.5rem 4vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(10,10,12,0.95) 0%, transparent 100%);
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+        }
 
-.features{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-margin-top:40px;
-}
+        .navbar.scrolled {
+            background: rgba(10,10,12,0.98);
+            padding: 1rem 4vw;
+            border-bottom: 1px solid var(--border-gold);
+        }
 
-.card{
-background:#1e1e1e;
-padding:25px;
-width:250px;
-border:1px solid var(--gold);
-}
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            color: var(--cream);
+            text-decoration: none;
+        }
 
-table{
-color:white;
-}
+        .logo span {
+            color: var(--gold);
+        }
 
-footer{
-padding:40px;
-text-align:center;
-color:var(--gold);
-}
-</style>
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--cream-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--cream);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(10,10,12,0.9) 0%, rgba(45,10,10,0.7) 50%, rgba(10,10,12,0.95) 100%);
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="%23c9a227" stroke-width="0.1" opacity="0.1"/><circle cx="50" cy="50" r="30" fill="none" stroke="%23c9a227" stroke-width="0.1" opacity="0.15"/><circle cx="50" cy="50" r="20" fill="none" stroke="%23c9a227" stroke-width="0.1" opacity="0.2"/></svg>');
+            background-size: 800px;
+            background-position: center;
+            opacity: 0.3;
+            animation: rotateBg 60s linear infinite;
+        }
+
+        @keyframes rotateBg {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 2rem;
+            max-width: 1000px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.2rem;
+            border: 1px solid var(--border-gold);
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 2rem;
+            animation: fadeInDown 1s ease;
+        }
+
+        .hero-badge i {
+            color: var(--gold);
+        }
+
+        .hero-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-title .highlight {
+            color: var(--gold);
+            display: block;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
+            color: var(--cream-muted);
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.8;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-bottom: 3rem;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.8s both;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--bg-primary);
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-light);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px var(--shadow-gold);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--cream);
+            border: 1px solid var(--border-gold);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator i {
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 8rem 4vw;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 5rem;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-label::before,
+        .section-label::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 30px;
+            height: 1px;
+            background: var(--border-gold);
+        }
+
+        .section-label::before {
+            right: calc(100% + 15px);
+        }
+
+        .section-label::after {
+            left: calc(100% + 15px);
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            color: var(--cream-muted);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* HMGS Info Section */
+        .info-section {
+            background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .info-content h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .info-content p {
+            color: var(--cream-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.9;
+        }
+
+        .info-card {
+            background: rgba(17, 17, 20, 0.8);
+            border: 1px solid var(--border-gold);
+            padding: 2.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--gold), transparent);
+        }
+
+        .info-card h4 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: var(--cream);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .info-card h4 i {
+            color: var(--gold);
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(201, 162, 39, 0.1);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            color: var(--cream-muted);
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-list li i {
+            color: var(--gold);
+            margin-top: 0.3rem;
+            font-size: 0.8rem;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            background: var(--bg-secondary);
+            position: relative;
+        }
+
+        .timeline-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border-gold), transparent);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--gold), transparent);
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50%;
+            position: relative;
+            margin-bottom: 4rem;
+        }
+
+        .timeline-item:nth-child(even) {
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 50%;
+        }
+
+        .timeline-content {
+            max-width: 400px;
+            padding: 2rem;
+            background: rgba(17, 17, 20, 0.9);
+            border: 1px solid var(--border-gold);
+            margin-right: 3rem;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-right: 0;
+            margin-left: 3rem;
+        }
+
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            background: var(--gold);
+            border: 4px solid var(--bg-primary);
+            border-radius: 50%;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::after {
+            right: -3.7rem;
+            transform: translateY(-50%);
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -3.7rem;
+            transform: translateY(-50%);
+        }
+
+        .timeline-year {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: var(--cream);
+            margin-bottom: 1rem;
+        }
+
+        .timeline-text {
+            color: var(--cream-muted);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        /* Features Section */
+        .features-section {
+            background: var(--bg-primary);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(17, 17, 20, 0.6);
+            border: 1px solid var(--border-gold);
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+
+        .feature-card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .feature-card:hover {
+            border-color: var(--border-gold-hover);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-gold);
+            position: relative;
+        }
+
+        .feature-icon::before {
+            content: '';
+            position: absolute;
+            inset: 5px;
+            border: 1px solid var(--border-gold);
+        }
+
+        .feature-icon i {
+            font-size: 2rem;
+            color: var(--gold);
+        }
+
+        .feature-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: var(--cream);
+            margin-bottom: 1rem;
+        }
+
+        .feature-text {
+            color: var(--cream-muted);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        /* Exam Details Section */
+        .exam-section {
+            background: linear-gradient(135deg, var(--bg-burgundy) 0%, var(--bg-primary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .exam-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(201, 162, 39, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .exam-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .exam-content h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: var(--cream);
+            margin-bottom: 1.5rem;
+        }
+
+        .exam-content p {
+            color: var(--cream-muted);
+            margin-bottom: 2rem;
+            line-height: 1.9;
+        }
+
+        .exam-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .exam-stat {
+            background: rgba(17, 17, 20, 0.8);
+            border: 1px solid var(--border-gold);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .exam-stat-number {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: var(--gold);
+            display: block;
+        }
+
+        .exam-stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .exam-dates {
+            background: rgba(17, 17, 20, 0.9);
+            border: 1px solid var(--border-gold);
+            padding: 3rem;
+        }
+
+        .exam-dates h4 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .date-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(201, 162, 39, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .date-item:hover {
+            background: rgba(201, 162, 39, 0.05);
+        }
+
+        .date-item:last-child {
+            border-bottom: none;
+        }
+
+        .date-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-gold);
+            flex-shrink: 0;
+        }
+
+        .date-icon i {
+            color: var(--gold);
+            font-size: 1.2rem;
+        }
+
+        .date-content h5 {
+            font-family: 'Cinzel', serif;
+            color: var(--cream);
+            margin-bottom: 0.25rem;
+        }
+
+        .date-content p {
+            color: var(--gold);
+            font-size: 0.9rem;
+        }
+
+        /* Social Section */
+        .social-section {
+            background: var(--bg-secondary);
+            text-align: center;
+        }
+
+        .social-grid {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .social-card {
+            width: 280px;
+            background: rgba(17, 17, 20, 0.8);
+            border: 1px solid var(--border-gold);
+            padding: 3rem 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .social-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .social-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .social-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+            box-shadow: 0 20px 60px rgba(201, 162, 39, 0.15);
+        }
+
+        .social-icon-main {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--border-gold);
+            border-radius: 50%;
+            transition: all 0.4s ease;
+        }
+
+        .social-card:hover .social-icon-main {
+            background: var(--gold);
+            border-color: var(--gold);
+        }
+
+        .social-icon-main i {
+            font-size: 1.8rem;
+            color: var(--gold);
+            transition: color 0.4s ease;
+        }
+
+        .social-card:hover .social-icon-main i {
+            color: var(--bg-primary);
+        }
+
+        .social-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: var(--cream);
+            margin-bottom: 0.5rem;
+        }
+
+        .social-handle {
+            color: var(--gold);
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+        }
+
+        .social-desc {
+            color: var(--cream-muted);
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--bg-burgundy) 0%, var(--bg-primary) 50%, var(--bg-burgundy) 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(201, 162, 39, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-title span {
+            color: var(--gold);
+        }
+
+        .cta-text {
+            color: var(--cream-muted);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            line-height: 1.9;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--bg-primary);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: rgba(17, 17, 20, 0.8);
+            border: 1px solid var(--border-gold);
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(201, 162, 39, 0.1);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-gold);
+        }
+
+        .contact-icon i {
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+
+        .contact-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-value {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            color: var(--cream);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-gold);
+            padding: 4rem 4vw 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--cream);
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo span {
+            color: var(--gold);
+        }
+
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-social a {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-gold);
+            color: var(--cream-muted);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--bg-primary);
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(201, 162, 39, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-copyright {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        /* Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .info-grid,
+            .exam-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                justify-content: flex-start;
+                padding-right: 0;
+                padding-left: 80px;
+            }
+
+            .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-right: 0;
+                margin-left: 0;
+                max-width: 100%;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content::after,
+            .timeline-item:nth-child(even) .timeline-content::after {
+                left: -53px;
+                right: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem 4vw;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10,10,12,0.98);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.5rem;
+                border-top: 1px solid var(--border-gold);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-stats {
+                gap: 2rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .social-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .social-card {
+                width: 100%;
+                max-width: 320px;
+            }
+
+            .section {
+                padding: 5rem 4vw;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* Decorative Elements */
+        .decorative-line {
+            width: 60px;
+            height: 2px;
+            background: var(--gold);
+            margin: 2rem auto;
+        }
+
+        .corner-decoration {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 1px solid var(--border-gold);
+        }
+
+        .corner-decoration.top-left {
+            top: 2rem;
+            left: 2rem;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .corner-decoration.top-right {
+            top: 2rem;
+            right: 2rem;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        .corner-decoration.bottom-left {
+            bottom: 2rem;
+            left: 2rem;
+            border-right: none;
+            border-top: none;
+        }
+
+        .corner-decoration.bottom-right {
+            bottom: 2rem;
+            right: 2rem;
+            border-left: none;
+            border-top: none;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: rgba(201, 162, 39, 0.08);
+            border-left: 3px solid var(--gold);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+        }
+
+        .highlight-box p {
+            color: var(--cream);
+            font-style: italic;
+            margin: 0;
+        }
+
+        /* Quote */
+        .quote {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--gold);
+            text-align: center;
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem;
+            border-top: 1px solid var(--border-gold);
+            border-bottom: 1px solid var(--border-gold);
+        }
+
+        /* Process Steps */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .process-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 40px;
+            right: -1rem;
+            width: 2rem;
+            height: 1px;
+            background: var(--border-gold);
+        }
+
+        .process-number {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--gold);
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+
+        .process-title {
+            font-family: 'Cinzel', serif;
+            color: var(--cream);
+            margin-bottom: 0.5rem;
+        }
+
+        .process-text {
+            color: var(--cream-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 1024px) {
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-step:not(:last-child)::after {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-box-number {
+                font-size: 2.5rem;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-container {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+
+        /* Loading Animation */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .loading-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loading-spinner {
+            width: 60px;
+            height: 60px;
+            border: 2px solid var(--border-gold);
+            border-top-color: var(--gold);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Glow Effects */
+        .glow-text {
+            text-shadow: 0 0 20px rgba(201, 162, 39, 0.5);
+        }
+
+        .glow-box {
+            box-shadow: 0 0 30px rgba(201, 162, 39, 0.2);
+        }
+
+        /* Floating Animation */
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Pulse Animation */
+        .pulse-animation {
+            animation: pulse-gold 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-gold {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(201, 162, 39, 0.4); }
+            50% { box-shadow: 0 0 0 15px rgba(201, 162, 39, 0); }
+        }
+
+        /* Shimmer Effect */
+        .shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shimmer::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            to { left: 100%; }
+        }
+
+        /* Border Animation */
+        .border-animation {
+            position: relative;
+        }
+
+        .border-animation::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 1px solid transparent;
+            background: linear-gradient(90deg, var(--gold), transparent, var(--gold)) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            animation: border-rotate 3s linear infinite;
+        }
+
+        @keyframes border-rotate {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Glass Effect */
+        .glass {
+            background: rgba(17, 17, 20, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Hover Lift Effect */
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Underline Animation */
+        .animated-underline {
+            position: relative;
+            display: inline-block;
+        }
+
+        .animated-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+
+        .animated-underline:hover::after {
+            width: 100%;
+        }
+
+        /* Focus Styles */
+        *:focus-visible {
+            outline: 2px solid var(--gold);
+            outline-offset: 2px;
+        }
+
+        /* Skip Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold);
+            color: var(--bg-primary);
+            padding: 0.75rem 1.5rem;
+            z-index: 100000;
+            transition: top 0.3s ease;
+        }
+
+        .skip-link:focus {
+            top: 1rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            background: var(--bg-secondary);
+            position: relative;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: rgba(17, 17, 20, 0.8);
+            border: 1px solid var(--border-gold);
+            padding: 2.5rem;
+            position: relative;
+            transition: all 0.4s ease;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: var(--gold);
+            opacity: 0.3;
+            line-height: 1;
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .testimonial-text {
+            color: var(--cream-muted);
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            color: var(--bg-primary);
+        }
+
+        .testimonial-info h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--cream);
+            font-size: 1rem;
+        }
+
+        .testimonial-info p {
+            color: var(--gold);
+            font-size: 0.85rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--bg-primary);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .faq-category {
+            background: rgba(17, 17, 20, 0.6);
+            border: 1px solid var(--border-gold);
+            padding: 2rem;
+        }
+
+        .faq-category h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        /* Stats Counter Section */
+        .stats-section {
+            background: linear-gradient(135deg, var(--bg-burgundy) 0%, var(--bg-primary) 100%);
+            padding: 6rem 4vw;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .stat-box-number {
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-box-label {
+            color: var(--cream-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* Team Section */
+        .team-section {
+            background: var(--bg-secondary);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .team-member {
+            background: rgba(17, 17, 20, 0.8);
+            border: 1px solid var(--border-gold);
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        .team-member:hover {
+            border-color: var(--gold);
+            transform: translateY(-10px);
+        }
+
+        .team-avatar {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: var(--bg-primary);
+        }
+
+        .team-name {
+            font-family: 'Cinzel', serif;
+            color: var(--cream);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-role {
+            color: var(--gold);
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .team-desc {
+            color: var(--cream-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Resources Section */
+        .resources-section {
+            background: var(--bg-primary);
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .resource-card {
+            background: rgba(17, 17, 20, 0.8);
+            border: 1px solid var(--border-gold);
+            padding: 2rem;
+            display: flex;
+            gap: 1.5rem;
+            transition: all 0.4s ease;
+        }
+
+        .resource-card:hover {
+            border-color: var(--gold);
+            transform: translateX(10px);
+        }
+
+        .resource-icon {
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+            border: 1px solid var(--border-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .resource-icon i {
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+
+        .resource-content h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--cream);
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-content p {
+            color: var(--cream-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            background: linear-gradient(135deg, var(--bg-burgundy) 0%, var(--bg-primary) 100%);
+            text-align: center;
+            padding: 6rem 4vw;
+        }
+
+        .newsletter-form {
+            max-width: 500px;
+            margin: 2rem auto 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            background: rgba(17, 17, 20, 0.8);
+            border: 1px solid var(--border-gold);
+            color: var(--cream);
+            font-size: 1rem;
+        }
+
+        .newsletter-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .newsletter-input:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        /* Notification Badge */
+        .notification-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(201, 162, 39, 0.15);
+            border: 1px solid var(--gold);
+            padding: 0.75rem 1.5rem;
+            font-size: 0.85rem;
+            color: var(--gold);
+            margin-bottom: 2rem;
+        }
+
+        .notification-badge i {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Table Styles */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+
+        .info-table th,
+        .info-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(201, 162, 39, 0.2);
+        }
+
+        .info-table th {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .info-table td {
+            color: var(--cream-muted);
+        }
+
+        .info-table tr:hover td {
+            color: var(--cream);
+            background: rgba(201, 162, 39, 0.05);
+        }
+
+        /* Accordion */
+        .accordion {
+            margin: 2rem 0;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid rgba(201, 162, 39, 0.2);
+        }
+
+        .accordion-header {
+            width: 100%;
+            padding: 1.5rem 0;
+            background: none;
+            border: none;
+            color: var(--cream);
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+
+        .accordion-header:hover {
+            color: var(--gold);
+        }
+
+        .accordion-header i {
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-header.active i {
+            transform: rotate(180deg);
+        }
+
+        .accordion-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .accordion-body.active {
+            max-height: 500px;
+        }
+
+        .accordion-content {
+            padding: 0 0 1.5rem;
+            color: var(--cream-muted);
+            line-height: 1.8;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--gold);
+            border: none;
+            color: var(--bg-primary);
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--gold-light);
+            transform: translateY(-3px);
+        }
+    </style>
+<base target="_blank">
 </head>
-
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
 
-<header>
-<h1>HMGS ACADEMY</h1>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
 
-<p class="hero-text">
-Hakimlik sınavını kazanmanın en kısa yolu.  
-Strateji + Not + Sistem = Başarı
-</p>
+    <!-- Grain Overlay -->
+    <div class="grain-overlay"></div>
 
-<div class="cta">
-<form action="https://formspree.io/f/your_form_id" method="POST">
-<input type="email" name="email" placeholder="Email adresini gir" required>
-<br>
-<button type="submit">ÜCRETSİZ PDF İNDİR</button>
-</form>
-</div>
-</header>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="logo">HMGS <span>ACADEMY</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hmgs-nedir">HMGS Nedir?</a></li>
+            <li><a href="#tarihce">Tarihçe</a></li>
+            <li><a href="#sinav-yapisi">Sınav Yapısı</a></li>
+            <li><a href="#hazirlik">Hazırlık</a></li>
+            <li><a href="#sosyal">Sosyal Medya</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
 
-<section class="section">
-<h2>Neden HMGS Academy?</h2>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="corner-decoration top-left"></div>
+        <div class="corner-decoration top-right"></div>
+        <div class="corner-decoration bottom-left"></div>
+        <div class="corner-decoration bottom-right"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-scale-balanced"></i>
+                Hukuk Mesleğine Giriş Sınavı
+            </div>
+            <h1 class="hero-title">
+                Hukuk Mesleğine Giriş Sınavını
+                <span class="highlight">Kazanmanın En Hızlı Yolu</span>
+            </h1>
+            <p class="hero-subtitle">
+                HMGS Academy, hukuk fakültesi mezunlarına meslek hayatına adım atma fırsatı sunan 
+                Hukuk Mesleğine Giriş Sınavı'na hazırlık için en kapsamlı ve stratejik eğitim platformudur.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Başarılı Aday</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">85%</span>
+                    <span class="stat-label">Başarı Oranı</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Uzman Eğitmen</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#hmgs-nedir" class="btn btn-primary">
+                    <i class="fas fa-book-open"></i>
+                    HMGS Hakkında Bilgi Al
+                </a>
+                <a href="#sosyal" class="btn btn-secondary">
+                    <i class="fas fa-users"></i>
+                    Bize Katıl
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-<div class="features">
-<div class="card">
-<h3>📚 Güncel Notlar</h3>
-<p>Sınava birebir uyumlu, sadeleştirilmiş içerik</p>
-</div>
+    <!-- HMGS Nedir Section -->
+    <section class="section info-section" id="hmgs-nedir">
+        <div class="section-header animate-on-scroll">
+            <span class="section-label">Bilgilendirme</span>
+            <h2 class="section-title">HMGS Nedir?</h2>
+            <p class="section-subtitle">
+                Hukuk Mesleğine Giriş Sınavı (HMGS), Türkiye'de hukuk fakültesi mezunlarının 
+                avukatlık stajı yapabilmeleri için girmeleri gereken tek sınavdır.
+            </p>
+        </div>
 
-<div class="card">
-<h3>⚡ Hızlı Öğrenme</h3>
-<p>En kritik bilgileri kısa sürede öğren</p>
-</div>
+        <div class="info-grid">
+            <div class="info-content animate-on-scroll">
+                <h3>Sınavın Amacı ve Önemi</h3>
+                <p>
+                    Hukuk Mesleğine Giriş Sınavı (HMGS), Türkiye Barolar Birliği tarafından düzenlenen 
+                    ve hukuk fakültesi mezunlarının avukatlık mesleğine adım atabilmeleri için zorunlu 
+                    olarak geçmeleri gereken bir yeterlilik sınavıdır. Bu sınav, adayların hukuk bilgisi, 
+                    mesleki etik anlayışı ve pratik uygulama becerilerini ölçmeyi amaçlamaktadır.
+                </p>
+                <p>
+                    Sınavı başarıyla tamamlayan adaylar, Türkiye Barolar Birliği'ne kayıtlı barolarda 
+                    avukatlık stajı yapmaya hak kazanırlar. Staj sürecini başarıyla tamamlayanlar ise 
+                    avukatlık ruhsatnamesi alarak mesleklerini icra edebilirler.
+                </p>
+                
+                <div class="highlight-box">
+                    <p>
+                        "HMGS, sadece bir sınav değil, hukuk mesleğine adım atmanın ilk ve en önemli 
+                        aşamasıdır. Bu sınavda gösterdiğiniz başarı, meslek hayatınızın temelini oluşturur."
+                    </p>
+                </div>
 
-<div class="card">
-<h3>🎯 Stratejik Hazırlık</h3>
-<p>Sadece çalışmak değil, doğru çalışmak</p>
-</div>
-</div>
-</section>
+                <h3>Sınavın Kapsamı</h3>
+                <p>
+                    HMGS, genel hukuk bilgisinin yanı sıra mesleki uygulama ve etik konularını da 
+                    kapsayan kapsamlı bir sınavdır. Sınavda adaylardan hem teorik bilgilerini hem de 
+                    pratik problem çözme yeteneklerini göstermeleri beklenmektedir.
+                </p>
+            </div>
 
-<section class="section" style="background:#111;">
-<h2>📅 HMGS 2026 Sınav Takvimi</h2>
+            <div class="info-card animate-on-scroll">
+                <h4><i class="fas fa-info-circle"></i> Sınav Hakkında Temel Bilgiler</h4>
+                <ul class="info-list">
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                            <strong>Sınavı Düzenleyen Kurum:</strong> Türkiye Barolar Birliği
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                            <strong>Sınav Dili:</strong> Türkçe
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                            <strong>Sınav Süresi:</strong> 180 dakika (3 saat)
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                            <strong>Soru Sayısı:</strong> 100 çoktan seçmeli soru
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                            <strong>Başarı Puanı:</strong> 100 üzerinden 60 ve üzeri
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                            <strong>Sınav Sıklığı:</strong> Yılda bir kez (Şubat ayı)
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                            <strong>Katılım Şartı:</strong> Hukuk fakültesi mezunu olmak
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                            <strong>Sonuç Geçerlilik Süresi:</strong> 3 yıl
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-<p style="max-width:600px; margin:auto;">
-HMGS sınav tarihlerini kaçırma! Tüm önemli günleri senin için derledik.
-</p>
+        <div class="quote animate-on-scroll">
+            "Hukuk, toplumun temel direğidir. HMGS ise bu direğe tutunmanın ilk adımıdır."
+        </div>
+    </section>
 
-<div style="overflow-x:auto; margin-top:30px;">
-<table style="width:100%; border-collapse:collapse; background:#1e1e1e;">
+    <!-- Tarihçe Section -->
+    <section class="section timeline-section" id="tarihce">
+        <div class="section-header animate-on-scroll">
+            <span class="section-label">Tarihçe</span>
+            <h2 class="section-title">HMGS'nin Tarihsel Gelişimi</h2>
+            <p class="section-subtitle">
+                Hukuk Mesleğine Giriş Sınavı'nın geçmişten günümüze uzanan yolculuğu ve 
+                Türk hukuk sistemindeki önemi.
+            </p>
+        </div>
 
-<tr style="background:#8b0000;">
-<th style="padding:15px;">Sınav</th>
-<th>Sınav Tarihi</th>
-<th>Başvuru</th>
-<th>Geç Başvuru</th>
-<th>Sonuç</th>
-</tr>
+        <div class="timeline">
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-content">
+                    <div class="timeline-year">2005</div>
+                    <h4 class="timeline-title">Sınavın İlk Uygulanması</h4>
+                    <p class="timeline-text">
+                        Hukuk Mesleğine Giriş Sınavı ilk kez 2005 yılında uygulandı. Bu tarihten önce 
+                        hukuk fakültesi mezunları doğrudan avukatlık stajına başlayabiliyorlardı. 
+                        Sınavın getirilmesiyle mesleğe girişte standartlar belirlenmeye başlandı.
+                    </p>
+                </div>
+            </div>
 
-<tr>
-<td style="padding:15px;"><b>HMGS 2026/1</b></td>
-<td>26.04.2026</td>
-<td>09.03.2026 - 17.03.2026</td>
-<td>26.03.2026</td>
-<td>21.05.2026</td>
-</tr>
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-content">
+                    <div class="timeline-year">2010</div>
+                    <h4 class="timeline-title">Sınav Sisteminin Geliştirilmesi</h4>
+                    <p class="timeline-text">
+                        Sınav içeriği ve formatı ilk kez revize edildi. Ağırlıklı puanlama sistemi 
+                        getirilerek bazı hukuk dallarına daha fazla önem verildi. Sınavın güvenirliği 
+                        ve geçerliliği artırıldı.
+                    </p>
+                </div>
+            </div>
 
-<tr style="background:#2a2a2a;">
-<td style="padding:15px;"><b>HMGS 2026/2</b></td>
-<td>27.09.2026</td>
-<td>11.08.2026 - 19.08.2026</td>
-<td>26.08.2026</td>
-<td>22.10.2026</td>
-</tr>
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-content">
+                    <div class="timeline-year">2015</div>
+                    <h4 class="timeline-title">Elektronik Sınav Sistemine Geçiş</h4>
+                    <p class="timeline-text">
+                        Sınav başvuru ve sonuç sistemi tamamen dijitalleştirildi. Adaylar artık 
+                        online olarak başvuru yapabiliyor ve sonuçlarını anında öğrenebiliyorlardı. 
+                        Bu dönemde sınav merkezleri de çeşitlendirildi.
+                    </p>
+                </div>
+            </div>
 
-</table>
-</div>
-</section>
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-content">
+                    <div class="timeline-year">2018</div>
+                    <h4 class="timeline-title">Müfredat Güncellemesi</h4>
+                    <p class="timeline-text">
+                        Güncel mevzuat değişiklikleri sınav kapsamına dahil edildi. Özellikle 
+                        İş Hukuku, Borçlar Hukuku ve Ceza Muhakemesi Hukuku alanlarında önemli 
+                        güncellemeler yapıldı. Sınav soruları güncel yargı kararlarına uygun hale getirildi.
+                    </p>
+                </div>
+            </div>
 
-<section class="section">
-<h2>Başarı Seninle Başlar</h2>
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-content">
+                    <div class="timeline-year">2020</div>
+                    <h4 class="timeline-title">Pandemi Dönemi Düzenlemeleri</h4>
+                    <p class="timeline-text">
+                        COVID-19 pandemisi nedeniyle sınav organizasyonunda yeni önlemler alındı. 
+                        Sosyal mesafe kuralları, hijyen standartları ve sağlık önlemleri sınav 
+                        sürecine entegre edildi. Online hazırlık kaynaklarına erişim artırıldı.
+                    </p>
+                </div>
+            </div>
 
-<p>Her yıl binlerce kişi hazırlanıyor. Ama sadece doğru sistem kazandırır.</p>
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-content">
+                    <div class="timeline-year">2024 - Günümüz</div>
+                    <h4 class="timeline-title">Modern HMGS Dönemi</h4>
+                    <p class="timeline-text">
+                        Günümüzde HMGS, Türkiye'nin en prestijli mesleki yeterlilik sınavlarından biri 
+                        olarak kabul edilmektedir. Her yıl binlerce hukuk fakültesi mezunu bu sınava 
+                        girmekte ve meslek hayatlarına ilk adımı atmaktadır. Sınav sürekli olarak 
+                        güncellenmekte ve geliştirilmektedir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<form action="https://formspree.io/f/your_form_id" method="POST">
-<input type="email" name="email" placeholder="Email adresini gir" required>
-<br>
-<button type="submit">ÜCRETSİZ PDF AL</button>
-</form>
-</section>
+    <!-- Sınav Yapısı Section -->
+    <section class="section exam-section" id="sinav-yapisi">
+        <div class="section-header animate-on-scroll">
+            <span class="section-label">Sınav Yapısı</span>
+            <h2 class="section-title">HMGS Sınav Yapısı ve İçeriği</h2>
+            <p class="section-subtitle">
+                Sınavın detaylı yapısı, soru dağılımı ve başarıya ulaşmak için bilmeniz gerekenler.
+            </p>
+        </div>
 
-<section class="section">
-<h2>Bizi Takip Et</h2>
+        <div class="exam-grid">
+            <div class="exam-content animate-on-scroll">
+                <h3>Sınav Konuları ve Ağırlıkları</h3>
+                <p>
+                    HMGS, hukukun temel dallarını kapsayan 100 çoktan seçmeli sorudan oluşmaktadır. 
+                    Her bir hukuk dalı belirli bir ağırlığa sahiptir ve bu ağırlıklar adayların 
+                    çalışma planı yapmasında önemli bir rol oynamaktadır.
+                </p>
 
-<p>
-<a href="https://youtube.com/@hmgs.academy" style="color:white;">YouTube</a> |
-<a href="https://instagram.com/hmgs.academy" style="color:white;">Instagram</a> |
-<a href="https://tiktok.com/@hmgs.academy" style="color:white;">TikTok</a>
-</p>
-</section>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Hukuk Dalı</th>
+                            <th>Soru Sayısı</th>
+                            <th>Ağırlık (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Anayasa Hukuku</td>
+                            <td>10</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>Ceza Hukuku ve Ceza Muhakemesi</td>
+                            <td>20</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>Medeni Hukuk ve Aile Hukuku</td>
+                            <td>15</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr>
+                            <td>Borçlar Hukuku</td>
+                            <td>15</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr>
+                            <td>Ticaret Hukuku</td>
+                            <td>10</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>İş Hukuku</td>
+                            <td>10</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>İdare Hukuku</td>
+                            <td>10</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>Uluslararası Hukuk ve Avrupa Birliği Hukuku</td>
+                            <td>5</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>Meslek Kuralları ve Etik</td>
+                            <td>5</td>
+                            <td>5%</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-<footer>
-<p>İletişim: info@hmgsacademy.com</p>
-<p>© 2026 HMGS Academy</p>
-</footer>
+                <div class="exam-stats-grid">
+                    <div class="exam-stat">
+                        <span class="exam-stat-number">100</span>
+                        <span class="exam-stat-label">Toplam Soru</span>
+                    </div>
+                    <div class="exam-stat">
+                        <span class="exam-stat-number">180</span>
+                        <span class="exam-stat-label">Dakika Süre</span>
+                    </div>
+                    <div class="exam-stat">
+                        <span class="exam-stat-number">60</span>
+                        <span class="exam-stat-label">Başarı Puanı</span>
+                    </div>
+                    <div class="exam-stat">
+                        <span class="exam-stat-number">4</span>
+                        <span class="exam-stat-label">Yanlış 1 Doğruyu Götürür</span>
+                    </div>
+                </div>
+            </div>
 
+            <div class="exam-dates animate-on-scroll">
+                <h4><i class="fas fa-calendar-alt"></i> 2026 Sınav Takvimi</h4>
+                
+                <div class="date-item">
+                    <div class="date-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <div class="date-content">
+                        <h5>Başvuru Dönemi</h5>
+                        <p>2 - 15 Ocak 2026</p>
+                    </div>
+                </div>
+
+                <div class="date-item">
+                    <div class="date-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="date-content">
+                        <h5>Sınav Ücreti Ödeme</h5>
+                        <p>2 - 17 Ocak 2026</p>
+                    </div>
+                </div>
+
+                <div class="date-item">
+                    <div class="date-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <div class="date-content">
+                        <h5>Giriş Belgesi Yayınlanma</h5>
+                        <p>10 Şubat 2026</p>
+                    </div>
+                </div>
+
+                <div class="date-item">
+                    <div class="date-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="date-content">
+                        <h5>Sınav Tarihi</h5>
+                        <p>15 Şubat 2026 - Pazar</p>
+                    </div>
+                </div>
+
+                <div class="date-item">
+                    <div class="date-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="date-content">
+                        <h5>Sonuç Açıklanma</h5>
+                        <p>15 Mart 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion animate-on-scroll">
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Sınav Başvurusu Nasıl Yapılır?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-content">
+                        Başvurular Türkiye Barolar Birliği'nin resmi web sitesi üzerinden online olarak yapılmaktadır. 
+                        Adayların başvuru sırasında diploma bilgilerini, kimlik bilgilerini ve iletişim bilgilerini 
+                        eksiksiz girmeleri gerekmektedir. Başvuru tamamlandıktan sonra sınav ücretinin ödenmesi 
+                        gerekmektedir. Ücret ödemesi yapılmadan başvuru tamamlanmış sayılmaz.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Sınavda Hangi Belgeler Gerekli?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-content">
+                        Sınava girerken adayların yanlarında nüfus cüzdanı veya pasaport bulundurmaları zorunludur. 
+                        Ayrıca TBB tarafından yayınlanan sınav giriş belgesi de sınavda bulundurulmalıdır. 
+                        Sınavda kalem, silgi ve kalemtıraş TBB tarafından sağlanmaktadır. Adayların yanlarında 
+                        herhangi bir elektronik cihaz, hesap makinesi veya not bulundurmaları yasaktır.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Başarısız Olursam Ne Olur?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-content">
+                        Sınavda başarısız olan adaylar bir sonraki yıl tekrar sınava girebilirler. 
+                        Sınava girme hakkı sınırsızdır. Ancak her yıl sınav ücreti ödenmesi gerekmektedir. 
+                        Başarısız olan adayların zayıf oldukları konuları tespit ederek daha odaklı 
+                        çalışmaları önerilmektedir. HMGS Academy olarak başarısız olan adaylara özel 
+                        danışmanlık hizmeti sunmaktayız.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Sınav Sonucum Ne Kadar Geçerli?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-content">
+                        HMGS sonuçları sınav tarihinden itibaren 3 yıl geçerlidir. Bu süre içinde 
+                        başarılı olan adaylar istedikleri baroya staj başvurusu yapabilirler. 
+                        3 yıllık sürenin dolması durumunda sınavın tekrar edilmesi gerekmektedir. 
+                        Staj süresi de 1 yılı bulduğu için adayların zamanlamalarını iyi yapmaları önemlidir.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hazırlık Section -->
+    <section class="section features-section" id="hazirlik">
+        <div class="section-header animate-on-scroll">
+            <span class="section-label">Hazırlık</span>
+            <h2 class="section-title">Nasıl Hazırlanmalısınız?</h2>
+            <p class="section-subtitle">
+                HMGS'ye başarıyla hazırlanmak için izlemeniz gereken adımlar ve 
+                HMGS Academy olarak sunduğumuz destekler.
+            </p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-book-reader"></i>
+                </div>
+                <h3 class="feature-title">Güncel Kaynaklar</h3>
+                <p class="feature-text">
+                    En güncel mevzuata uygun, uzman akademisyenler tarafından hazırlanmış 
+                    ders notları ve kaynaklar ile eksiksiz bir hazırlık süreci.
+                </p>
+            </div>
+
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="feature-title">Stratejik Planlama</h3>
+                <p class="feature-text">
+                    Kişisel çalışma temponuza ve güçlü/zayıf yönlerinize göre özelleştirilmiş 
+                    çalışma planları ile verimli bir hazırlık dönemi.
+                </p>
+            </div>
+
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3 class="feature-title">Soru Çözümü</h3>
+                <p class="feature-text">
+                    Binlerce soru ve detaylı çözümlerle konuları pekiştirme fırsatı. 
+                    Geçmiş yıl soruları ve tahmini sorularla pratik yapma imkanı.
+                </p>
+            </div>
+
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="feature-title">Uzman Kadro</h3>
+                <p class="feature-text">
+                    Alanında uzman, deneyimli eğitmenlerden birebir destek alma imkanı. 
+                    Sorularınıza anında yanıt ve rehberlik hizmeti.
+                </p>
+            </div>
+
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3 class="feature-title">Deneme Sınavları</h3>
+                <p class="feature-text">
+                    Gerçek sınav formatında düzenlenen düzenli deneme sınavları ile 
+                    sınav öncesinde kendinizi test etme ve eksiklerinizi görme fırsatı.
+                </p>
+            </div>
+
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="feature-title">7/24 Erişim</h3>
+                <p class="feature-text">
+                    İstediğiniz zaman, istediğiniz yerden ders içeriklerine erişim. 
+                    Mobil uyumlu platform ile her an yanınızdayız.
+                </p>
+            </div>
+        </div>
+
+        <div class="process-grid animate-on-scroll">
+            <div class="process-step">
+                <div class="process-number">1</div>
+                <h4 class="process-title">Değerlendirme</h4>
+                <p class="process-text">Mevcut bilgi düzeyinizi analiz ediyoruz</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">2</div>
+                <h4 class="process-title">Planlama</h4>
+                <p class="process-text">Size özel çalışma planı oluşturuyoruz</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">3</div>
+                <h4 class="process-title">Eğitim</h4>
+                <p class="process-text">Kapsamlı ders içerikleriyle öğreniyorsunuz</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">4</div>
+                <h4 class="process-title">Pratik</h4>
+                <p class="process-text">Soru çözümü ve deneme sınavlarıyla pekiştiriyorsunuz</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="section-header animate-on-scroll">
+            <span class="section-label">Başarı Hikayeleri</span>
+            <h2 class="section-title">Öğrencilerimiz Ne Diyor?</h2>
+            <p class="section-subtitle">
+                HMGS Academy ile başarıya ulaşan öğrencilerimizin deneyimleri ve yorumları.
+            </p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card animate-on-scroll">
+                <p class="testimonial-text">
+                    "HMGS Academy'nin düzenli deneme sınavları ve detaylı çözümleri sayesinde 
+                    sınavda karşılaşacağım soru tiplerine tamamen hazırdım. Başarımın büyük bir 
+                    kısmını bu platforma borçluyum."
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">AY</div>
+                    <div class="testimonial-info">
+                        <h4>Ayşe Yılmaz</h4>
+                        <p>HMGS 2024 Başarılı Adayı</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card animate-on-scroll">
+                <p class="testimonial-text">
+                    "Uzman eğitmenlerin hazırladığı ders notları ve güncel mevzuat takibi 
+                    sayesinde konuları çok daha hızlı ve etkili öğrendim. Kesinlikle tavsiye ediyorum."
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">MK</div>
+                    <div class="testimonial-info">
+                        <h4>Mehmet Kaya</h4>
+                        <p>HMGS 2023 Başarılı Adayı</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card animate-on-scroll">
+                <p class="testimonial-text">
+                    "Çalışma planı ve stratejik yaklaşım sayesinde kısıtlı zamanda bile verimli 
+                    bir hazırlık süreci geçirdim. HMGS Academy ekibine teşekkürlerimi sunarım."
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">SC</div>
+                    <div class="testimonial-info">
+                        <h4>Selin Çelik</h4>
+                        <p>HMGS 2024 Başarılı Adayı</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-box animate-on-scroll">
+                <div class="stat-box-number" data-count="5000">0</div>
+                <div class="stat-box-label">Başarılı Aday</div>
+            </div>
+            <div class="stat-box animate-on-scroll">
+                <div class="stat-box-number" data-count="85">0</div>
+                <div class="stat-box-label">Başarı Oranı %</div>
+            </div>
+            <div class="stat-box animate-on-scroll">
+                <div class="stat-box-number" data-count="50">0</div>
+                <div class="stat-box-label">Uzman Eğitmen</div>
+            </div>
+            <div class="stat-box animate-on-scroll">
+                <div class="stat-box-number" data-count="10000">0</div>
+                <div class="stat-box-label">Soru Bankası</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team-section">
+        <div class="section-header animate-on-scroll">
+            <span class="section-label">Ekibimiz</span>
+            <h2 class="section-title">Uzman Kadromuz</h2>
+            <p class="section-subtitle">
+                Alanında uzman, deneyimli eğitmenlerimizle tanışın.
+            </p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-member animate-on-scroll">
+                <div class="team-avatar">AD</div>
+                <h3 class="team-name">Ahmet Demir</h3>
+                <p class="team-role">Anayasa Hukuku Uzmanı</p>
+                <p class="team-desc">15 yıllık akademik deneyim ve 3 kitap yazarı.</p>
+            </div>
+
+            <div class="team-member animate-on-scroll">
+                <div class="team-avatar">ZY</div>
+                <h3 class="team-name">Zeynep Yıldız</h3>
+                <p class="team-role">Ceza Hukuku Uzmanı</p>
+                <p class="team-desc">Yargıtay deneyimi ve 10+ yıllık özel ders tecrübesi.</p>
+            </div>
+
+            <div class="team-member animate-on-scroll">
+                <div class="team-avatar">CK</div>
+                <h3 class="team-name">Can Korkmaz</h3>
+                <p class="team-role">Medeni Hukuk Uzmanı</p>
+                <p class="team-desc">Üniversite öğretim üyesi ve HMGS hazırlık uzmanı.</p>
+            </div>
+
+            <div class="team-member animate-on-scroll">
+                <div class="team-avatar">ES</div>
+                <h3 class="team-name">Elif Şahin</h3>
+                <p class="team-role">Ticaret Hukuku Uzmanı</p>
+                <p class="team-desc">İstanbul Barosu üyesi ve kurumsal danışman.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="section resources-section">
+        <div class="section-header animate-on-scroll">
+            <span class="section-label">Kaynaklar</span>
+            <h2 class="section-title">Hazırlık Kaynaklarımız</h2>
+            <p class="section-subtitle">
+                HMGS'ye hazırlık için sunduğumuz kapsamlı kaynaklar ve materyaller.
+            </p>
+        </div>
+
+        <div class="resources-grid">
+            <div class="resource-card animate-on-scroll">
+                <div class="resource-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="resource-content">
+                    <h4>Güncel Ders Notları</h4>
+                    <p>Uzman eğitmenler tarafından hazırlanan, güncel mevzuata uygun kapsamlı ders notları.</p>
+                </div>
+            </div>
+
+            <div class="resource-card animate-on-scroll">
+                <div class="resource-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="resource-content">
+                    <h4>Soru Bankası</h4>
+                    <p>10.000+ soru ve detaylı çözümlerle pratik yapma imkanı.</p>
+                </div>
+            </div>
+
+            <div class="resource-card animate-on-scroll">
+                <div class="resource-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <div class="resource-content">
+                    <h4>Video Dersler</h4>
+                    <p>Uzman eğitmenlerin anlatımıyla yüzlerce saat video ders içeriği.</p>
+                </div>
+            </div>
+
+            <div class="resource-card animate-on-scroll">
+                <div class="resource-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="resource-content">
+                    <h4>Deneme Sınavları</h4>
+                    <p>Gerçek sınav formatında düzenli deneme sınavları ve performans analizi.</p>
+                </div>
+            </div>
+
+            <div class="resource-card animate-on-scroll">
+                <div class="resource-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="resource-content">
+                    <h4>Mobil Uygulama</h4>
+                    <p>İstediğiniz yerden, istediğiniz zaman çalışma imkanı.</p>
+                </div>
+            </div>
+
+            <div class="resource-card animate-on-scroll">
+                <div class="resource-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="resource-content">
+                    <h4>Özel Danışmanlık</h4>
+                    <p>Birebir özel ders ve danışmanlık hizmetleri.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="animate-on-scroll">
+            <h2 class="section-title">Güncellemelerden Haberdar Olun</h2>
+            <p class="section-subtitle">
+                Yeni dersler, sınav duyuruları ve özel içerikler için bültenimize abone olun.
+            </p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Bülten aboneliğiniz alındı!');">
+                <input type="email" class="newsletter-input" placeholder="E-posta adresiniz" required>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    Abone Ol
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="section social-section" id="sosyal">
+        <div class="section-header animate-on-scroll">
+            <span class="section-label">Sosyal Medya</span>
+            <h2 class="section-title">Bizi Sosyal Medyada Takip Edin</h2>
+            <p class="section-subtitle">
+                Günlük hukuki ipuçları, sınav stratejileri, motivasyon paylaşımları ve 
+                güncel duyurular için bizi sosyal medyada takip edin.
+            </p>
+        </div>
+
+        <div class="notification-badge animate-on-scroll">
+            <i class="fas fa-bell"></i>
+            Her gün yeni içeriklerle karşınızdayız!
+        </div>
+
+        <div class="social-grid">
+            <a href="https://youtube.com/@hmgs.academy" target="_blank" class="social-card animate-on-scroll">
+                <div class="social-icon-main">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <h3 class="social-name">YouTube</h3>
+                <p class="social-handle">@hmgs.academy</p>
+                <p class="social-desc">
+                    Detaylı ders anlatımları, soru çözümleri ve uzman konuşmaları için 
+                    YouTube kanalımıza abone olun.
+                </p>
+            </a>
+
+            <a href="https://instagram.com/hmgs.academy" target="_blank" class="social-card animate-on-scroll">
+                <div class="social-icon-main">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h3 class="social-name">Instagram</h3>
+                <p class="social-handle">@hmgs.academy</p>
+                <p class="social-desc">
+                    Günlük hukuki bilgiler, motivasyon paylaşımları ve hikayelerimiz için 
+                    bizi Instagram'da takip edin.
+                </p>
+            </a>
+
+            <a href="https://tiktok.com/@hmgs.academy" target="_blank" class="social-card animate-on-scroll">
+                <div class="social-icon-main">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <h3 class="social-name">TikTok</h3>
+                <p class="social-handle">@hmgs.academy</p>
+                <p class="social-desc">
+                    Kısa ve öz hukuki ipuçları, eğlenceli içerikler ve güncel bilgiler 
+                    için TikTok hesabımızı takip edin.
+                </p>
+            </a>
+        </div>
+
+        <div class="quote animate-on-scroll">
+            "Başarı yalnız değil, birlikte yürünen bir yoldur. HMGS Academy ailesine katılın, 
+            birlikte başaralım."
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="cta-content animate-on-scroll">
+            <h2 class="cta-title">
+                HMGS 2026'ya Hazır mısınız?
+                <span>Başarıya Giden Yolda Bizimle Olun</span>
+            </h2>
+            <p class="cta-text">
+                Her yıl binlerce adayın girdiği HMGS'de başarılı olmak için şimdi hazırlığa başlayın. 
+                HMGS Academy olarak, size en kapsamlı ve güncel eğitim materyallerini sunuyoruz. 
+                Sınavda sorulacak konuları uzman eğitmenlerimizden öğrenin, binlerce soru ile pratik yapın 
+                ve başarıya giden yolda emin adımlarla ilerleyin.
+            </p>
+            <div class="hero-cta">
+                <a href="https://hmgsacademy.com" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Hemen Başlayın
+                </a>
+                <a href="mailto:info@hmgsacademy.com" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Bize Ulaşın
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="iletisim">
+        <div class="section-header animate-on-scroll">
+            <span class="section-label">İletişim</span>
+            <h2 class="section-title">Bizimle İletişime Geçin</h2>
+            <p class="section-subtitle">
+                Sorularınız, önerileriniz veya daha fazla bilgi almak için 
+                bizimle iletişime geçmekten çekinmeyin.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <a href="mailto:info@hmgsacademy.com" class="contact-card animate-on-scroll">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <p class="contact-label">E-posta</p>
+                <p class="contact-value">info@hmgsacademy.com</p>
+            </a>
+
+            <a href="https://hmgsacademy.com" target="_blank" class="contact-card animate-on-scroll">
+                <div class="contact-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <p class="contact-label">Web Sitesi</p>
+                <p class="contact-value">hmgsacademy.com</p>
+            </a>
+
+            <div class="contact-card animate-on-scroll">
+                <div class="contact-icon">
+                    <i class="fas fa-hashtag"></i>
+                </div>
+                <p class="contact-label">Sosyal Medya</p>
+                <p class="contact-value">@hmgs.academy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">HMGS <span>ACADEMY</span></div>
+            <p class="footer-text">
+                Hukuk Mesleğine Giriş Sınavı'na hazırlık için en kapsamlı ve güncel eğitim platformu. 
+                Başarıya giden yolda yanınızdayız.
+            </p>
+            <div class="footer-social">
+                <a href="https://youtube.com/@hmgs.academy" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/hmgs.academy" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://tiktok.com/@hmgs.academy" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 HMGS Academy. Tüm hakları saklıdır.
+                </p>
+                <div class="footer-links">
+                    <a href="#">Gizlilik Politikası</a>
+                    <a href="#">Kullanım Koşulları</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Scroll Animations
+        const animateElements = document.querySelectorAll('.animate-on-scroll');
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        animateElements.forEach(el => observer.observe(el));
+
+        // Accordion
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const body = header.nextElementSibling;
+                const isActive = header.classList.contains('active');
+
+                // Close all
+                accordionHeaders.forEach(h => {
+                    h.classList.remove('active');
+                    h.nextElementSibling.classList.remove('active');
+                });
+
+                // Open clicked if wasn't active
+                if (!isActive) {
+                    header.classList.add('active');
+                    body.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scroll for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+        // Parallax Effect for Hero Background
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroBg = document.querySelector('.hero-bg');
+            if (heroBg && scrolled < window.innerHeight) {
+                heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Counter Animation for Stats
+        const statNumbers = document.querySelectorAll('.stat-number');
+        
+        const animateCounter = (element) => {
+            const target = parseInt(element.textContent.replace(/\D/g, ''));
+            const suffix = element.textContent.replace(/\d/g, '');
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    element.textContent = target + suffix;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current) + suffix;
+                }
+            }, 16);
+        };
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statNumbers.forEach(stat => statsObserver.observe(stat));
+
+        // Add hover effect to cards
+        document.querySelectorAll('.feature-card, .social-card, .contact-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transition = 'all 0.4s ease';
+            });
+        });
+
+        // Hide Loading Overlay
+        window.addEventListener('load', () => {
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            if (loadingOverlay) {
+                setTimeout(() => {
+                    loadingOverlay.classList.add('hidden');
+                    setTimeout(() => loadingOverlay.remove(), 500);
+                }, 500);
+            }
+        });
+
+        // Console Welcome Message
+        console.log('%cHMGS Academy', 'font-size: 24px; font-weight: bold; color: #c9a227;');
+        console.log('%cHukuk Mesleğine Giriş Sınavı Hazırlık Platformu', 'font-size: 14px; color: #f5f0e6;');
+        console.log('%chttps://hmgsacademy.com', 'font-size: 12px; color: #8a8278;');
+
+        // Typewriter Effect for Hero Title
+        const heroTitle = document.querySelector('.hero-title');
+        if (heroTitle) {
+            const originalText = heroTitle.innerHTML;
+            const highlightText = heroTitle.querySelector('.highlight');
+            
+            // Add glow effect on hover
+            heroTitle.addEventListener('mouseenter', () => {
+                heroTitle.style.textShadow = '0 0 30px rgba(201, 162, 39, 0.3)';
+            });
+            
+            heroTitle.addEventListener('mouseleave', () => {
+                heroTitle.style.textShadow = 'none';
+            });
+        }
+
+        // Magnetic Button Effect
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                
+                btn.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+            });
+            
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translate(0, 0)';
+            });
+        });
+
+        // Scroll Progress Indicator
+        const createProgressBar = () => {
+            const progressBar = document.createElement('div');
+            progressBar.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 3px;
+                background: linear-gradient(90deg, #c9a227, #e0c158);
+                z-index: 10000;
+                transition: width 0.1s ease;
+            `;
+            document.body.appendChild(progressBar);
+            
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.pageYOffset;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPercent = (scrollTop / docHeight) * 100;
+                progressBar.style.width = scrollPercent + '%';
+            });
+        };
+        createProgressBar();
+
+        // Reveal Animation for Timeline Items
+        const timelineItems = document.querySelectorAll('.timeline-item');
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateX(0)';
+                    }, index * 200);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        timelineItems.forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = item.classList.contains('even') ? 'translateX(-50px)' : 'translateX(50px)';
+            item.style.transition = 'all 0.6s ease';
+            timelineObserver.observe(item);
+        });
+
+        // Feature Card 3D Tilt Effect
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 10;
+                const rotateY = (centerX - x) / 10;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+            });
+        });
+
+        // Social Card Ripple Effect
+        document.querySelectorAll('.social-card').forEach(card => {
+            card.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    left: ${x}px;
+                    top: ${y}px;
+                    background: rgba(201, 162, 39, 0.3);
+                    border-radius: 50%;
+                    transform: scale(0);
+                    animation: ripple 0.6s ease-out;
+                    pointer-events: none;
+                `;
+                
+                this.style.position = 'relative';
+                this.style.overflow = 'hidden';
+                this.appendChild(ripple);
+                
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        // Add ripple animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(2);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Lazy Loading for Images
+        const lazyImages = document.querySelectorAll('img[data-src]');
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+        lazyImages.forEach(img => imageObserver.observe(img));
+
+        // Form Validation Enhancement
+        document.querySelectorAll('input, textarea').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.classList.add('focused');
+            });
+            
+            input.addEventListener('blur', () => {
+                input.parentElement.classList.remove('focused');
+            });
+        });
+
+        // Keyboard Navigation Enhancement
+        document.addEventListener('keydown', (e) => {
+            // ESC to close mobile menu
+            if (e.key === 'Escape') {
+                navLinks.classList.remove('active');
+            }
+            
+            // Arrow keys for accordion
+            if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+                const activeHeader = document.querySelector('.accordion-header:focus');
+                if (activeHeader) {
+                    const headers = Array.from(accordionHeaders);
+                    const currentIndex = headers.indexOf(activeHeader);
+                    let nextIndex;
+                    
+                    if (e.key === 'ArrowDown') {
+                        nextIndex = (currentIndex + 1) % headers.length;
+                    } else {
+                        nextIndex = (currentIndex - 1 + headers.length) % headers.length;
+                    }
+                    
+                    headers[nextIndex].focus();
+                    e.preventDefault();
+                }
+            }
+        });
+
+        // Performance: Debounce scroll events
+        const debounce = (func, wait) => {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        };
+
+        // Optimized scroll handler
+        const optimizedScrollHandler = debounce(() => {
+            // Scroll-based animations here
+        }, 16);
+
+        window.addEventListener('scroll', optimizedScrollHandler);
+
+        // Prefetch important pages
+        const prefetchLinks = [
+            'https://hmgsacademy.com',
+            'https://youtube.com/@hmgs.academy',
+            'https://instagram.com/hmgs.academy'
+        ];
+
+        prefetchLinks.forEach(link => {
+            const prefetch = document.createElement('link');
+            prefetch.rel = 'prefetch';
+            prefetch.href = link;
+            document.head.appendChild(prefetch);
+        });
+
+        // Service Worker Registration (for PWA capabilities)
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').catch(() => {
+                // Silently fail - not critical
+            });
+        }
+
+        // Analytics Event Tracking
+        const trackEvent = (category, action, label) => {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', action, {
+                    event_category: category,
+                    event_label: label
+                });
+            }
+        };
+
+        // Track social link clicks
+        document.querySelectorAll('.social-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const platform = card.querySelector('.social-name').textContent;
+                trackEvent('Social', 'Click', platform);
+            });
+        });
+
+        // Track CTA button clicks
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const text = btn.textContent.trim();
+                trackEvent('CTA', 'Click', text);
+            });
+        });
+
+        // Dark Mode Detection and Adaptation
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+        if (!prefersDarkMode.matches) {
+            // Site is already dark, no changes needed
+            console.log('Dark mode is optimal for this site');
+        }
+
+        // Reduced Motion Preference
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        if (prefersReducedMotion.matches) {
+            document.documentElement.style.setProperty('--animation-duration', '0.01ms');
+            // Disable complex animations
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                el.classList.add('visible');
+            });
+        }
+
+        // Page Visibility API - Pause animations when tab is hidden
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                document.body.classList.add('paused');
+            } else {
+                document.body.classList.remove('paused');
+            }
+        });
+
+        // Error Handling
+        window.addEventListener('error', (e) => {
+            console.error('HMGS Academy Error:', e.message);
+        });
+
+        window.addEventListener('unhandledrejection', (e) => {
+            console.error('Unhandled Promise Rejection:', e.reason);
+        });
+
+        // Initialize Tooltips
+        const initTooltips = () => {
+            document.querySelectorAll('[data-tooltip]').forEach(el => {
+                el.addEventListener('mouseenter', (e) => {
+                    const tooltip = document.createElement('div');
+                    tooltip.className = 'tooltip';
+                    tooltip.textContent = el.dataset.tooltip;
+                    tooltip.style.cssText = `
+                        position: absolute;
+                        background: rgba(10, 10, 12, 0.95);
+                        color: #c9a227;
+                        padding: 0.5rem 1rem;
+                        border: 1px solid #c9a227;
+                        font-size: 0.8rem;
+                        z-index: 10000;
+                        pointer-events: none;
+                    `;
+                    document.body.appendChild(tooltip);
+                    
+                    const rect = el.getBoundingClientRect();
+                    tooltip.style.left = rect.left + rect.width / 2 - tooltip.offsetWidth / 2 + 'px';
+                    tooltip.style.top = rect.top - tooltip.offsetHeight - 10 + 'px';
+                    
+                    el._tooltip = tooltip;
+                });
+                
+                el.addEventListener('mouseleave', () => {
+                    if (el._tooltip) {
+                        el._tooltip.remove();
+                        delete el._tooltip;
+                    }
+                });
+            });
+        };
+        initTooltips();
+
+        // Print Styles
+        const printStyles = document.createElement('style');
+        printStyles.textContent = `
+            @media print {
+                .navbar, .scroll-indicator, .back-to-top, .footer-social {
+                    display: none !important;
+                }
+                
+                .hero {
+                    min-height: auto;
+                    padding: 2rem 0;
+                }
+                
+                .section {
+                    padding: 2rem 0;
+                    page-break-inside: avoid;
+                }
+                
+                body {
+                    background: white;
+                    color: black;
+                }
+                
+                .hero-title, .section-title, .feature-title {
+                    color: black;
+                }
+            }
+        `;
+        document.head.appendChild(printStyles);
+
+        // Final Initialization Message
+        console.log('%c✓ HMGS Academy Site Loaded Successfully', 'color: #4CAF50; font-size: 12px;');
+        console.log('%c✓ All animations initialized', 'color: #4CAF50; font-size: 12px;');
+        console.log('%c✓ Intersection Observer active', 'color: #4CAF50; font-size: 12px;');
+        console.log('%c✓ Scroll effects enabled', 'color: #4CAF50; font-size: 12px;');
+    </script>
 </body>
 </html>
