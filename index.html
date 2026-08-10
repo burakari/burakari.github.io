@@ -2,24 +2,42 @@
 <html lang="tr">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SVV8PZFPTC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SVV8PZFPTC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SVV8PZFPTC');
+    </script>
 
-  gtag('config', 'G-SVV8PZFPTC');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HMGS Academy | Hukuk Mesleğine Giriş Sınavı Hazırlık</title>
-    <meta name="description" content="HMGS Academy - Hukuk Mesleğine Giriş Sınavı'na hazırlık için en kapsamlı ve stratejik eğitim platformu. 7188 sayılı kanun ile getirilen zorunlu ön eleme sınavına hazırlık.">
+    <meta name="description" content="HMGS Academy - Hukuk Mesleğine Giriş Sınavı (HMGS) için kapsamlı hazırlık platformu. 7188 sayılı kanunla gelen zorunlu ön eleme sınavına strateji ve içerik.">
     <meta name="keywords" content="HMGS, Hukuk Mesleğine Giriş Sınavı, 7188 sayılı kanun, avukatlık stajı, hakim savcı adaylığı, noterlik stajı, hukuk fakültesi">
     <meta name="author" content="HMGS Academy">
     <meta property="og:title" content="HMGS Academy | Hukuk Mesleğine Giriş Sınavı Hazırlık">
     <meta property="og:description" content="Hukuk fakültesi mezunları için zorunlu ön eleme sınavı HMGS'ye hazırlık platformu.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hmgsacademy.com">
+    <link rel="canonical" href="https://hmgsacademy.com/">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%96%EF%B8%8F%3C/text%3E%3C/svg%3E">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "HMGS Academy",
+      "url": "https://hmgsacademy.com",
+      "description": "Hukuk Mesleğine Giriş Sınavı (HMGS) hazırlık platformu.",
+      "sameAs": [
+        "https://youtube.com/@hmgs.academy",
+        "https://instagram.com/hmgs.academy",
+        "https://tiktok.com/@hmgs.academy"
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
@@ -42,17 +60,8 @@
             --warning: #FF9800;
             --danger: #f44336;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-primary);
@@ -60,1779 +69,341 @@
             line-height: 1.7;
             overflow-x: hidden;
         }
-
-        /* Grain Overlay */
         .grain-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9999;
-            opacity: 0.03;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 9999; opacity: 0.03;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
         }
-
-        /* Scroll Progress Bar */
         .scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 3px;
+            position: fixed; top: 0; left: 0; height: 3px;
             background: linear-gradient(90deg, var(--gold), var(--gold-light));
-            z-index: 10001;
-            transition: width 0.1s ease;
+            z-index: 10001; transition: width 0.1s ease;
         }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--bg-primary);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--gold-dark);
-            border-radius: 0;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--gold);
-        }
-
-        /* Selection */
-        ::selection {
-            background: rgba(201, 162, 39, 0.3);
-            color: var(--cream);
-        }
-
-        /* Typography */
-        .font-display {
-            font-family: 'Cinzel', serif;
-        }
-
-        .font-serif {
-            font-family: 'Playfair Display', serif;
-        }
-
-        /* Loading Overlay */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); }
+        ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 0; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+        ::selection { background: rgba(201, 162, 39, 0.3); color: var(--cream); }
+        .font-display { font-family: 'Cinzel', serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
         .loading-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--bg-primary);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 99999;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--bg-primary); display: flex; flex-direction: column;
+            align-items: center; justify-content: center; z-index: 99999;
             transition: opacity 0.5s ease, visibility 0.5s ease;
         }
-
-        .loading-overlay.hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
-
+        .loading-overlay.hidden { opacity: 0; visibility: hidden; }
         .loading-spinner {
-            width: 60px;
-            height: 60px;
-            border: 2px solid var(--border-gold);
-            border-top-color: var(--gold);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
+            width: 60px; height: 60px; border: 2px solid var(--border-gold);
+            border-top-color: var(--gold); border-radius: 50%; animation: spin 1s linear infinite;
         }
-
         .loading-text {
-            margin-top: 1.5rem;
-            font-family: 'Cinzel', serif;
-            color: var(--gold);
-            letter-spacing: 0.2em;
-            animation: pulse 1.5s ease-in-out infinite;
+            margin-top: 1.5rem; font-family: 'Cinzel', serif; color: var(--gold);
+            letter-spacing: 0.2em; animation: pulse 1.5s ease-in-out infinite;
         }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        /* Navigation */
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
         .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 1.2rem 4vw;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1.2rem 4vw;
+            display: flex; justify-content: space-between; align-items: center;
             background: linear-gradient(to bottom, rgba(10,10,12,0.98) 0%, transparent 100%);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid transparent;
-            transition: all 0.4s ease;
+            backdrop-filter: blur(20px); border-bottom: 1px solid transparent; transition: all 0.4s ease;
         }
-
-        .navbar.scrolled {
-            background: rgba(10,10,12,0.98);
-            border-bottom-color: var(--border-gold);
-            padding: 0.8rem 4vw;
-        }
-
+        .navbar.scrolled { background: rgba(10,10,12,0.98); border-bottom-color: var(--border-gold); padding: 0.8rem 4vw; }
         .logo {
-            font-family: 'Cinzel', serif;
-            font-size: 1.2rem;
-            font-weight: 700;
-            letter-spacing: 0.15em;
-            color: var(--cream);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 700; letter-spacing: 0.15em;
+            color: var(--cream); text-decoration: none; display: flex; align-items: center; gap: 0.5rem;
         }
-
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            border: 2px solid var(--gold);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .logo-icon i {
-            color: var(--gold);
-            font-size: 1rem;
-        }
-
-        .logo span {
-            color: var(--gold);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2.5rem;
-            list-style: none;
-        }
-
+        .logo-icon { width: 40px; height: 40px; border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; }
+        .logo-icon i { color: var(--gold); font-size: 1rem; }
+        .logo span { color: var(--gold); }
+        .nav-links { display: flex; gap: 2.5rem; list-style: none; }
         .nav-links a {
-            color: var(--cream-muted);
-            text-decoration: none;
-            font-size: 0.8rem;
-            font-weight: 500;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            position: relative;
-            transition: color 0.3s ease;
-            padding: 0.5rem 0;
+            color: var(--cream-muted); text-decoration: none; font-size: 0.8rem; font-weight: 500;
+            letter-spacing: 0.1em; text-transform: uppercase; position: relative; transition: color 0.3s ease; padding: 0.5rem 0;
         }
-
         .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 1px;
-            background: var(--gold);
-            transition: width 0.3s ease;
+            content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px;
+            background: var(--gold); transition: width 0.3s ease;
         }
-
-        .nav-links a:hover {
-            color: var(--gold);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--cream);
-            font-size: 1.5rem;
-            cursor: pointer;
-            padding: 0.5rem;
-        }
-
-        /* Hero Section */
+        .nav-links a:hover { color: var(--gold); }
+        .nav-links a:hover::after { width: 100%; }
+        .mobile-menu-btn { display: none; background: none; border: none; color: var(--cream); font-size: 1.5rem; cursor: pointer; padding: 0.5rem; }
         .hero {
-            min-height: 100vh;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-burgundy) 50%, var(--bg-primary) 100%);
+            min-height: 100vh; position: relative; display: flex; align-items: center; justify-content: center;
+            overflow: hidden; background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-burgundy) 50%, var(--bg-primary) 100%);
         }
-
         .hero-bg-pattern {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.05;
-            background-image: 
-                linear-gradient(var(--gold) 1px, transparent 1px),
-                linear-gradient(90deg, var(--gold) 1px, transparent 1px);
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.05;
+            background-image: linear-gradient(var(--gold) 1px, transparent 1px), linear-gradient(90deg, var(--gold) 1px, transparent 1px);
             background-size: 50px 50px;
         }
-
-        .hero-content {
-            position: relative;
-            z-index: 10;
-            text-align: center;
-            padding: 8rem 2rem 4rem;
-            max-width: 1100px;
-        }
-
+        .hero-content { position: relative; z-index: 10; text-align: center; padding: 8rem 2rem 4rem; max-width: 1100px; }
         .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.6rem 1.5rem;
-            background: rgba(201, 162, 39, 0.1);
-            border: 1px solid var(--border-gold);
-            font-size: 0.75rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 2rem;
-            animation: fadeInDown 1s ease;
+            display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.6rem 1.5rem;
+            background: rgba(201, 162, 39, 0.1); border: 1px solid var(--border-gold); font-size: 0.75rem;
+            letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 2rem; animation: fadeInDown 1s ease;
         }
-
-        .hero-badge i {
-            animation: pulse 2s infinite;
-        }
-
+        .hero-badge i { animation: pulse 2s infinite; }
         .hero-title {
-            font-family: 'Cinzel', serif;
-            font-size: clamp(2.2rem, 5vw, 4.5rem);
-            font-weight: 700;
-            line-height: 1.1;
-            letter-spacing: 0.03em;
-            margin-bottom: 1.5rem;
-            animation: fadeInUp 1s ease 0.2s both;
+            font-family: 'Cinzel', serif; font-size: clamp(2.2rem, 5vw, 4.5rem); font-weight: 700; line-height: 1.1;
+            letter-spacing: 0.03em; margin-bottom: 1.5rem; animation: fadeInUp 1s ease 0.2s both;
         }
-
-        .hero-title .highlight {
-            color: var(--gold);
-            display: block;
-            margin-top: 0.5rem;
-        }
-
+        .hero-title .highlight { color: var(--gold); display: block; margin-top: 0.5rem; }
         .hero-subtitle {
-            font-size: clamp(1rem, 1.5vw, 1.2rem);
-            color: var(--cream-muted);
-            max-width: 700px;
-            margin: 0 auto 2.5rem;
-            line-height: 1.9;
-            animation: fadeInUp 1s ease 0.4s both;
+            font-size: clamp(1rem, 1.5vw, 1.2rem); color: var(--cream-muted); max-width: 700px;
+            margin: 0 auto 2.5rem; line-height: 1.9; animation: fadeInUp 1s ease 0.4s both;
         }
-
         .hero-warning {
-            background: rgba(244, 67, 54, 0.1);
-            border: 1px solid rgba(244, 67, 54, 0.3);
-            padding: 1rem 2rem;
-            margin-bottom: 2rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 1rem;
-            animation: fadeInUp 1s ease 0.5s both;
+            background: rgba(244, 67, 54, 0.1); border: 1px solid rgba(244, 67, 54, 0.3); padding: 1rem 2rem;
+            margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 1rem; animation: fadeInUp 1s ease 0.5s both;
         }
-
-        .hero-warning i {
-            color: var(--danger);
-            font-size: 1.5rem;
-        }
-
-        .hero-warning-text {
-            color: var(--cream);
-            font-size: 0.95rem;
-            text-align: left;
-        }
-
-        .hero-warning-text strong {
-            color: var(--danger);
-        }
-
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-            animation: fadeInUp 1s ease 0.6s both;
-        }
-
-        .stat-item {
-            text-align: center;
-            padding: 1.5rem 2rem;
-            background: rgba(17, 17, 20, 0.6);
-            border: 1px solid var(--border-gold);
-            min-width: 150px;
-        }
-
-        .stat-number {
-            font-family: 'Cinzel', serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--gold);
-            display: block;
-            line-height: 1;
-        }
-
-        .stat-label {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            margin-top: 0.5rem;
-        }
-
-        .hero-cta {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            animation: fadeInUp 1s ease 0.8s both;
-        }
-
+        .hero-warning i { color: var(--danger); font-size: 1.5rem; }
+        .hero-warning-text { color: var(--cream); font-size: 0.95rem; text-align: left; }
+        .hero-warning-text strong { color: var(--danger); }
+        .hero-stats { display: flex; justify-content: center; gap: 3rem; margin-bottom: 3rem; flex-wrap: wrap; animation: fadeInUp 1s ease 0.6s both; }
+        .stat-item { text-align: center; padding: 1.5rem 2rem; background: rgba(17, 17, 20, 0.6); border: 1px solid var(--border-gold); min-width: 150px; }
+        .stat-number { font-family: 'Cinzel', serif; font-size: 2.5rem; font-weight: 700; color: var(--gold); display: block; line-height: 1; }
+        .stat-label { font-size: 0.75rem; color: var(--text-muted); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.5rem; }
+        .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; animation: fadeInUp 1s ease 0.8s both; }
         .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 1rem 2.5rem;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
+            display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2.5rem; font-size: 0.85rem;
+            font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border: none;
+            cursor: pointer; transition: all 0.4s ease; position: relative; overflow: hidden;
         }
-
-        .btn-primary {
-            background: var(--gold);
-            color: var(--bg-primary);
-        }
-
+        .btn-primary { background: var(--gold); color: var(--bg-primary); }
         .btn-primary::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: left 0.5s ease;
+            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); transition: left 0.5s ease;
         }
-
-        .btn-primary:hover::before {
-            left: 100%;
-        }
-
-        .btn-primary:hover {
-            background: var(--gold-light);
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px var(--shadow-gold);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--cream);
-            border: 1px solid var(--border-gold);
-        }
-
-        .btn-secondary:hover {
-            border-color: var(--gold);
-            color: var(--gold);
-            transform: translateY(-3px);
-        }
-
-        .scroll-indicator {
-            position: absolute;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: bounce 2s infinite;
-        }
-
-        .scroll-indicator i {
-            font-size: 1.5rem;
-            color: var(--gold);
-        }
-
+        .btn-primary:hover::before { left: 100%; }
+        .btn-primary:hover { background: var(--gold-light); transform: translateY(-3px); box-shadow: 0 15px 40px var(--shadow-gold); }
+        .btn-secondary { background: transparent; color: var(--cream); border: 1px solid var(--border-gold); }
+        .btn-secondary:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-3px); }
+        .scroll-indicator { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); animation: bounce 2s infinite; }
+        .scroll-indicator i { font-size: 1.5rem; color: var(--gold); }
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
             40% { transform: translateX(-50%) translateY(-10px); }
             60% { transform: translateX(-50%) translateY(-5px); }
         }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Section Styles */
-        .section {
-            padding: 7rem 4vw;
-            position: relative;
-        }
-
-        .section-header {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 4rem;
-        }
-
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        .section { padding: 7rem 4vw; position: relative; }
+        .section-header { text-align: center; max-width: 800px; margin: 0 auto 4rem; }
         .section-label {
-            display: inline-block;
-            font-size: 0.7rem;
-            letter-spacing: 0.25em;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 1rem;
-            position: relative;
-            font-weight: 600;
-        }
-
-        .section-label::before,
-        .section-label::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            width: 40px;
-            height: 1px;
-            background: var(--border-gold);
-        }
-
-        .section-label::before {
-            right: calc(100% + 15px);
-        }
-
-        .section-label::after {
-            left: calc(100% + 15px);
-        }
-
-        .section-title {
-            font-family: 'Cinzel', serif;
-            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-
-        .section-subtitle {
-            color: var(--cream-muted);
-            font-size: 1.05rem;
-            line-height: 1.9;
-        }
-
-        /* Info Section - HMGS Nedir */
-        .info-section {
-            background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 4rem;
-            align-items: start;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .info-content h3 {
-            font-family: 'Cinzel', serif;
-            font-size: 1.6rem;
-            color: var(--gold);
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .info-content h3 i {
-            font-size: 1.2rem;
-        }
-
-        .info-content p {
-            color: var(--cream-muted);
-            margin-bottom: 1.5rem;
-            line-height: 1.9;
-            font-size: 1rem;
-        }
-
-        .info-highlight {
-            background: linear-gradient(135deg, rgba(201, 162, 39, 0.15), rgba(201, 162, 39, 0.05));
-            border-left: 3px solid var(--gold);
-            padding: 1.5rem 2rem;
-            margin: 2rem 0;
-        }
-
-        .info-highlight p {
-            color: var(--cream);
-            font-style: italic;
-            margin: 0;
-            font-size: 1.05rem;
-        }
-
-        .info-card {
-            background: rgba(17, 17, 20, 0.9);
-            border: 1px solid var(--border-gold);
-            padding: 2.5rem;
-            position: relative;
-        }
-
-        .info-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, var(--gold), transparent);
-        }
-
-        .info-card h4 {
-            font-family: 'Cinzel', serif;
-            font-size: 1.2rem;
-            color: var(--cream);
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .info-card h4 i {
-            color: var(--gold);
-        }
-
-        .info-list {
-            list-style: none;
-        }
-
-        .info-list li {
-            padding: 1rem 0;
-            border-bottom: 1px solid rgba(201, 162, 39, 0.1);
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            color: var(--cream-muted);
-            font-size: 0.95rem;
-        }
-
-        .info-list li:last-child {
-            border-bottom: none;
-        }
-
-        .info-list li i {
-            color: var(--gold);
-            margin-top: 0.3rem;
-            font-size: 0.9rem;
-        }
-
-        .info-list li strong {
-            color: var(--cream);
-            display: block;
-            margin-bottom: 0.25rem;
-        }
-
-        /* Warning Box */
-        .warning-box {
-            background: rgba(244, 67, 54, 0.08);
-            border: 1px solid rgba(244, 67, 54, 0.3);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-
-        .warning-box i {
-            color: var(--danger);
-            font-size: 1.5rem;
-            flex-shrink: 0;
-        }
-
-        .warning-box-content h4 {
-            color: var(--danger);
-            font-family: 'Cinzel', serif;
-            margin-bottom: 0.5rem;
-        }
-
-        .warning-box-content p {
-            color: var(--cream-muted);
-            margin: 0;
-            font-size: 0.95rem;
-        }
-
-        /* Timeline Section */
-        .timeline-section {
-            background: var(--bg-secondary);
-            position: relative;
-        }
-
-        .timeline-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--border-gold), transparent);
-        }
-
-        .timeline {
-            position: relative;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(to bottom, var(--gold), var(--gold-dark), transparent);
-        }
-
-        .timeline-item {
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 50%;
-            position: relative;
-            margin-bottom: 3rem;
-        }
-
-        .timeline-item:nth-child(even) {
-            justify-content: flex-start;
-            padding-right: 0;
-            padding-left: 50%;
-        }
-
-        .timeline-content {
-            max-width: 420px;
-            padding: 2rem;
-            background: rgba(17, 17, 20, 0.95);
-            border: 1px solid var(--border-gold);
-            margin-right: 3rem;
-            position: relative;
-        }
-
-        .timeline-item:nth-child(even) .timeline-content {
-            margin-right: 0;
-            margin-left: 3rem;
-        }
-
-        .timeline-content::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            width: 16px;
-            height: 16px;
-            background: var(--gold);
-            border: 3px solid var(--bg-primary);
-            border-radius: 50%;
-        }
-
-        .timeline-item:nth-child(odd) .timeline-content::after {
-            right: -3.5rem;
-            transform: translateY(-50%);
-        }
-
-        .timeline-item:nth-child(even) .timeline-content::after {
-            left: -3.5rem;
-            transform: translateY(-50%);
-        }
-
-        .timeline-date {
-            font-family: 'Cinzel', serif;
-            font-size: 0.9rem;
-            color: var(--gold);
-            margin-bottom: 0.5rem;
-            letter-spacing: 0.1em;
-        }
-
-        .timeline-title {
-            font-family: 'Cinzel', serif;
-            font-size: 1.2rem;
-            color: var(--cream);
-            margin-bottom: 0.75rem;
-        }
-
-        .timeline-text {
-            color: var(--cream-muted);
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
-
-        /* Exam Structure Section */
-        .exam-section {
-            background: linear-gradient(135deg, var(--bg-burgundy) 0%, var(--bg-primary) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .exam-section::before {
-            content: '';
-            position: absolute;
-            top: -30%;
-            right: -20%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(201, 162, 39, 0.06) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .exam-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: start;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .exam-content h3 {
-            font-family: 'Cinzel', serif;
-            font-size: 1.5rem;
-            color: var(--cream);
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .exam-content h3 i {
-            color: var(--gold);
-        }
-
-        .exam-content p {
-            color: var(--cream-muted);
-            margin-bottom: 1.5rem;
-            line-height: 1.9;
-        }
-
-        .exam-stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .exam-stat {
-            background: rgba(17, 17, 20, 0.9);
-            border: 1px solid var(--border-gold);
-            padding: 1.5rem;
-            text-align: center;
-        }
-
-        .exam-stat-number {
-            font-family: 'Cinzel', serif;
-            font-size: 2rem;
-            color: var(--gold);
-            display: block;
-            font-weight: 700;
-        }
-
-        .exam-stat-label {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-top: 0.5rem;
-        }
-
-        .subjects-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            font-size: 0.9rem;
-        }
-
-        .subjects-table th,
-        .subjects-table td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid rgba(201, 162, 39, 0.15);
-        }
-
-        .subjects-table th {
-            font-family: 'Cinzel', serif;
-            color: var(--gold);
-            font-weight: 600;
-            background: rgba(201, 162, 39, 0.05);
-        }
-
-        .subjects-table td {
-            color: var(--cream-muted);
-        }
-
-        .subjects-table tr:hover td {
-            color: var(--cream);
-            background: rgba(201, 162, 39, 0.03);
-        }
-
-        .weight-high {
-            color: var(--gold);
-            font-weight: 600;
-        }
-
-        .exam-dates {
-            background: rgba(17, 17, 20, 0.95);
-            border: 1px solid var(--border-gold);
-            padding: 2.5rem;
-        }
-
-        .exam-dates h4 {
-            font-family: 'Cinzel', serif;
-            font-size: 1.3rem;
-            color: var(--gold);
-            margin-bottom: 2rem;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.75rem;
-        }
-
-        .date-item {
-            display: flex;
-            align-items: center;
-            gap: 1.25rem;
-            padding: 1.25rem;
-            border-bottom: 1px solid rgba(201, 162, 39, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .date-item:hover {
-            background: rgba(201, 162, 39, 0.05);
-        }
-
-        .date-item:last-child {
-            border-bottom: none;
-        }
-
-        .date-icon {
-            width: 45px;
-            height: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid var(--border-gold);
-            flex-shrink: 0;
-        }
-
-        .date-icon i {
-            color: var(--gold);
-            font-size: 1.1rem;
-        }
-
-        .date-content h5 {
-            font-family: 'Cinzel', serif;
-            color: var(--cream);
-            margin-bottom: 0.25rem;
-            font-size: 0.95rem;
-        }
-
-        .date-content p {
-            color: var(--gold);
-            font-size: 0.9rem;
-            margin: 0;
-        }
-
-        /* Pass Rates Section */
-        .pass-rates-section {
-            background: var(--bg-primary);
-            position: relative;
-        }
-
-        .pass-rates-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .pass-rate-card {
-            background: rgba(17, 17, 20, 0.9);
-            border: 1px solid var(--border-gold);
-            padding: 2.5rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .pass-rate-card.danger {
-            border-color: rgba(244, 67, 54, 0.4);
-        }
-
-        .pass-rate-card.danger .pass-rate-percentage {
-            color: var(--danger);
-        }
-
-        .pass-rate-year {
-            font-family: 'Cinzel', serif;
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-
-        .pass-rate-percentage {
-            font-family: 'Cinzel', serif;
-            font-size: 4rem;
-            font-weight: 700;
-            color: var(--gold);
-            line-height: 1;
-        }
-
-        .pass-rate-label {
-            color: var(--cream-muted);
-            font-size: 0.9rem;
-            margin-top: 1rem;
-        }
-
-        .pass-rate-detail {
-            color: var(--text-muted);
-            font-size: 0.8rem;
-            margin-top: 0.5rem;
-        }
-
-        /* Features Section */
-        .features-section {
-            background: var(--bg-secondary);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .feature-card {
-            background: rgba(17, 17, 20, 0.7);
-            border: 1px solid var(--border-gold);
-            padding: 2.5rem 2rem;
-            text-align: center;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--gold), transparent);
-            transform: translateX(-100%);
-            transition: transform 0.6s ease;
-        }
-
-        .feature-card:hover::before {
-            transform: translateX(100%);
-        }
-
-        .feature-card:hover {
-            border-color: var(--border-gold-hover);
-            transform: translateY(-5px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
-        }
-
-        .feature-icon {
-            width: 70px;
-            height: 70px;
-            margin: 0 auto 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid var(--border-gold);
-            position: relative;
-        }
-
-        .feature-icon::before {
-            content: '';
-            position: absolute;
-            inset: 4px;
-            border: 1px solid var(--border-gold);
-        }
-
-        .feature-icon i {
-            font-size: 1.6rem;
-            color: var(--gold);
-        }
-
-        .feature-title {
-            font-family: 'Cinzel', serif;
-            font-size: 1.15rem;
-            color: var(--cream);
-            margin-bottom: 1rem;
-        }
-
-        .feature-text {
-            color: var(--cream-muted);
-            font-size: 0.9rem;
-            line-height: 1.8;
-        }
-
-        /* Process Section */
-        .process-section {
-            background: var(--bg-primary);
-        }
-
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .process-step {
-            text-align: center;
-            position: relative;
-        }
-
-        .process-step:not(:last-child)::after {
-            content: '';
-            position: absolute;
-            top: 35px;
-            right: -1rem;
-            width: 2rem;
-            height: 1px;
-            background: var(--border-gold);
-        }
-
-        .process-number {
-            width: 70px;
-            height: 70px;
-            margin: 0 auto 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid var(--gold);
-            font-family: 'Cinzel', serif;
-            font-size: 1.4rem;
-            color: var(--gold);
-            font-weight: 700;
-            background: rgba(201, 162, 39, 0.05);
-        }
-
-        .process-title {
-            font-family: 'Cinzel', serif;
-            color: var(--cream);
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .process-text {
-            color: var(--cream-muted);
-            font-size: 0.9rem;
-            line-height: 1.7;
-        }
-
-        /* Testimonials Section */
-        .testimonials-section {
-            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .testimonial-card {
-            background: rgba(17, 17, 20, 0.9);
-            border: 1px solid var(--border-gold);
-            padding: 2rem;
-            position: relative;
-            transition: all 0.4s ease;
-        }
-
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: 0.5rem;
-            right: 1rem;
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            color: var(--gold);
-            opacity: 0.2;
-            line-height: 1;
-        }
-
-        .testimonial-card:hover {
-            border-color: var(--gold);
-            transform: translateY(-5px);
-        }
-
-        .testimonial-text {
-            color: var(--cream-muted);
-            font-style: italic;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .testimonial-avatar {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Cinzel', serif;
-            font-weight: 700;
-            color: var(--bg-primary);
-            font-size: 0.9rem;
-        }
-
-        .testimonial-info h4 {
-            font-family: 'Cinzel', serif;
-            color: var(--cream);
-            font-size: 0.95rem;
-        }
-
-        .testimonial-info p {
-            color: var(--gold);
-            font-size: 0.8rem;
-        }
-
-        /* Social Section */
-        .social-section {
-            background: var(--bg-burgundy);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .social-section::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, rgba(201, 162, 39, 0.08) 0%, transparent 60%);
-            pointer-events: none;
-        }
-
-        .social-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(201, 162, 39, 0.15);
-            border: 1px solid var(--gold);
-            padding: 0.6rem 1.2rem;
-            font-size: 0.75rem;
-            color: var(--gold);
-            margin-bottom: 2rem;
-            letter-spacing: 0.1em;
-        }
-
-        .social-badge i {
-            animation: bell-ring 2s infinite;
-        }
-
-        @keyframes bell-ring {
-            0%, 100% { transform: rotate(0); }
-            10% { transform: rotate(15deg); }
-            20% { transform: rotate(-15deg); }
-            30% { transform: rotate(10deg); }
-            40% { transform: rotate(-10deg); }
-            50% { transform: rotate(0); }
-        }
-
-        .social-grid {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 3rem;
-            flex-wrap: wrap;
-            position: relative;
-            z-index: 1;
-        }
-
-        .social-card {
-            width: 260px;
-            background: rgba(17, 17, 20, 0.95);
-            border: 1px solid var(--border-gold);
-            padding: 2.5rem 2rem;
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.4s ease;
-            position: relative;
-        }
-
-        .social-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: var(--gold);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-        }
-
-        .social-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .social-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--gold);
-            box-shadow: 0 20px 50px rgba(201, 162, 39, 0.15);
-        }
-
-        .social-icon-main {
-            width: 60px;
-            height: 60px;
-            margin: 0 auto 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid var(--border-gold);
-            border-radius: 50%;
-            transition: all 0.4s ease;
-        }
-
-        .social-card:hover .social-icon-main {
-            background: var(--gold);
-            border-color: var(--gold);
-        }
-
-        .social-icon-main i {
-            font-size: 1.5rem;
-            color: var(--gold);
-            transition: color 0.4s ease;
-        }
-
-        .social-card:hover .social-icon-main i {
-            color: var(--bg-primary);
-        }
-
-        .social-name {
-            font-family: 'Cinzel', serif;
-            font-size: 1.2rem;
-            color: var(--cream);
-            margin-bottom: 0.5rem;
-        }
-
-        .social-handle {
-            color: var(--gold);
-            font-size: 0.85rem;
-            letter-spacing: 0.05em;
-        }
-
-        .social-desc {
-            color: var(--cream-muted);
-            font-size: 0.85rem;
-            margin-top: 1rem;
-            line-height: 1.6;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-burgundy) 50%, var(--bg-primary) 100%);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-section::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 700px;
-            height: 700px;
-            background: radial-gradient(circle, rgba(201, 162, 39, 0.06) 0%, transparent 60%);
-            pointer-events: none;
-        }
-
-        .cta-content {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .cta-title {
-            font-family: 'Cinzel', serif;
-            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-            margin-bottom: 1.5rem;
-        }
-
-        .cta-title span {
-            color: var(--gold);
-        }
-
-        .cta-text {
-            color: var(--cream-muted);
-            font-size: 1.05rem;
-            margin-bottom: 2.5rem;
-            line-height: 1.9;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            background: var(--bg-secondary);
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .contact-card {
-            background: rgba(17, 17, 20, 0.9);
-            border: 1px solid var(--border-gold);
-            padding: 2.5rem 2rem;
-            text-align: center;
-            transition: all 0.4s ease;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .contact-card:hover {
-            border-color: var(--gold);
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(201, 162, 39, 0.1);
-        }
-
-        .contact-icon {
-            width: 55px;
-            height: 55px;
-            margin: 0 auto 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid var(--border-gold);
-            transition: all 0.3s ease;
-        }
-
-        .contact-card:hover .contact-icon {
-            background: var(--gold);
-            border-color: var(--gold);
-        }
-
-        .contact-icon i {
-            font-size: 1.3rem;
-            color: var(--gold);
-            transition: color 0.3s ease;
-        }
-
-        .contact-card:hover .contact-icon i {
-            color: var(--bg-primary);
-        }
-
-        .contact-label {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-value {
-            font-family: 'Cinzel', serif;
-            font-size: 1rem;
-            color: var(--cream);
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--bg-primary);
-            border-top: 1px solid var(--border-gold);
-            padding: 4rem 4vw 2rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .footer-logo {
-            font-family: 'Cinzel', serif;
-            font-size: 1.8rem;
-            color: var(--cream);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.75rem;
-        }
-
-        .footer-logo i {
-            color: var(--gold);
-        }
-
-        .footer-logo span {
-            color: var(--gold);
-        }
-
-        .footer-text {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-            line-height: 1.8;
-        }
-
-        .footer-social {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-social a {
-            width: 45px;
-            height: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid var(--border-gold);
-            color: var(--cream-muted);
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .footer-social a:hover {
-            background: var(--gold);
-            border-color: var(--gold);
-            color: var(--bg-primary);
-        }
-
-        .footer-bottom {
-            padding-top: 2rem;
-            border-top: 1px solid rgba(201, 162, 39, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .footer-copyright {
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .footer-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.85rem;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: var(--gold);
-        }
-
-        /* Back to Top */
-        .back-to-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 50px;
-            height: 50px;
-            background: var(--gold);
-            border: none;
-            color: var(--bg-primary);
-            font-size: 1.2rem;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .back-to-top:hover {
-            background: var(--gold-light);
-            transform: translateY(-3px);
-        }
-
-        /* Animations */
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease;
-        }
-
-        .animate-on-scroll.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Responsive */
+            display: inline-block; font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase;
+            color: var(--gold); margin-bottom: 1rem; position: relative; font-weight: 600;
+        }
+        .section-label::before, .section-label::after { content: ''; position: absolute; top: 50%; width: 40px; height: 1px; background: var(--border-gold); }
+        .section-label::before { right: calc(100% + 15px); }
+        .section-label::after { left: calc(100% + 15px); }
+        .section-title { font-family: 'Cinzel', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 600; margin-bottom: 1.5rem; line-height: 1.2; }
+        .section-subtitle { color: var(--cream-muted); font-size: 1.05rem; line-height: 1.9; }
+        .info-section { background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%); }
+        .info-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: start; max-width: 1400px; margin: 0 auto; }
+        .info-content h3 { font-family: 'Cinzel', serif; font-size: 1.6rem; color: var(--gold); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem; }
+        .info-content h3 i { font-size: 1.2rem; }
+        .info-content p { color: var(--cream-muted); margin-bottom: 1.5rem; line-height: 1.9; font-size: 1rem; }
+        .info-highlight { background: linear-gradient(135deg, rgba(201, 162, 39, 0.15), rgba(201, 162, 39, 0.05)); border-left: 3px solid var(--gold); padding: 1.5rem 2rem; margin: 2rem 0; }
+        .info-highlight p { color: var(--cream); font-style: italic; margin: 0; font-size: 1.05rem; }
+        .info-card { background: rgba(17, 17, 20, 0.9); border: 1px solid var(--border-gold); padding: 2.5rem; position: relative; }
+        .info-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--gold), transparent); }
+        .info-card h4 { font-family: 'Cinzel', serif; font-size: 1.2rem; color: var(--cream); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
+        .info-card h4 i { color: var(--gold); }
+        .info-list { list-style: none; }
+        .info-list li { padding: 1rem 0; border-bottom: 1px solid rgba(201, 162, 39, 0.1); display: flex; align-items: flex-start; gap: 1rem; color: var(--cream-muted); font-size: 0.95rem; }
+        .info-list li:last-child { border-bottom: none; }
+        .info-list li i { color: var(--gold); margin-top: 0.3rem; font-size: 0.9rem; }
+        .info-list li strong { color: var(--cream); display: block; margin-bottom: 0.25rem; }
+        .warning-box { background: rgba(244, 67, 54, 0.08); border: 1px solid rgba(244, 67, 54, 0.3); padding: 1.5rem; margin: 2rem 0; display: flex; align-items: flex-start; gap: 1rem; }
+        .warning-box i { color: var(--danger); font-size: 1.5rem; flex-shrink: 0; }
+        .warning-box-content h4 { color: var(--danger); font-family: 'Cinzel', serif; margin-bottom: 0.5rem; }
+        .warning-box-content p { color: var(--cream-muted); margin: 0; font-size: 0.95rem; }
+        .timeline-section { background: var(--bg-secondary); position: relative; }
+        .timeline-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border-gold), transparent); }
+        .timeline { position: relative; max-width: 1000px; margin: 0 auto; }
+        .timeline::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); width: 2px; height: 100%; background: linear-gradient(to bottom, var(--gold), var(--gold-dark), transparent); }
+        .timeline-item { display: flex; justify-content: flex-end; padding-right: 50%; position: relative; margin-bottom: 3rem; }
+        .timeline-item:nth-child(even) { justify-content: flex-start; padding-right: 0; padding-left: 50%; }
+        .timeline-content { max-width: 420px; padding: 2rem; background: rgba(17, 17, 20, 0.95); border: 1px solid var(--border-gold); margin-right: 3rem; position: relative; }
+        .timeline-item:nth-child(even) .timeline-content { margin-right: 0; margin-left: 3rem; }
+        .timeline-content::after { content: ''; position: absolute; top: 50%; width: 16px; height: 16px; background: var(--gold); border: 3px solid var(--bg-primary); border-radius: 50%; }
+        .timeline-item:nth-child(odd) .timeline-content::after { right: -3.5rem; transform: translateY(-50%); }
+        .timeline-item:nth-child(even) .timeline-content::after { left: -3.5rem; transform: translateY(-50%); }
+        .timeline-date { font-family: 'Cinzel', serif; font-size: 0.9rem; color: var(--gold); margin-bottom: 0.5rem; letter-spacing: 0.1em; }
+        .timeline-title { font-family: 'Cinzel', serif; font-size: 1.2rem; color: var(--cream); margin-bottom: 0.75rem; }
+        .timeline-text { color: var(--cream-muted); font-size: 0.95rem; line-height: 1.8; }
+        .exam-section { background: linear-gradient(135deg, var(--bg-burgundy) 0%, var(--bg-primary) 100%); position: relative; overflow: hidden; }
+        .exam-section::before { content: ''; position: absolute; top: -30%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(201, 162, 39, 0.06) 0%, transparent 70%); pointer-events: none; }
+        .exam-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; max-width: 1400px; margin: 0 auto; }
+        .exam-content h3 { font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--cream); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
+        .exam-content h3 i { color: var(--gold); }
+        .exam-content p { color: var(--cream-muted); margin-bottom: 1.5rem; line-height: 1.9; }
+        .exam-stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
+        .exam-stat { background: rgba(17, 17, 20, 0.9); border: 1px solid var(--border-gold); padding: 1.5rem; text-align: center; }
+        .exam-stat-number { font-family: 'Cinzel', serif; font-size: 2rem; color: var(--gold); display: block; font-weight: 700; }
+        .exam-stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem; }
+        .subjects-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+        .subjects-table th, .subjects-table td { padding: 1rem; text-align: left; border-bottom: 1px solid rgba(201, 162, 39, 0.15); }
+        .subjects-table th { font-family: 'Cinzel', serif; color: var(--gold); font-weight: 600; background: rgba(201, 162, 39, 0.05); }
+        .subjects-table td { color: var(--cream-muted); }
+        .subjects-table tr:hover td { color: var(--cream); background: rgba(201, 162, 39, 0.03); }
+        .weight-high { color: var(--gold); font-weight: 600; }
+        .exam-dates { background: rgba(17, 17, 20, 0.95); border: 1px solid var(--border-gold); padding: 2.5rem; }
+        .exam-dates h4 { font-family: 'Cinzel', serif; font-size: 1.3rem; color: var(--gold); margin-bottom: 2rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
+        .date-item { display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem; border-bottom: 1px solid rgba(201, 162, 39, 0.1); transition: all 0.3s ease; }
+        .date-item:hover { background: rgba(201, 162, 39, 0.05); }
+        .date-item:last-child { border-bottom: none; }
+        .date-icon { width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-gold); flex-shrink: 0; }
+        .date-icon i { color: var(--gold); font-size: 1.1rem; }
+        .date-content h5 { font-family: 'Cinzel', serif; color: var(--cream); margin-bottom: 0.25rem; font-size: 0.95rem; }
+        .date-content p { color: var(--gold); font-size: 0.9rem; margin: 0; }
+        .pass-rates-section { background: var(--bg-primary); position: relative; }
+        .pass-rates-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1000px; margin: 0 auto; }
+        .pass-rate-card { background: rgba(17, 17, 20, 0.9); border: 1px solid var(--border-gold); padding: 2.5rem; text-align: center; position: relative; overflow: hidden; }
+        .pass-rate-card.danger { border-color: rgba(244, 67, 54, 0.4); }
+        .pass-rate-card.danger .pass-rate-percentage { color: var(--danger); }
+        .pass-rate-year { font-family: 'Cinzel', serif; font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1rem; }
+        .pass-rate-percentage { font-family: 'Cinzel', serif; font-size: 4rem; font-weight: 700; color: var(--gold); line-height: 1; }
+        .pass-rate-label { color: var(--cream-muted); font-size: 0.9rem; margin-top: 1rem; }
+        .pass-rate-detail { color: var(--text-muted); font-size: 0.8rem; margin-top: 0.5rem; }
+        .features-section { background: var(--bg-secondary); }
+        .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1400px; margin: 0 auto; }
+        .feature-card { background: rgba(17, 17, 20, 0.7); border: 1px solid var(--border-gold); padding: 2.5rem 2rem; text-align: center; transition: all 0.4s ease; position: relative; overflow: hidden; }
+        .feature-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent); transform: translateX(-100%); transition: transform 0.6s ease; }
+        .feature-card:hover::before { transform: translateX(100%); }
+        .feature-card:hover { border-color: var(--border-gold-hover); transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
+        .feature-icon { width: 70px; height: 70px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-gold); position: relative; }
+        .feature-icon::before { content: ''; position: absolute; inset: 4px; border: 1px solid var(--border-gold); }
+        .feature-icon i { font-size: 1.6rem; color: var(--gold); }
+        .feature-title { font-family: 'Cinzel', serif; font-size: 1.15rem; color: var(--cream); margin-bottom: 1rem; }
+        .feature-text { color: var(--cream-muted); font-size: 0.9rem; line-height: 1.8; }
+        .process-section { background: var(--bg-primary); }
+        .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 3rem; }
+        .process-step { text-align: center; position: relative; }
+        .process-step:not(:last-child)::after { content: ''; position: absolute; top: 35px; right: -1rem; width: 2rem; height: 1px; background: var(--border-gold); }
+        .process-number { width: 70px; height: 70px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; border: 2px solid var(--gold); font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--gold); font-weight: 700; background: rgba(201, 162, 39, 0.05); }
+        .process-title { font-family: 'Cinzel', serif; color: var(--cream); margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .process-text { color: var(--cream-muted); font-size: 0.9rem; line-height: 1.7; }
+        .testimonials-section { background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .testimonial-card { background: rgba(17, 17, 20, 0.9); border: 1px solid var(--border-gold); padding: 2rem; position: relative; transition: all 0.4s ease; }
+        .testimonial-card::before { content: '"'; position: absolute; top: 0.5rem; right: 1rem; font-family: 'Playfair Display', serif; font-size: 4rem; color: var(--gold); opacity: 0.2; line-height: 1; }
+        .testimonial-card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        .testimonial-text { color: var(--cream-muted); font-style: italic; line-height: 1.8; margin-bottom: 1.5rem; font-size: 0.95rem; }
+        .testimonial-author { display: flex; align-items: center; gap: 1rem; }
+        .testimonial-avatar { width: 45px; height: 45px; border-radius: 50%; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); display: flex; align-items: center; justify-content: center; font-family: 'Cinzel', serif; font-weight: 700; color: var(--bg-primary); font-size: 0.9rem; }
+        .testimonial-info h4 { font-family: 'Cinzel', serif; color: var(--cream); font-size: 0.95rem; }
+        .testimonial-info p { color: var(--gold); font-size: 0.8rem; }
+        .social-section { background: var(--bg-burgundy); text-align: center; position: relative; overflow: hidden; }
+        .social-section::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 800px; background: radial-gradient(circle, rgba(201, 162, 39, 0.08) 0%, transparent 60%); pointer-events: none; }
+        .social-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(201, 162, 39, 0.15); border: 1px solid var(--gold); padding: 0.6rem 1.2rem; font-size: 0.75rem; color: var(--gold); margin-bottom: 2rem; letter-spacing: 0.1em; }
+        .social-badge i { animation: bell-ring 2s infinite; }
+        @keyframes bell-ring { 0%, 100% { transform: rotate(0); } 10% { transform: rotate(15deg); } 20% { transform: rotate(-15deg); } 30% { transform: rotate(10deg); } 40% { transform: rotate(-10deg); } 50% { transform: rotate(0); } }
+        .social-grid { display: flex; justify-content: center; gap: 2rem; margin-top: 3rem; flex-wrap: wrap; position: relative; z-index: 1; }
+        .social-card { width: 260px; background: rgba(17, 17, 20, 0.95); border: 1px solid var(--border-gold); padding: 2.5rem 2rem; text-decoration: none; color: inherit; transition: all 0.4s ease; position: relative; }
+        .social-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--gold); transform: scaleX(0); transition: transform 0.4s ease; }
+        .social-card:hover::before { transform: scaleX(1); }
+        .social-card:hover { transform: translateY(-10px); border-color: var(--gold); box-shadow: 0 20px 50px rgba(201, 162, 39, 0.15); }
+        .social-icon-main { width: 60px; height: 60px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; border: 2px solid var(--border-gold); border-radius: 50%; transition: all 0.4s ease; }
+        .social-card:hover .social-icon-main { background: var(--gold); border-color: var(--gold); }
+        .social-icon-main i { font-size: 1.5rem; color: var(--gold); transition: color 0.4s ease; }
+        .social-card:hover .social-icon-main i { color: var(--bg-primary); }
+        .social-name { font-family: 'Cinzel', serif; font-size: 1.2rem; color: var(--cream); margin-bottom: 0.5rem; }
+        .social-handle { color: var(--gold); font-size: 0.85rem; letter-spacing: 0.05em; }
+        .social-desc { color: var(--cream-muted); font-size: 0.85rem; margin-top: 1rem; line-height: 1.6; }
+        .cta-section { background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-burgundy) 50%, var(--bg-primary) 100%); text-align: center; position: relative; overflow: hidden; }
+        .cta-section::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 700px; height: 700px; background: radial-gradient(circle, rgba(201, 162, 39, 0.06) 0%, transparent 60%); pointer-events: none; }
+        .cta-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
+        .cta-title { font-family: 'Cinzel', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); margin-bottom: 1.5rem; }
+        .cta-title span { color: var(--gold); }
+        .cta-text { color: var(--cream-muted); font-size: 1.05rem; margin-bottom: 2.5rem; line-height: 1.9; }
+        .contact-section { background: var(--bg-secondary); }
+        .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+        .contact-card { background: rgba(17, 17, 20, 0.9); border: 1px solid var(--border-gold); padding: 2.5rem 2rem; text-align: center; transition: all 0.4s ease; text-decoration: none; color: inherit; }
+        .contact-card:hover { border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 15px 40px rgba(201, 162, 39, 0.1); }
+        .contact-icon { width: 55px; height: 55px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-gold); transition: all 0.3s ease; }
+        .contact-card:hover .contact-icon { background: var(--gold); border-color: var(--gold); }
+        .contact-icon i { font-size: 1.3rem; color: var(--gold); transition: color 0.3s ease; }
+        .contact-card:hover .contact-icon i { color: var(--bg-primary); }
+        .contact-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+        .contact-value { font-family: 'Cinzel', serif; font-size: 1rem; color: var(--cream); }
+        .footer { background: var(--bg-primary); border-top: 1px solid var(--border-gold); padding: 4rem 4vw 2rem; }
+        .footer-content { max-width: 1200px; margin: 0 auto; text-align: center; }
+        .footer-logo { font-family: 'Cinzel', serif; font-size: 1.8rem; color: var(--cream); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
+        .footer-logo i { color: var(--gold); }
+        .footer-logo span { color: var(--gold); }
+        .footer-text { color: var(--text-muted); font-size: 0.95rem; max-width: 600px; margin: 0 auto 2rem; line-height: 1.8; }
+        .footer-social { display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; }
+        .footer-social a { width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-gold); color: var(--cream-muted); text-decoration: none; transition: all 0.3s ease; }
+        .footer-social a:hover { background: var(--gold); border-color: var(--gold); color: var(--bg-primary); }
+        .footer-bottom { padding-top: 2rem; border-top: 1px solid rgba(201, 162, 39, 0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .footer-copyright { color: var(--text-muted); font-size: 0.85rem; }
+        .footer-links { display: flex; gap: 2rem; }
+        .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; transition: color 0.3s ease; }
+        .footer-links a:hover { color: var(--gold); }
+        .back-to-top { position: fixed; bottom: 2rem; right: 2rem; width: 50px; height: 50px; background: var(--gold); border: none; color: var(--bg-primary); font-size: 1.2rem; cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.3s ease; z-index: 999; display: flex; align-items: center; justify-content: center; }
+        .back-to-top.visible { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background: var(--gold-light); transform: translateY(-3px); }
+        .animate-on-scroll { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+        .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
         @media (max-width: 1024px) {
-            .info-grid,
-            .exam-grid {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .features-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .testimonials-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .pass-rates-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .timeline::before {
-                left: 30px;
-            }
-
-            .timeline-item,
-            .timeline-item:nth-child(even) {
-                justify-content: flex-start;
-                padding-right: 0;
-                padding-left: 80px;
-            }
-
-            .timeline-content,
-            .timeline-item:nth-child(even) .timeline-content {
-                margin-right: 0;
-                margin-left: 0;
-                max-width: 100%;
-            }
-
-            .timeline-item:nth-child(odd) .timeline-content::after,
-            .timeline-item:nth-child(even) .timeline-content::after {
-                left: -53px;
-                right: auto;
-            }
-
-            .process-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .process-step:not(:last-child)::after {
-                display: none;
-            }
+            .info-grid, .exam-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+            .pass-rates-grid { grid-template-columns: 1fr; }
+            .timeline::before { left: 30px; }
+            .timeline-item, .timeline-item:nth-child(even) { justify-content: flex-start; padding-right: 0; padding-left: 80px; }
+            .timeline-content, .timeline-item:nth-child(even) .timeline-content { margin-right: 0; margin-left: 0; max-width: 100%; }
+            .timeline-item:nth-child(odd) .timeline-content::after, .timeline-item:nth-child(even) .timeline-content::after { left: -53px; right: auto; }
+            .process-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-step:not(:last-child)::after { display: none; }
         }
-
         @media (max-width: 768px) {
-            .navbar {
-                padding: 1rem 4vw;
-            }
-
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: rgba(10,10,12,0.98);
-                flex-direction: column;
-                padding: 2rem;
-                gap: 1.5rem;
-                border-top: 1px solid var(--border-gold);
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .hero-stats {
-                gap: 1rem;
-            }
-
-            .stat-item {
-                min-width: 120px;
-                padding: 1rem;
-            }
-
-            .stat-number {
-                font-size: 2rem;
-            }
-
-            .features-grid,
-            .testimonials-grid,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .process-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero-warning {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .section {
-                padding: 5rem 4vw;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .subjects-table {
-                font-size: 0.8rem;
-            }
-
-            .subjects-table th,
-            .subjects-table td {
-                padding: 0.75rem 0.5rem;
-            }
+            .navbar { padding: 1rem 4vw; }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(10,10,12,0.98); flex-direction: column; padding: 2rem; gap: 1.5rem; border-top: 1px solid var(--border-gold); }
+            .nav-links.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .hero-stats { gap: 1rem; }
+            .stat-item { min-width: 120px; padding: 1rem; }
+            .stat-number { font-size: 2rem; }
+            .features-grid, .testimonials-grid, .contact-grid { grid-template-columns: 1fr; }
+            .process-grid { grid-template-columns: 1fr; }
+            .hero-warning { flex-direction: column; text-align: center; }
+            .section { padding: 5rem 4vw; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .subjects-table { font-size: 0.8rem; }
+            .subjects-table th, .subjects-table td { padding: 0.75rem 0.5rem; }
         }
-
         @media (max-width: 480px) {
-            .hero-title {
-                font-size: 1.8rem;
-            }
-
-            .pass-rate-percentage {
-                font-size: 3rem;
-            }
-
-            .social-grid {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .social-card {
-                width: 100%;
-                max-width: 300px;
-            }
-
-            .btn {
-                padding: 0.9rem 1.8rem;
-                font-size: 0.8rem;
-            }
+            .hero-title { font-size: 1.8rem; }
+            .pass-rate-percentage { font-size: 3rem; }
+            .social-grid { flex-direction: column; align-items: center; }
+            .social-card { width: 100%; max-width: 300px; }
+            .btn { padding: 0.9rem 1.8rem; font-size: 0.8rem; }
         }
-
-        /* Print Styles */
         @media print {
-            .navbar, .scroll-indicator, .back-to-top, .footer-social, .loading-overlay, .scroll-progress {
-                display: none !important;
-            }
-
-            .hero {
-                min-height: auto;
-                padding: 2rem 0;
-            }
-
-            .section {
-                padding: 2rem 0;
-                page-break-inside: avoid;
-            }
-
-            body {
-                background: white;
-                color: black;
-            }
-
-            .hero-title, .section-title, .feature-title {
-                color: black;
-            }
+            .navbar, .scroll-indicator, .back-to-top, .footer-social, .loading-overlay, .scroll-progress { display: none !important; }
+            .hero { min-height: auto; padding: 2rem 0; }
+            .section { padding: 2rem 0; page-break-inside: avoid; }
+            body { background: white; color: black; }
+            .hero-title, .section-title, .feature-title { color: black; }
         }
     </style>
 <base target="_blank">
 </head>
 <body>
-    <!-- Loading Overlay -->
     <div class="loading-overlay" id="loadingOverlay">
         <div class="loading-spinner"></div>
         <div class="loading-text">HMGS ACADEMY</div>
     </div>
-
-    <!-- Scroll Progress -->
     <div class="scroll-progress" id="scrollProgress"></div>
-
-    <!-- Grain Overlay -->
     <div class="grain-overlay"></div>
 
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <a href="#" class="logo">
-            <div class="logo-icon">
-                <i class="fas fa-scale-balanced"></i>
-            </div>
+            <div class="logo-icon"><i class="fas fa-scale-balanced"></i></div>
             HMGS <span>ACADEMY</span>
         </a>
         <ul class="nav-links" id="navLinks">
@@ -1843,742 +414,289 @@
             <li><a href="#sosyal">Sosyal Medya</a></li>
             <li><a href="#iletisim">İletişim</a></li>
         </ul>
-        <button class="mobile-menu-btn" id="mobileMenuBtn">
-            <i class="fas fa-bars"></i>
-        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg-pattern"></div>
-        
         <div class="hero-content">
-            <div class="hero-badge">
-                <i class="fas fa-gavel"></i>
-                7188 Sayılı Kanun ile Getirildi
-            </div>
+            <div class="hero-badge"><i class="fas fa-gavel"></i> 7188 Sayılı Kanun ile Getirildi</div>
             <h1 class="hero-title">
-                Hukuk Fakültesi Mezunları İçin
-                <span class="highlight">Zorunlu Ön Eleme Sınavı</span>
+                Hukuk Mesleğine Giriş Sınavı (HMGS)
+                <span class="highlight">Hukuk Fakültesi Mezunları İçin Zorunlu Sınav</span>
             </h1>
             <p class="hero-subtitle">
-                24 Ekim 2019'dan sonra hukuk fakültesine kaydolan ve 31 Mart 2024'ten sonra mezun olan 
-                herkes için zorunlu. Hakim/savcı adaylığı, avukatlık ve noterlik stajı için 
+                24 Ekim 2019'dan sonra hukuk fakültesine kaydolan ve 31 Mart 2024'ten sonra mezun olan
+                herkes için zorunlu. Hakim/savcı adaylığı, avukatlık ve noterlik stajı için
                 geçmeniz gereken tek sınav.
             </p>
-            
             <div class="hero-warning">
                 <i class="fas fa-exclamation-triangle"></i>
                 <div class="hero-warning-text">
-                    <strong>Kritik Bilgi:</strong> Hukuk fakültesini bitirmek artık yeterli değil. 
+                    <strong>Kritik Bilgi:</strong> Hukuk fakültesini bitirmek artık yeterli değil.
                     Bu sınavı geçmeden mesleğe başlayamazsınız!
                 </div>
             </div>
-
             <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">120</span>
-                    <span class="stat-label">Soru Sayısı</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">84</span>
-                    <span class="stat-label">Geçme Barajı</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">%11</span>
-                    <span class="stat-label">2025 Geçme Oranı</span>
-                </div>
+                <div class="stat-item"><span class="stat-number">120</span><span class="stat-label">Soru Sayısı</span></div>
+                <div class="stat-item"><span class="stat-number">84</span><span class="stat-label">Geçme Barajı</span></div>
+                <div class="stat-item"><span class="stat-number">%11</span><span class="stat-label">2025 Geçme Oranı</span></div>
             </div>
-            
             <div class="hero-cta">
-                <a href="#hmgs-nedir" class="btn btn-primary">
-                    <i class="fas fa-book-open"></i>
-                    Detaylı Bilgi Al
-                </a>
-                <a href="#sosyal" class="btn btn-secondary">
-                    <i class="fas fa-users"></i>
-                    Bizi Takip Et
-                </a>
+                <a href="#hmgs-nedir" class="btn btn-primary"><i class="fas fa-book-open"></i> Detaylı Bilgi Al</a>
+                <a href="#sosyal" class="btn btn-secondary"><i class="fas fa-users"></i> Bizi Takip Et</a>
             </div>
         </div>
-        
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
+        <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
     </section>
-
-    <!-- HMGS Nedir Section -->
     <section class="section info-section" id="hmgs-nedir">
         <div class="section-header animate-on-scroll">
             <span class="section-label">Bilgilendirme</span>
             <h2 class="section-title">HMGS Nedir?</h2>
             <p class="section-subtitle">
-                7188 sayılı kanunla 24 Ekim 2019'da yürürlüğe giren Hukuk Mesleğine Giriş Sınavı 
+                7188 sayılı kanunla 24 Ekim 2019'da yürürlüğe giren Hukuk Mesleğine Giriş Sınavı
                 hakkında bilmeniz gerekenler.
             </p>
         </div>
-
         <div class="info-grid">
             <div class="info-content animate-on-scroll">
                 <h3><i class="fas fa-landmark"></i> Sınavın Amacı ve Önemi</h3>
                 <p>
-                    <strong>Hukuk Mesleğine Giriş Sınavı (HMGS)</strong>, 7188 sayılı kanunla 24 Ekim 2019'da 
-                    yürürlüğe giren ve hukuk fakültesi mezunları için zorunlu hale getirilen bir ön eleme sınavıdır. 
-                    Bu sınavı geçmeden ne hakim/savcı adaylığı sınavına girebilir, ne de avukatlık veya noterlik 
+                    <strong>Hukuk Mesleğine Giriş Sınavı (HMGS)</strong>, 7188 sayılı kanunla 24 Ekim 2019'da
+                    yürürlüğe giren ve hukuk fakültesi mezunları için zorunlu hale getirilen bir ön eleme sınavıdır.
+                    Bu sınavı geçmeden ne hakim/savcı adaylığı sınavına girebilir, ne de avukatlık veya noterlik
                     stajına başlayabilirsiniz.
                 </p>
-                
                 <div class="info-highlight">
                     <p>
-                        "Hukuk fakültesini bitirsen bile bu sınavı geçmeden mesleğe başlayamazsın. 
+                        "Hukuk fakültesini bitirsen bile bu sınavı geçmeden mesleğe başlayamazsın.
                         Bu sınavı geçmek artık diplomandan önce geliyor."
                     </p>
                 </div>
-
                 <h3><i class="fas fa-user-check"></i> Kimler Girmek Zorunda?</h3>
                 <p>
-                    <strong>24 Ekim 2019'dan sonra</strong> hukuk fakültesine kaydolan ve 
-                    <strong>31 Mart 2024'ten sonra</strong> mezun olan herkes bu sınava girmek zorundadır. 
+                    <strong>24 Ekim 2019'dan sonra</strong> hukuk fakültesine kaydolan ve
+                    <strong>31 Mart 2024'ten sonra</strong> mezun olan herkes bu sınava girmek zorundadır.
                     Bu tarihlerden önce kayıt veya mezuniyeti olanlar muaftır.
                 </p>
-
                 <div class="warning-box">
                     <i class="fas fa-exclamation-circle"></i>
                     <div class="warning-box-content">
                         <h4>Dikkat Edilmesi Gereken</h4>
-                        <p>Mezuniyet tarihiniz 31 Mart 2024'ten sonraysa, mesleğe başlamadan önce 
+                        <p>Mezuniyet tarihiniz 31 Mart 2024'ten sonraysa, mesleğe başlamadan önce
                         mutlaka HMGS'yi geçmeniz gerekmektedir. Sınav sonucunuz 3 yıl geçerlidir.</p>
                     </div>
                 </div>
             </div>
-
             <div class="info-card animate-on-scroll">
                 <h4><i class="fas fa-info-circle"></i> Sınav Hakkında Temel Bilgiler</h4>
                 <ul class="info-list">
-                    <li>
-                        <i class="fas fa-check"></i>
-                        <div>
-                            <strong>Düzenleyen Kurum:</strong> ÖSYM (Ölçme, Seçme ve Yerleştirme Merkezi)
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-check"></i>
-                        <div>
-                            <strong>Sınav Sıklığı:</strong> Yılda iki kez (Nisan ve Eylül aylarında)
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-check"></i>
-                        <div>
-                            <strong>Soru Sayısı:</strong> 120 çoktan seçmeli soru
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-check"></i>
-                        <div>
-                            <strong>Geçme Barajı:</strong> En az 84 doğru (70 puan)
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-check"></i>
-                        <div>
-                            <strong>Sınav Formatı:</strong> Çoktan seçmeli test
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-check"></i>
-                        <div>
-                            <strong>Yanlışlar:</strong> 4 yanlış 1 doğruyu götürür
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-check"></i>
-                        <div>
-                            <strong>Sonuç Geçerlilik:</strong> 3 yıl
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-check"></i>
-                        <div>
-                            <strong>Ders Sayısı:</strong> 18 farklı hukuk dersi
-                        </div>
-                    </li>
+                    <li><i class="fas fa-check"></i><div><strong>Düzenleyen Kurum:</strong> ÖSYM (Ölçme, Seçme ve Yerleştirme Merkezi)</div></li>
+                    <li><i class="fas fa-check"></i><div><strong>Sınav Sıklığı:</strong> Yılda iki kez (Nisan ve Eylül aylarında)</div></li>
+                    <li><i class="fas fa-check"></i><div><strong>Soru Sayısı:</strong> 120 çoktan seçmeli soru</div></li>
+                    <li><i class="fas fa-check"></i><div><strong>Geçme Barajı:</strong> En az 84 doğru (70 puan)</div></li>
+                    <li><i class="fas fa-check"></i><div><strong>Sınav Formatı:</strong> Çoktan seçmeli test</div></li>
+                    <li><i class="fas fa-check"></i><div><strong>Yanlışlar:</strong> 4 yanlış 1 doğruyu götürür</div></li>
+                    <li><i class="fas fa-check"></i><div><strong>Sonuç Geçerlilik:</strong> 3 yıl</div></li>
+                    <li><i class="fas fa-check"></i><div><strong>Ders Sayısı:</strong> 18 farklı hukuk dersi</div></li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Tarihçe Section -->
     <section class="section timeline-section" id="tarihce">
         <div class="section-header animate-on-scroll">
             <span class="section-label">Tarihçe</span>
             <h2 class="section-title">HMGS'nin Kısa Tarihçesi</h2>
-            <p class="section-subtitle">
-                7188 sayılı kanunun yürürlüğe girmesinden bugüne HMGS'nin gelişimi.
-            </p>
+            <p class="section-subtitle">7188 sayılı kanunun yürürlüğe girmesinden bugüne HMGS'nin gelişimi.</p>
         </div>
-
         <div class="timeline">
             <div class="timeline-item animate-on-scroll">
                 <div class="timeline-content">
                     <div class="timeline-date">24 EKİM 2019</div>
                     <h4 class="timeline-title">Kanun Yürürlüğe Girdi</h4>
-                    <p class="timeline-text">
-                        7188 sayılı kanunla Hukuk Mesleğine Giriş Sınavı (HMGS) getirildi. 
-                        Artık hukuk fakültesi mezunları, mesleğe başlamadan önce bu sınavı 
-                        geçmek zorunda oldu.
-                    </p>
+                    <p class="timeline-text">7188 sayılı kanunla Hukuk Mesleğine Giriş Sınavı (HMGS) getirildi. Artık hukuk fakültesi mezunları, mesleğe başlamadan önce bu sınavı geçmek zorunda oldu.</p>
                 </div>
             </div>
-
             <div class="timeline-item animate-on-scroll">
                 <div class="timeline-content">
                     <div class="timeline-date">2024</div>
                     <h4 class="timeline-title">İlk Sınav Yapıldı</h4>
-                    <p class="timeline-text">
-                        31 Mart 2024'ten sonra mezun olanlar için ilk HMGS yapıldı. 
-                        9.142 adayın girdiği sınavda yalnızca %42,67'si (3.901 kişi) 
-                        70 puan barajını geçebildi.
-                    </p>
+                    <p class="timeline-text">31 Mart 2024'ten sonra mezun olanlar için ilk HMGS yapıldı. 9.142 adayın girdiği sınavda yalnızca %42,67'si (3.901 kişi) 70 puan barajını geçebildi.</p>
                 </div>
             </div>
-
             <div class="timeline-item animate-on-scroll">
                 <div class="timeline-content">
                     <div class="timeline-date">2025</div>
                     <h4 class="timeline-title">İkinci Sınav ve Düşük Başarı</h4>
-                    <p class="timeline-text">
-                        2025 yılında yapılan ikinci sınavda geçme oranı sadece %11,81'e düştü. 
-                        Yaklaşık 11.700 adaydan sadece 1.386 kişi başarılı olabildi. 
-                        Sınavın ne kadar zor olduğu bu sayılarla görüldü.
-                    </p>
+                    <p class="timeline-text">2025 yılında yapılan ikinci sınavda geçme oranı sadece %11,81'e düştü. Yaklaşık 11.700 adaydan sadece 1.386 kişi başarılı olabildi.</p>
                 </div>
             </div>
-
             <div class="timeline-item animate-on-scroll">
                 <div class="timeline-content">
                     <div class="timeline-date">GÜNÜMÜZ</div>
                     <h4 class="timeline-title">Zorunlu ve Kritik Sınav</h4>
-                    <p class="timeline-text">
-                        HMGS, hukuk fakültesi mezunları için mesleğe adım atmanın ilk ve en önemli 
-                        engeli haline geldi. Düşük geçme oranları ve kapsamlı müfredatıyla 
-                        ciddi bir hazırlık gerektiriyor.
-                    </p>
+                    <p class="timeline-text">HMGS, hukuk fakültesi mezunları için mesleğe adım atmanın ilk ve en önemli engeli haline geldi. Düşük geçme oranları ve kapsamlı müfredatıyla ciddi bir hazırlık gerektiriyor.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Exam Structure Section -->
     <section class="section exam-section" id="sinav-yapisi">
         <div class="section-header animate-on-scroll">
             <span class="section-label">Sınav Yapısı</span>
             <h2 class="section-title">HMGS Sınav Yapısı ve Konular</h2>
-            <p class="section-subtitle">
-                Sınavın detaylı yapısı, konu dağılımları ve başarıya ulaşmak için bilmeniz gerekenler.
-            </p>
+            <p class="section-subtitle">Sınavın detaylı yapısı, konu dağılımları ve başarıya ulaşmak için bilmeniz gerekenler.</p>
         </div>
-
         <div class="exam-grid">
             <div class="exam-content animate-on-scroll">
                 <h3><i class="fas fa-list-ol"></i> Dersler ve Soru Dağılımı</h3>
-                <p>
-                    HMGS, toplam 18 farklı hukuk dersinden oluşan kapsamlı bir sınavdır. 
-                    Her dersin sınavdaki ağırlığı farklıdır. En ağır dersler %7,5 ağırlıkla 
-                    yaklaşık 9'ar soru iken, diğer dersler %5 veya %2,5 ağırlıkta gelmektedir.
-                </p>
-
+                <p>HMGS, toplam 18 farklı hukuk dersinden oluşan kapsamlı bir sınavdır. Her dersin sınavdaki ağırlığı farklıdır.</p>
                 <table class="subjects-table">
-                    <thead>
-                        <tr>
-                            <th>Ders Adı</th>
-                            <th>Ağırlık</th>
-                            <th>Yaklaşık Soru</th>
-                        </tr>
-                    </thead>
+                    <thead><tr><th>Ders Adı</th><th>Ağırlık</th><th>Yaklaşık Soru</th></tr></thead>
                     <tbody>
-                        <tr>
-                            <td>Medeni Hukuk</td>
-                            <td class="weight-high">%7,5</td>
-                            <td class="weight-high">~9</td>
-                        </tr>
-                        <tr>
-                            <td>Borçlar Hukuku</td>
-                            <td class="weight-high">%7,5</td>
-                            <td class="weight-high">~9</td>
-                        </tr>
-                        <tr>
-                            <td>Ticaret Hukuku</td>
-                            <td class="weight-high">%7,5</td>
-                            <td class="weight-high">~9</td>
-                        </tr>
-                        <tr>
-                            <td>Hukuk Yargılama Usulü</td>
-                            <td class="weight-high">%7,5</td>
-                            <td class="weight-high">~9</td>
-                        </tr>
-                        <tr>
-                            <td>Ceza Hukuku</td>
-                            <td class="weight-high">%7,5</td>
-                            <td class="weight-high">~9</td>
-                        </tr>
-                        <tr>
-                            <td>Anayasa Hukuku</td>
-                            <td>%5</td>
-                            <td>~6</td>
-                        </tr>
-                        <tr>
-                            <td>İdare Hukuku</td>
-                            <td>%5</td>
-                            <td>~6</td>
-                        </tr>
-                        <tr>
-                            <td>Ceza Yargılama Usulü</td>
-                            <td>%5</td>
-                            <td>~6</td>
-                        </tr>
-                        <tr>
-                            <td>İcra-İflas Hukuku</td>
-                            <td>%5</td>
-                            <td>~6</td>
-                        </tr>
-                        <tr>
-                            <td>İş Hukuku</td>
-                            <td>%5</td>
-                            <td>~6</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3" style="text-align: center; color: var(--text-muted);">
-                                + 8 ders daha (%2,5 ağırlıkla ~3'er soru)
-                            </td>
-                        </tr>
+                        <tr><td>Medeni Hukuk</td><td class="weight-high">%7,5</td><td class="weight-high">~9</td></tr>
+                        <tr><td>Borçlar Hukuku</td><td class="weight-high">%7,5</td><td class="weight-high">~9</td></tr>
+                        <tr><td>Ticaret Hukuku</td><td class="weight-high">%7,5</td><td class="weight-high">~9</td></tr>
+                        <tr><td>Hukuk Yargılama Usulü</td><td class="weight-high">%7,5</td><td class="weight-high">~9</td></tr>
+                        <tr><td>Ceza Hukuku</td><td class="weight-high">%7,5</td><td class="weight-high">~9</td></tr>
+                        <tr><td>Anayasa Hukuku</td><td>%5</td><td>~6</td></tr>
+                        <tr><td>İdare Hukuku</td><td>%5</td><td>~6</td></tr>
+                        <tr><td>Ceza Yargılama Usulü</td><td>%5</td><td>~6</td></tr>
+                        <tr><td>İcra-İflas Hukuku</td><td>%5</td><td>~6</td></tr>
+                        <tr><td>İş Hukuku</td><td>%5</td><td>~6</td></tr>
+                        <tr><td colspan="3" style="text-align:center;color:var(--text-muted);">+ 8 ders daha (%2,5 ağırlıkla ~3'er soru)</td></tr>
                     </tbody>
                 </table>
-
                 <div class="exam-stats-grid">
-                    <div class="exam-stat">
-                        <span class="exam-stat-number">120</span>
-                        <span class="exam-stat-label">Toplam Soru</span>
-                    </div>
-                    <div class="exam-stat">
-                        <span class="exam-stat-number">84</span>
-                        <span class="exam-stat-label">Geçme (70%)</span>
-                    </div>
-                    <div class="exam-stat">
-                        <span class="exam-stat-number">4→1</span>
-                        <span class="exam-stat-label">Yanlış/Doğru</span>
-                    </div>
-                    <div class="exam-stat">
-                        <span class="exam-stat-number">18</span>
-                        <span class="exam-stat-label">Ders Sayısı</span>
-                    </div>
+                    <div class="exam-stat"><span class="exam-stat-number">120</span><span class="exam-stat-label">Toplam Soru</span></div>
+                    <div class="exam-stat"><span class="exam-stat-number">84</span><span class="exam-stat-label">Geçme (70%)</span></div>
+                    <div class="exam-stat"><span class="exam-stat-number">4→1</span><span class="exam-stat-label">Yanlış/Doğru</span></div>
+                    <div class="exam-stat"><span class="exam-stat-number">18</span><span class="exam-stat-label">Ders Sayısı</span></div>
                 </div>
             </div>
-
             <div class="exam-dates animate-on-scroll">
                 <h4><i class="fas fa-calendar-alt"></i> 2026 Sınav Takvimi</h4>
-                
-                <div class="date-item">
-                    <div class="date-icon">
-                        <i class="fas fa-file-signature"></i>
-                    </div>
-                    <div class="date-content">
-                        <h5>Nisan Sınavı Başvurusu</h5>
-                        <p>Şubat-Mart 2026</p>
-                    </div>
-                </div>
-
-                <div class="date-item">
-                    <div class="date-icon">
-                        <i class="fas fa-pencil-alt"></i>
-                    </div>
-                    <div class="date-content">
-                        <h5>Nisan Sınavı</h5>
-                        <p>Nisan 2026</p>
-                    </div>
-                </div>
-
-                <div class="date-item">
-                    <div class="date-icon">
-                        <i class="fas fa-file-signature"></i>
-                    </div>
-                    <div class="date-content">
-                        <h5>Eylül Sınavı Başvurusu</h5>
-                        <p>Temmuz-Ağustos 2026</p>
-                    </div>
-                </div>
-
-                <div class="date-item">
-                    <div class="date-icon">
-                        <i class="fas fa-pencil-alt"></i>
-                    </div>
-                    <div class="date-content">
-                        <h5>Eylül Sınavı</h5>
-                        <p>Eylül 2026</p>
-                    </div>
-                </div>
+                <div class="date-item"><div class="date-icon"><i class="fas fa-file-signature"></i></div><div class="date-content"><h5>Nisan Sınavı Başvurusu</h5><p>Şubat-Mart 2026</p></div></div>
+                <div class="date-item"><div class="date-icon"><i class="fas fa-pencil-alt"></i></div><div class="date-content"><h5>Nisan Sınavı</h5><p>Nisan 2026</p></div></div>
+                <div class="date-item"><div class="date-icon"><i class="fas fa-file-signature"></i></div><div class="date-content"><h5>Eylül Sınavı Başvurusu</h5><p>Temmuz-Ağustos 2026</p></div></div>
+                <div class="date-item"><div class="date-icon"><i class="fas fa-pencil-alt"></i></div><div class="date-content"><h5>Eylül Sınavı</h5><p>Eylül 2026</p></div></div>
             </div>
         </div>
     </section>
 
-    <!-- Pass Rates Section -->
     <section class="section pass-rates-section">
         <div class="section-header animate-on-scroll">
             <span class="section-label">Gerçekler</span>
             <h2 class="section-title">Geçme Oranları: Ne Kadar Zor?</h2>
-            <p class="section-subtitle">
-                HMGS'nin ne kadar zor olduğunu resmi sayılar gösteriyor. 
-                İşte son sınavların geçme oranları:
-            </p>
+            <p class="section-subtitle">HMGS'nin ne kadar zor olduğunu resmi sayılar gösteriyor. İşte son sınavların geçme oranları:</p>
         </div>
-
         <div class="pass-rates-grid">
-            <div class="pass-rate-card animate-on-scroll">
-                <div class="pass-rate-year">2024 İlk Sınav</div>
-                <div class="pass-rate-percentage">%42,67</div>
-                <div class="pass-rate-label">Geçme Oranı</div>
-                <div class="pass-rate-detail">9.142 adaydan 3.901 kişi başarılı oldu</div>
-            </div>
-
-            <div class="pass-rate-card danger animate-on-scroll">
-                <div class="pass-rate-year">2025 İkinci Sınav</div>
-                <div class="pass-rate-percentage">%11,81</div>
-                <div class="pass-rate-label">Geçme Oranı</div>
-                <div class="pass-rate-detail">~11.700 adaydan sadece 1.386 kişi başarılı oldu</div>
-            </div>
-
-            <div class="pass-rate-card animate-on-scroll">
-                <div class="pass-rate-year">Ortalama</div>
-                <div class="pass-rate-percentage">~%27</div>
-                <div class="pass-rate-label">Genel Ortalama</div>
-                <div class="pass-rate-detail">Her 4 kişiden sadece 1'i geçiyor</div>
-            </div>
+            <div class="pass-rate-card animate-on-scroll"><div class="pass-rate-year">2024 İlk Sınav</div><div class="pass-rate-percentage">%42,67</div><div class="pass-rate-label">Geçme Oranı</div><div class="pass-rate-detail">9.142 adaydan 3.901 kişi başarılı oldu</div></div>
+            <div class="pass-rate-card danger animate-on-scroll"><div class="pass-rate-year">2025 İkinci Sınav</div><div class="pass-rate-percentage">%11,81</div><div class="pass-rate-label">Geçme Oranı</div><div class="pass-rate-detail">~11.700 adaydan sadece 1.386 kişi başarılı oldu</div></div>
+            <div class="pass-rate-card animate-on-scroll"><div class="pass-rate-year">Ortalama</div><div class="pass-rate-percentage">~%27</div><div class="pass-rate-label">Genel Ortalama</div><div class="pass-rate-detail">Her 4 kişiden sadece 1'i geçiyor</div></div>
         </div>
-
         <div class="warning-box animate-on-scroll" style="max-width: 800px; margin: 3rem auto 0;">
             <i class="fas fa-brain"></i>
             <div class="warning-box-content">
                 <h4>Sınav Nasıl Bir Sınav?</h4>
-                <p>HMGS salt bilgi soran bir sınav değil — <strong>hukuki olayları yorumlama yeteneğini</strong> ölçüyor. 
-                Kanun maddelerini ezberlemek yerine her hukuk dalının temel prensiplerini, kurumlarını ve mantığını 
-                kavramak esas. Hukuk dalları birbiriyle ilişkili olduğundan örneğin bir Borçlar Hukuku sorusu, 
-                Ticaret Hukuku veya İcra-İflas bilgisiyle entegre olabilir.</p>
+                <p>HMGS salt bilgi soran bir sınav değil — <strong>hukuki olayları yorumlama yeteneğini</strong> ölçüyor. Kanun maddelerini ezberlemek yerine her hukuk dalının temel prensiplerini, kurumlarını ve mantığını kavramak esas.</p>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
     <section class="section features-section" id="hazirlik">
         <div class="section-header animate-on-scroll">
             <span class="section-label">Hazırlık</span>
             <h2 class="section-title">Nasıl Hazırlanmalısınız?</h2>
-            <p class="section-subtitle">
-                Düşük geçme oranlarına rağmen başarıya ulaşmak için izlemeniz gereken stratejiler.
-            </p>
+            <p class="section-subtitle">Düşük geçme oranlarına rağmen başarıya ulaşmak için izlemeniz gereken stratejiler.</p>
         </div>
-
         <div class="features-grid">
-            <div class="feature-card animate-on-scroll">
-                <div class="feature-icon">
-                    <i class="fas fa-book-reader"></i>
-                </div>
-                <h3 class="feature-title">Kavrama, Ezber Değil</h3>
-                <p class="feature-text">
-                    Kanun maddelerini ezberlemek yerine hukuk dallarının temel prensiplerini, 
-                    kurumlarını ve mantığını kavrayın.
-                </p>
-            </div>
-
-            <div class="feature-card animate-on-scroll">
-                <div class="feature-icon">
-                    <i class="fas fa-link"></i>
-                </div>
-                <h3 class="feature-title">İlişkileri Görün</h3>
-                <p class="feature-text">
-                    Hukuk dalları birbiriyle ilişkilidir. Borçlar Hukuku sorusu Ticaret Hukuku 
-                    veya İcra-İflas bilgisiyle entegre olabilir.
-                </p>
-            </div>
-
-            <div class="feature-card animate-on-scroll">
-                <div class="feature-icon">
-                    <i class="fas fa-balance-scale"></i>
-                </div>
-                <h3 class="feature-title">Yorumlama Yeteneği</h3>
-                <p class="feature-text">
-                    HMGS salt bilgi sormuyor. Hukuki olayları analiz etme ve yorumlama 
-                    yeteneğinizi geliştirin.
-                </p>
-            </div>
-
-            <div class="feature-card animate-on-scroll">
-                <div class="feature-icon">
-                    <i class="fas fa-question-circle"></i>
-                </div>
-                <h3 class="feature-title">Çok Soru Çözün</h3>
-                <p class="feature-text">
-                    Farklı kaynaklardan bol bol soru çözün. Özellikle çıkmış soruları 
-                    tekrar tekrar inceleyin.
-                </p>
-            </div>
-
-            <div class="feature-card animate-on-scroll">
-                <div class="feature-icon">
-                    <i class="fas fa-clock"></i>
-                </div>
-                <h3 class="feature-title">Zaman Yönetimi</h3>
-                <p class="feature-text">
-                    120 soruyu zamanında bitirmek için pratik yapın. Zor soruları atlayıp 
-                    sona bırakma stratejisi geliştirin.
-                </p>
-            </div>
-
-            <div class="feature-card animate-on-scroll">
-                <div class="feature-icon">
-                    <i class="fas fa-redo"></i>
-                </div>
-                <h3 class="feature-title">Düzenli Tekrar</h3>
-                <p class="feature-text">
-                    18 dersi unutmamak için düzenli tekrar programı yapın. 
-                    Spaced repetition tekniğini kullanın.
-                </p>
-            </div>
+            <div class="feature-card animate-on-scroll"><div class="feature-icon"><i class="fas fa-book-reader"></i></div><h3 class="feature-title">Kavrama, Ezber Değil</h3><p class="feature-text">Kanun maddelerini ezberlemek yerine hukuk dallarının temel prensiplerini, kurumlarını ve mantığını kavrayın.</p></div>
+            <div class="feature-card animate-on-scroll"><div class="feature-icon"><i class="fas fa-link"></i></div><h3 class="feature-title">İlişkileri Görün</h3><p class="feature-text">Hukuk dalları birbiriyle ilişkilidir. Borçlar Hukuku sorusu Ticaret Hukuku veya İcra-İflas bilgisiyle entegre olabilir.</p></div>
+            <div class="feature-card animate-on-scroll"><div class="feature-icon"><i class="fas fa-balance-scale"></i></div><h3 class="feature-title">Yorumlama Yeteneği</h3><p class="feature-text">HMGS salt bilgi sormuyor. Hukuki olayları analiz etme ve yorumlama yeteneğinizi geliştirin.</p></div>
+            <div class="feature-card animate-on-scroll"><div class="feature-icon"><i class="fas fa-question-circle"></i></div><h3 class="feature-title">Çok Soru Çözün</h3><p class="feature-text">Farklı kaynaklardan bol bol soru çözün. Özellikle çıkmış soruları tekrar tekrar inceleyin.</p></div>
+            <div class="feature-card animate-on-scroll"><div class="feature-icon"><i class="fas fa-clock"></i></div><h3 class="feature-title">Zaman Yönetimi</h3><p class="feature-text">120 soruyu zamanında bitirmek için pratik yapın. Zor soruları atlayıp sona bırakma stratejisi geliştirin.</p></div>
+            <div class="feature-card animate-on-scroll"><div class="feature-icon"><i class="fas fa-redo"></i></div><h3 class="feature-title">Düzenli Tekrar</h3><p class="feature-text">18 dersi unutmamak için düzenli tekrar programı yapın. Spaced repetition tekniğini kullanın.</p></div>
         </div>
-
         <div class="process-grid">
-            <div class="process-step animate-on-scroll">
-                <div class="process-number">1</div>
-                <h4 class="process-title">Analiz</h4>
-                <p class="process-text">Mevcut bilgi düzeyinizi ve zayıf yönlerinizi tespit edin</p>
-            </div>
-            <div class="process-step animate-on-scroll">
-                <div class="process-number">2</div>
-                <h4 class="process-title">Planlama</h4>
-                <p class="process-text">18 ders için ağırlıklara göre çalışma planı oluşturun</p>
-            </div>
-            <div class="process-step animate-on-scroll">
-                <div class="process-number">3</div>
-                <h4 class="process-title">Uygulama</h4>
-                <p class="process-text">Düzenli çalışma ve bol soru pratiği yapın</p>
-            </div>
-            <div class="process-step animate-on-scroll">
-                <div class="process-number">4</div>
-                <h4 class="process-title">Tekrar</h4>
-                <p class="process-text">Öğrendiklerinizi düzenli aralıklarla tekrarlayın</p>
-            </div>
+            <div class="process-step animate-on-scroll"><div class="process-number">1</div><h4 class="process-title">Analiz</h4><p class="process-text">Mevcut bilgi düzeyinizi ve zayıf yönlerinizi tespit edin</p></div>
+            <div class="process-step animate-on-scroll"><div class="process-number">2</div><h4 class="process-title">Planlama</h4><p class="process-text">18 ders için ağırlıklara göre çalışma planı oluşturun</p></div>
+            <div class="process-step animate-on-scroll"><div class="process-number">3</div><h4 class="process-title">Uygulama</h4><p class="process-text">Düzenli çalışma ve bol soru pratiği yapın</p></div>
+            <div class="process-step animate-on-scroll"><div class="process-number">4</div><h4 class="process-title">Tekrar</h4><p class="process-text">Öğrendiklerinizi düzenli aralıklarla tekrarlayın</p></div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section class="section testimonials-section">
         <div class="section-header animate-on-scroll">
             <span class="section-label">Başarı Hikayeleri</span>
             <h2 class="section-title">Başarılı Adayların Sözleri</h2>
-            <p class="section-subtitle">
-                HMGS'yi başarıyla geçen adayların deneyimleri ve tavsiyeleri.
-            </p>
+            <p class="section-subtitle">HMGS'yi başarıyla geçen adayların deneyimleri ve tavsiyeleri.</p>
         </div>
-
         <div class="testimonials-grid">
-            <div class="testimonial-card animate-on-scroll">
-                <p class="testimonial-text">
-                    "Ezber yapmak yerine kavramaya odaklandım. Her dersin mantığını anlamaya çalıştım. 
-                    Özellikle ağır derslere daha fazla zaman ayırdım."
-                </p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">AK</div>
-                    <div class="testimonial-info">
-                        <h4>Ahmet K.</h4>
-                        <p>HMGS 2024 Başarılı</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-card animate-on-scroll">
-                <p class="testimonial-text">
-                    "Soru çözmekten asla vazgeçmedim. Son 3 ayda her gün en az 100 soru çözdüm. 
-                    Bu pratik zaman yönetimimi de geliştirdi."
-                </p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">SY</div>
-                    <div class="testimonial-info">
-                        <h4>Selin Y.</h4>
-                        <p>HMGS 2024 Başarılı</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-card animate-on-scroll">
-                <p class="testimonial-text">
-                    "Hukuk dalları arasındaki ilişkileri görmeye çalıştım. Bir dersi tek başına değil, 
-                    diğerleriyle bağlantılı olarak öğrendim."
-                </p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">MC</div>
-                    <div class="testimonial-info">
-                        <h4>Mehmet C.</h4>
-                        <p>HMGS 2025 Başarılı</p>
-                    </div>
-                </div>
-            </div>
+            <div class="testimonial-card animate-on-scroll"><p class="testimonial-text">"Ezber yapmak yerine kavramaya odaklandım. Her dersin mantığını anlamaya çalıştım. Özellikle ağır derslere daha fazla zaman ayırdım."</p><div class="testimonial-author"><div class="testimonial-avatar">AK</div><div class="testimonial-info"><h4>Ahmet K.</h4><p>HMGS 2024 Başarılı</p></div></div></div>
+            <div class="testimonial-card animate-on-scroll"><p class="testimonial-text">"Soru çözmekten asla vazgeçmedim. Son 3 ayda her gün en az 100 soru çözdüm. Bu pratik zaman yönetimimi de geliştirdi."</p><div class="testimonial-author"><div class="testimonial-avatar">SY</div><div class="testimonial-info"><h4>Selin Y.</h4><p>HMGS 2024 Başarılı</p></div></div></div>
+            <div class="testimonial-card animate-on-scroll"><p class="testimonial-text">"Hukuk dalları arasındaki ilişkileri görmeye çalıştım. Bir dersi tek başına değil, diğerleriyle bağlantılı olarak öğrendim."</p><div class="testimonial-author"><div class="testimonial-avatar">MC</div><div class="testimonial-info"><h4>Mehmet C.</h4><p>HMGS 2025 Başarılı</p></div></div></div>
         </div>
     </section>
 
-    <!-- Social Media Section -->
     <section class="section social-section" id="sosyal">
         <div class="section-header animate-on-scroll">
             <span class="section-label">Sosyal Medya</span>
             <h2 class="section-title">Bizi Sosyal Medyada Takip Edin</h2>
-            <p class="section-subtitle">
-                Günlük hukuki ipuçları, sınav stratejileri ve güncel duyurular için bizi takip edin.
-            </p>
+            <p class="section-subtitle">Günlük hukuki ipuçları, sınav stratejileri ve güncel duyurular için bizi takip edin.</p>
         </div>
-
-        <div class="social-badge animate-on-scroll">
-            <i class="fas fa-bell"></i>
-            Her gün yeni içeriklerle karşınızdayız!
-        </div>
-
+        <div class="social-badge animate-on-scroll"><i class="fas fa-bell"></i> Her gün yeni içeriklerle karşınızdayız!</div>
         <div class="social-grid">
-            <a href="https://youtube.com/@hmgs.academy" target="_blank" class="social-card animate-on-scroll">
-                <div class="social-icon-main">
-                    <i class="fab fa-youtube"></i>
-                </div>
-                <h3 class="social-name">YouTube</h3>
-                <p class="social-handle">@hmgs.academy</p>
-                <p class="social-desc">
-                    Detaylı ders anlatımları, soru çözümleri ve uzman konuşmaları
-                </p>
-            </a>
-
-            <a href="https://instagram.com/hmgs.academy" target="_blank" class="social-card animate-on-scroll">
-                <div class="social-icon-main">
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <h3 class="social-name">Instagram</h3>
-                <p class="social-handle">@hmgs.academy</p>
-                <p class="social-desc">
-                    Günlük hukuki bilgiler, motivasyon paylaşımları ve hikayeler
-                </p>
-            </a>
-
-            <a href="https://tiktok.com/@hmgs.academy" target="_blank" class="social-card animate-on-scroll">
-                <div class="social-icon-main">
-                    <i class="fab fa-tiktok"></i>
-                </div>
-                <h3 class="social-name">TikTok</h3>
-                <p class="social-handle">@hmgs.academy</p>
-                <p class="social-desc">
-                    Kısa ve öz hukuki ipuçları, eğlenceli içerikler
-                </p>
-            </a>
+            <a href="https://youtube.com/@hmgs.academy" target="_blank" class="social-card animate-on-scroll"><div class="social-icon-main"><i class="fab fa-youtube"></i></div><h3 class="social-name">YouTube</h3><p class="social-handle">@hmgs.academy</p><p class="social-desc">Detaylı ders anlatımları, soru çözümleri ve uzman konuşmaları</p></a>
+            <a href="https://instagram.com/hmgs.academy" target="_blank" class="social-card animate-on-scroll"><div class="social-icon-main"><i class="fab fa-instagram"></i></div><h3 class="social-name">Instagram</h3><p class="social-handle">@hmgs.academy</p><p class="social-desc">Günlük hukuki bilgiler, motivasyon paylaşımları ve hikayeler</p></a>
+            <a href="https://tiktok.com/@hmgs.academy" target="_blank" class="social-card animate-on-scroll"><div class="social-icon-main"><i class="fab fa-tiktok"></i></div><h3 class="social-name">TikTok</h3><p class="social-handle">@hmgs.academy</p><p class="social-desc">Kısa ve öz hukuki ipuçları, eğlenceli içerikler</p></a>
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="section cta-section">
         <div class="cta-content animate-on-scroll">
-            <h2 class="cta-title">
-                HMGS'ye Hazır mısınız?
-                <span>Başarı Sizin Elinizde</span>
-            </h2>
-            <p class="cta-text">
-                Her yıl binlerce adayın girdiği HMGS'de başarılı olmak için şimdi hazırlığa başlayın. 
-                Doğru strateji, düzenli çalışma ve etkili pratik ile siz de başarabilirsiniz. 
-                Unutmayın, bu sınavı geçmek artık diplomadan önce geliyor.
-            </p>
+            <h2 class="cta-title">HMGS'ye Hazır mısınız? <span>Başarı Sizin Elinizde</span></h2>
+            <p class="cta-text">Her yıl binlerce adayın girdiği HMGS'de başarılı olmak için şimdi hazırlığa başlayın. Doğru strateji, düzenli çalışma ve etkili pratik ile siz de başarabilirsiniz.</p>
             <div class="hero-cta">
-                <a href="https://hmgsacademy.com" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-rocket"></i>
-                    Web Sitemizi Ziyaret Et
-                </a>
-                <a href="mailto:info@hmgsacademy.com" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i>
-                    Bize Ulaşın
-                </a>
+                <a href="https://hmgsacademy.com" target="_blank" class="btn btn-primary"><i class="fas fa-rocket"></i> Web Sitemizi Ziyaret Et</a>
+                <a href="mailto:info@hmgsacademy.com" class="btn btn-secondary"><i class="fas fa-envelope"></i> Bize Ulaşın</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="section contact-section" id="iletisim">
         <div class="section-header animate-on-scroll">
             <span class="section-label">İletişim</span>
             <h2 class="section-title">Bizimle İletişime Geçin</h2>
-            <p class="section-subtitle">
-                Sorularınız, önerileriniz veya daha fazla bilgi almak için bizimle iletişime geçin.
-            </p>
+            <p class="section-subtitle">Sorularınız, önerileriniz veya daha fazla bilgi almak için bizimle iletişime geçin.</p>
         </div>
-
         <div class="contact-grid">
-            <a href="mailto:info@hmgsacademy.com" class="contact-card animate-on-scroll">
-                <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <p class="contact-label">E-posta</p>
-                <p class="contact-value">info@hmgsacademy.com</p>
-            </a>
-
-            <a href="https://hmgsacademy.com" target="_blank" class="contact-card animate-on-scroll">
-                <div class="contact-icon">
-                    <i class="fas fa-globe"></i>
-                </div>
-                <p class="contact-label">Web Sitesi</p>
-                <p class="contact-value">hmgsacademy.com</p>
-            </a>
-
-            <div class="contact-card animate-on-scroll">
-                <div class="contact-icon">
-                    <i class="fas fa-hashtag"></i>
-                </div>
-                <p class="contact-label">Sosyal Medya</p>
-                <p class="contact-value">@hmgs.academy</p>
-            </div>
+            <a href="mailto:info@hmgsacademy.com" class="contact-card animate-on-scroll"><div class="contact-icon"><i class="fas fa-envelope"></i></div><p class="contact-label">E-posta</p><p class="contact-value">info@hmgsacademy.com</p></a>
+            <a href="https://hmgsacademy.com" target="_blank" class="contact-card animate-on-scroll"><div class="contact-icon"><i class="fas fa-globe"></i></div><p class="contact-label">Web Sitesi</p><p class="contact-value">hmgsacademy.com</p></a>
+            <div class="contact-card animate-on-scroll"><div class="contact-icon"><i class="fas fa-hashtag"></i></div><p class="contact-label">Sosyal Medya</p><p class="contact-value">@hmgs.academy</p></div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-logo">
-                <i class="fas fa-scale-balanced"></i>
-                HMGS <span>ACADEMY</span>
-            </div>
-            <p class="footer-text">
-                Hukuk Mesleğine Giriş Sınavı'na hazırlık için bilgi ve strateji platformu. 
-                Başarıya giden yolda yanınızdayız.
-            </p>
+            <div class="footer-logo"><i class="fas fa-scale-balanced"></i> HMGS <span>ACADEMY</span></div>
+            <p class="footer-text">Hukuk Mesleğine Giriş Sınavı'na hazırlık için bilgi ve strateji platformu. Başarıya giden yolda yanınızdayız.</p>
             <div class="footer-social">
-                <a href="https://youtube.com/@hmgs.academy" target="_blank" aria-label="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://instagram.com/hmgs.academy" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://tiktok.com/@hmgs.academy" target="_blank" aria-label="TikTok">
-                    <i class="fab fa-tiktok"></i>
-                </a>
+                <a href="https://youtube.com/@hmgs.academy" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com/hmgs.academy" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com/@hmgs.academy" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
             </div>
             <div class="footer-bottom">
-                <p class="footer-copyright">
-                    © 2026 HMGS Academy. Tüm hakları saklıdır.
-                </p>
-                <div class="footer-links">
-                    <a href="#">Gizlilik Politikası</a>
-                    <a href="#">Kullanım Koşulları</a>
-                </div>
+                <p class="footer-copyright">© 2026 HMGS Academy. Tüm hakları saklıdır.</p>
+                <div class="footer-links"><a href="#">Gizlilik Politikası</a><a href="#">Kullanım Koşulları</a></div>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Yukarı çık">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+    <button class="back-to-top" id="backToTop" aria-label="Yukarı çık"><i class="fas fa-chevron-up"></i></button>
 
-    <!-- JavaScript -->
     <script>
-        // Loading Overlay
         window.addEventListener('load', () => {
             const loadingOverlay = document.getElementById('loadingOverlay');
             if (loadingOverlay) {
@@ -2589,28 +707,16 @@
             }
         });
 
-        // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
+        mobileMenuBtn.addEventListener('click', () => { navLinks.classList.toggle('active'); });
 
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Navbar Scroll Effect
         const navbar = document.getElementById('navbar');
-        
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
+            if (window.scrollY > 100) { navbar.classList.add('scrolled'); } else { navbar.classList.remove('scrolled'); }
         });
 
-        // Scroll Progress Bar
         const scrollProgress = document.getElementById('scrollProgress');
-        
         window.addEventListener('scroll', () => {
             const scrollTop = window.pageYOffset;
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -2618,60 +724,31 @@
             scrollProgress.style.width = scrollPercent + '%';
         });
 
-        // Back to Top Button
         const backToTop = document.getElementById('backToTop');
-
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
+            if (window.scrollY > 500) { backToTop.classList.add('visible'); } else { backToTop.classList.remove('visible'); }
         });
+        backToTop.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Scroll Animations
         const animateElements = document.querySelectorAll('.animate-on-scroll');
-
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
+            entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } });
         }, observerOptions);
+ animateElements.forEach(el => observer.observe(el));
 
-        animateElements.forEach(el => observer.observe(el));
-
-        // Smooth Scroll for Navigation Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     navLinks.classList.remove('active');
                 }
             });
         });
 
-        // Counter Animation for Stats
         const statNumbers = document.querySelectorAll('.stat-number');
-        
         const animateCounter = (element) => {
             const text = element.textContent;
             const hasPercent = text.includes('%');
@@ -2680,18 +757,16 @@
             const duration = 2000;
             const step = target / (duration / 16);
             let current = 0;
-
             const timer = setInterval(() => {
                 current += step;
                 if (current >= target) {
-                    element.textContent = text; // Keep original format
+                    element.textContent = text;
                     clearInterval(timer);
                 } else {
                     element.textContent = Math.floor(current) + suffix;
                 }
             }, 16);
         };
-
         const statsObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -2700,747 +775,23 @@
                 }
             });
         }, { threshold: 0.5 });
-
         statNumbers.forEach(stat => statsObserver.observe(stat));
 
-        // Console Welcome Message
         console.log('%cHMGS Academy', 'font-size: 24px; font-weight: bold; color: #c9a227;');
         console.log('%cHukuk Mesleğine Giriş Sınavı Hazırlık Platformu', 'font-size: 14px; color: #f5f0e6;');
         console.log('%chttps://hmgsacademy.com', 'font-size: 12px; color: #8a8278;');
-    </script>
-</body>
-</html>           </div>
-
-            <div class="resource-card animate-on-scroll">
-                <div class="resource-icon">
-                    <i class="fas fa-file-alt"></i>
-                </div>
-                <div class="resource-content">
-                    <h4>Deneme Sınavları</h4>
-                    <p>Gerçek sınav formatında düzenli deneme sınavları ve performans analizi.</p>
-                </div>
-            </div>
-
-            <div class="resource-card animate-on-scroll">
-                <div class="resource-icon">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <div class="resource-content">
-                    <h4>Mobil Uygulama</h4>
-                    <p>İstediğiniz yerden, istediğiniz zaman çalışma imkanı.</p>
-                </div>
-            </div>
-
-            <div class="resource-card animate-on-scroll">
-                <div class="resource-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <div class="resource-content">
-                    <h4>Özel Danışmanlık</h4>
-                    <p>Birebir özel ders ve danışmanlık hizmetleri.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-        <div class="animate-on-scroll">
-            <h2 class="section-title">Güncellemelerden Haberdar Olun</h2>
-            <p class="section-subtitle">
-                Yeni dersler, sınav duyuruları ve özel içerikler için bültenimize abone olun.
-            </p>
-            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Bülten aboneliğiniz alındı!');">
-                <input type="email" class="newsletter-input" placeholder="E-posta adresiniz" required>
-                <button type="submit" class="btn btn-primary">
-                    <i class="fas fa-paper-plane"></i>
-                    Abone Ol
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Social Media Section -->
-    <section class="section social-section" id="sosyal">
-        <div class="section-header animate-on-scroll">
-            <span class="section-label">Sosyal Medya</span>
-            <h2 class="section-title">Bizi Sosyal Medyada Takip Edin</h2>
-            <p class="section-subtitle">
-                Günlük hukuki ipuçları, sınav stratejileri, motivasyon paylaşımları ve 
-                güncel duyurular için bizi sosyal medyada takip edin.
-            </p>
-        </div>
-
-        <div class="notification-badge animate-on-scroll">
-            <i class="fas fa-bell"></i>
-            Her gün yeni içeriklerle karşınızdayız!
-        </div>
-
-        <div class="social-grid">
-            <a href="https://youtube.com/@hmgs.academy" target="_blank" class="social-card animate-on-scroll">
-                <div class="social-icon-main">
-                    <i class="fab fa-youtube"></i>
-                </div>
-                <h3 class="social-name">YouTube</h3>
-                <p class="social-handle">@hmgs.academy</p>
-                <p class="social-desc">
-                    Detaylı ders anlatımları, soru çözümleri ve uzman konuşmaları için 
-                    YouTube kanalımıza abone olun.
-                </p>
-            </a>
-
-            <a href="https://instagram.com/hmgs.academy" target="_blank" class="social-card animate-on-scroll">
-                <div class="social-icon-main">
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <h3 class="social-name">Instagram</h3>
-                <p class="social-handle">@hmgs.academy</p>
-                <p class="social-desc">
-                    Günlük hukuki bilgiler, motivasyon paylaşımları ve hikayelerimiz için 
-                    bizi Instagram'da takip edin.
-                </p>
-            </a>
-
-            <a href="https://tiktok.com/@hmgs.academy" target="_blank" class="social-card animate-on-scroll">
-                <div class="social-icon-main">
-                    <i class="fab fa-tiktok"></i>
-                </div>
-                <h3 class="social-name">TikTok</h3>
-                <p class="social-handle">@hmgs.academy</p>
-                <p class="social-desc">
-                    Kısa ve öz hukuki ipuçları, eğlenceli içerikler ve güncel bilgiler 
-                    için TikTok hesabımızı takip edin.
-                </p>
-            </a>
-        </div>
-
-        <div class="quote animate-on-scroll">
-            "Başarı yalnız değil, birlikte yürünen bir yoldur. HMGS Academy ailesine katılın, 
-            birlikte başaralım."
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="section cta-section">
-        <div class="cta-content animate-on-scroll">
-            <h2 class="cta-title">
-                HMGS 2026'ya Hazır mısınız?
-                <span>Başarıya Giden Yolda Bizimle Olun</span>
-            </h2>
-            <p class="cta-text">
-                Her yıl binlerce adayın girdiği HMGS'de başarılı olmak için şimdi hazırlığa başlayın. 
-                HMGS Academy olarak, size en kapsamlı ve güncel eğitim materyallerini sunuyoruz. 
-                Sınavda sorulacak konuları uzman eğitmenlerimizden öğrenin, binlerce soru ile pratik yapın 
-                ve başarıya giden yolda emin adımlarla ilerleyin.
-            </p>
-            <div class="hero-cta">
-                <a href="https://hmgsacademy.com" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-rocket"></i>
-                    Hemen Başlayın
-                </a>
-                <a href="mailto:info@hmgsacademy.com" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i>
-                    Bize Ulaşın
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact-section" id="iletisim">
-        <div class="section-header animate-on-scroll">
-            <span class="section-label">İletişim</span>
-            <h2 class="section-title">Bizimle İletişime Geçin</h2>
-            <p class="section-subtitle">
-                Sorularınız, önerileriniz veya daha fazla bilgi almak için 
-                bizimle iletişime geçmekten çekinmeyin.
-            </p>
-        </div>
-
-        <div class="contact-grid">
-            <a href="mailto:info@hmgsacademy.com" class="contact-card animate-on-scroll">
-                <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <p class="contact-label">E-posta</p>
-                <p class="contact-value">info@hmgsacademy.com</p>
-            </a>
-
-            <a href="https://hmgsacademy.com" target="_blank" class="contact-card animate-on-scroll">
-                <div class="contact-icon">
-                    <i class="fas fa-globe"></i>
-                </div>
-                <p class="contact-label">Web Sitesi</p>
-                <p class="contact-value">hmgsacademy.com</p>
-            </a>
-
-            <div class="contact-card animate-on-scroll">
-                <div class="contact-icon">
-                    <i class="fas fa-hashtag"></i>
-                </div>
-                <p class="contact-label">Sosyal Medya</p>
-                <p class="contact-value">@hmgs.academy</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">HMGS <span>ACADEMY</span></div>
-            <p class="footer-text">
-                Hukuk Mesleğine Giriş Sınavı'na hazırlık için en kapsamlı ve güncel eğitim platformu. 
-                Başarıya giden yolda yanınızdayız.
-            </p>
-            <div class="footer-social">
-                <a href="https://youtube.com/@hmgs.academy" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://instagram.com/hmgs.academy" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://tiktok.com/@hmgs.academy" target="_blank">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-copyright">
-                    © 2026 HMGS Academy. Tüm hakları saklıdır.
-                </p>
-                <div class="footer-links">
-                    <a href="#">Gizlilik Politikası</a>
-                    <a href="#">Kullanım Koşulları</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- JavaScript -->
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Navbar Scroll Effect
-        const navbar = document.getElementById('navbar');
-        
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Back to Top Button
-        const backToTop = document.getElementById('backToTop');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
-
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Scroll Animations
-        const animateElements = document.querySelectorAll('.animate-on-scroll');
-
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        animateElements.forEach(el => observer.observe(el));
-
-        // Accordion
-        const accordionHeaders = document.querySelectorAll('.accordion-header');
-
-        accordionHeaders.forEach(header => {
-            header.addEventListener('click', () => {
-                const body = header.nextElementSibling;
-                const isActive = header.classList.contains('active');
-
-                // Close all
-                accordionHeaders.forEach(h => {
-                    h.classList.remove('active');
-                    h.nextElementSibling.classList.remove('active');
-                });
-
-                // Open clicked if wasn't active
-                if (!isActive) {
-                    header.classList.add('active');
-                    body.classList.add('active');
-                }
-            });
-        });
-
-        // Smooth Scroll for Navigation Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    navLinks.classList.remove('active');
-                }
-            });
-        });
-
-        // Parallax Effect for Hero Background
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const heroBg = document.querySelector('.hero-bg');
-            if (heroBg && scrolled < window.innerHeight) {
-                heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-        });
-
-        // Counter Animation for Stats
-        const statNumbers = document.querySelectorAll('.stat-number');
-        
-        const animateCounter = (element) => {
-            const target = parseInt(element.textContent.replace(/\D/g, ''));
-            const suffix = element.textContent.replace(/\d/g, '');
-            const duration = 2000;
-            const step = target / (duration / 16);
-            let current = 0;
-
-            const timer = setInterval(() => {
-                current += step;
-                if (current >= target) {
-                    element.textContent = target + suffix;
-                    clearInterval(timer);
-                } else {
-                    element.textContent = Math.floor(current) + suffix;
-                }
-            }, 16);
-        };
-
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounter(entry.target);
-                    statsObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        statNumbers.forEach(stat => statsObserver.observe(stat));
-
-        // Add hover effect to cards
-        document.querySelectorAll('.feature-card, .social-card, .contact-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transition = 'all 0.4s ease';
-            });
-        });
-
-        // Hide Loading Overlay
-        window.addEventListener('load', () => {
-            const loadingOverlay = document.getElementById('loadingOverlay');
-            if (loadingOverlay) {
-                setTimeout(() => {
-                    loadingOverlay.classList.add('hidden');
-                    setTimeout(() => loadingOverlay.remove(), 500);
-                }, 500);
-            }
-        });
-
-        // Console Welcome Message
-        console.log('%cHMGS Academy', 'font-size: 24px; font-weight: bold; color: #c9a227;');
-        console.log('%cHukuk Mesleğine Giriş Sınavı Hazırlık Platformu', 'font-size: 14px; color: #f5f0e6;');
-        console.log('%chttps://hmgsacademy.com', 'font-size: 12px; color: #8a8278;');
-
-        // Typewriter Effect for Hero Title
-        const heroTitle = document.querySelector('.hero-title');
-        if (heroTitle) {
-            const originalText = heroTitle.innerHTML;
-            const highlightText = heroTitle.querySelector('.highlight');
-            
-            // Add glow effect on hover
-            heroTitle.addEventListener('mouseenter', () => {
-                heroTitle.style.textShadow = '0 0 30px rgba(201, 162, 39, 0.3)';
-            });
-            
-            heroTitle.addEventListener('mouseleave', () => {
-                heroTitle.style.textShadow = 'none';
-            });
-        }
-
-        // Magnetic Button Effect
-        document.querySelectorAll('.btn').forEach(btn => {
-            btn.addEventListener('mousemove', (e) => {
-                const rect = btn.getBoundingClientRect();
-                const x = e.clientX - rect.left - rect.width / 2;
-                const y = e.clientY - rect.top - rect.height / 2;
-                
-                btn.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
-            });
-            
-            btn.addEventListener('mouseleave', () => {
-                btn.style.transform = 'translate(0, 0)';
-            });
-        });
-
-        // Scroll Progress Indicator
-        const createProgressBar = () => {
-            const progressBar = document.createElement('div');
-            progressBar.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                height: 3px;
-                background: linear-gradient(90deg, #c9a227, #e0c158);
-                z-index: 10000;
-                transition: width 0.1s ease;
-            `;
-            document.body.appendChild(progressBar);
-            
-            window.addEventListener('scroll', () => {
-                const scrollTop = window.pageYOffset;
-                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-                const scrollPercent = (scrollTop / docHeight) * 100;
-                progressBar.style.width = scrollPercent + '%';
-            });
-        };
-        createProgressBar();
-
-        // Reveal Animation for Timeline Items
-        const timelineItems = document.querySelectorAll('.timeline-item');
-        const timelineObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry, index) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateX(0)';
-                    }, index * 200);
-                }
-            });
-        }, { threshold: 0.2 });
-
-        timelineItems.forEach(item => {
-            item.style.opacity = '0';
-            item.style.transform = item.classList.contains('even') ? 'translateX(-50px)' : 'translateX(50px)';
-            item.style.transition = 'all 0.6s ease';
-            timelineObserver.observe(item);
-        });
-
-        // Feature Card 3D Tilt Effect
-        document.querySelectorAll('.feature-card').forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                const rotateX = (y - centerY) / 10;
-                const rotateY = (centerX - x) / 10;
-                
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-            });
-        });
-
-        // Social Card Ripple Effect
-        document.querySelectorAll('.social-card').forEach(card => {
-            card.addEventListener('click', function(e) {
-                const ripple = document.createElement('span');
-                const rect = this.getBoundingClientRect();
-                const size = Math.max(rect.width, rect.height);
-                const x = e.clientX - rect.left - size / 2;
-                const y = e.clientY - rect.top - size / 2;
-                
-                ripple.style.cssText = `
-                    position: absolute;
-                    width: ${size}px;
-                    height: ${size}px;
-                    left: ${x}px;
-                    top: ${y}px;
-                    background: rgba(201, 162, 39, 0.3);
-                    border-radius: 50%;
-                    transform: scale(0);
-                    animation: ripple 0.6s ease-out;
-                    pointer-events: none;
-                `;
-                
-                this.style.position = 'relative';
-                this.style.overflow = 'hidden';
-                this.appendChild(ripple);
-                
-                setTimeout(() => ripple.remove(), 600);
-            });
-        });
-
-        // Add ripple animation keyframes
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes ripple {
-                to {
-                    transform: scale(2);
-                    opacity: 0;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-
-        // Lazy Loading for Images
-        const lazyImages = document.querySelectorAll('img[data-src]');
-        const imageObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    img.src = img.dataset.src;
-                    img.removeAttribute('data-src');
-                    imageObserver.unobserve(img);
-                }
-            });
-        });
-        lazyImages.forEach(img => imageObserver.observe(img));
-
-        // Form Validation Enhancement
-        document.querySelectorAll('input, textarea').forEach(input => {
-            input.addEventListener('focus', () => {
-                input.parentElement.classList.add('focused');
-            });
-            
-            input.addEventListener('blur', () => {
-                input.parentElement.classList.remove('focused');
-            });
-        });
-
-        // Keyboard Navigation Enhancement
-        document.addEventListener('keydown', (e) => {
-            // ESC to close mobile menu
-            if (e.key === 'Escape') {
-                navLinks.classList.remove('active');
-            }
-            
-            // Arrow keys for accordion
-            if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-                const activeHeader = document.querySelector('.accordion-header:focus');
-                if (activeHeader) {
-                    const headers = Array.from(accordionHeaders);
-                    const currentIndex = headers.indexOf(activeHeader);
-                    let nextIndex;
-                    
-                    if (e.key === 'ArrowDown') {
-                        nextIndex = (currentIndex + 1) % headers.length;
-                    } else {
-                        nextIndex = (currentIndex - 1 + headers.length) % headers.length;
-                    }
-                    
-                    headers[nextIndex].focus();
-                    e.preventDefault();
-                }
-            }
-        });
-
-        // Performance: Debounce scroll events
-        const debounce = (func, wait) => {
-            let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-            };
-        };
-
-        // Optimized scroll handler
-        const optimizedScrollHandler = debounce(() => {
-            // Scroll-based animations here
-        }, 16);
-
-        window.addEventListener('scroll', optimizedScrollHandler);
-
-        // Prefetch important pages
-        const prefetchLinks = [
-            'https://hmgsacademy.com',
-            'https://youtube.com/@hmgs.academy',
-            'https://instagram.com/hmgs.academy'
-        ];
-
-        prefetchLinks.forEach(link => {
-            const prefetch = document.createElement('link');
-            prefetch.rel = 'prefetch';
-            prefetch.href = link;
-            document.head.appendChild(prefetch);
-        });
-
-        // Service Worker Registration (for PWA capabilities)
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js').catch(() => {
-                // Silently fail - not critical
-            });
-        }
-
-        // Analytics Event Tracking
-        const trackEvent = (category, action, label) => {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', action, {
-                    event_category: category,
-                    event_label: label
-                });
-            }
-        };
-
-        // Track social link clicks
-        document.querySelectorAll('.social-card').forEach(card => {
-            card.addEventListener('click', () => {
-                const platform = card.querySelector('.social-name').textContent;
-                trackEvent('Social', 'Click', platform);
-            });
-        });
-
-        // Track CTA button clicks
-        document.querySelectorAll('.btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const text = btn.textContent.trim();
-                trackEvent('CTA', 'Click', text);
-            });
-        });
-
-        // Dark Mode Detection and Adaptation
-        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-        if (!prefersDarkMode.matches) {
-            // Site is already dark, no changes needed
-            console.log('Dark mode is optimal for this site');
-        }
-
-        // Reduced Motion Preference
-        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-        if (prefersReducedMotion.matches) {
-            document.documentElement.style.setProperty('--animation-duration', '0.01ms');
-            // Disable complex animations
-            document.querySelectorAll('.animate-on-scroll').forEach(el => {
-                el.classList.add('visible');
-            });
-        }
-
-        // Page Visibility API - Pause animations when tab is hidden
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden) {
-                document.body.classList.add('paused');
-            } else {
-                document.body.classList.remove('paused');
-            }
-        });
-
-        // Error Handling
-        window.addEventListener('error', (e) => {
-            console.error('HMGS Academy Error:', e.message);
-        });
-
-        window.addEventListener('unhandledrejection', (e) => {
-            console.error('Unhandled Promise Rejection:', e.reason);
-        });
-
-        // Initialize Tooltips
-        const initTooltips = () => {
-            document.querySelectorAll('[data-tooltip]').forEach(el => {
-                el.addEventListener('mouseenter', (e) => {
-                    const tooltip = document.createElement('div');
-                    tooltip.className = 'tooltip';
-                    tooltip.textContent = el.dataset.tooltip;
-                    tooltip.style.cssText = `
-                        position: absolute;
-                        background: rgba(10, 10, 12, 0.95);
-                        color: #c9a227;
-                        padding: 0.5rem 1rem;
-                        border: 1px solid #c9a227;
-                        font-size: 0.8rem;
-                        z-index: 10000;
-                        pointer-events: none;
-                    `;
-                    document.body.appendChild(tooltip);
-                    
-                    const rect = el.getBoundingClientRect();
-                    tooltip.style.left = rect.left + rect.width / 2 - tooltip.offsetWidth / 2 + 'px';
-                    tooltip.style.top = rect.top - tooltip.offsetHeight - 10 + 'px';
-                    
-                    el._tooltip = tooltip;
-                });
-                
-                el.addEventListener('mouseleave', () => {
-                    if (el._tooltip) {
-                        el._tooltip.remove();
-                        delete el._tooltip;
-                    }
-                });
-            });
-        };
-        initTooltips();
-
-        // Print Styles
-        const printStyles = document.createElement('style');
-        printStyles.textContent = `
-            @media print {
-                .navbar, .scroll-indicator, .back-to-top, .footer-social {
-                    display: none !important;
-                }
-                
-                .hero {
-                    min-height: auto;
-                    padding: 2rem 0;
-                }
-                
-                .section {
-                    padding: 2rem 0;
-                    page-break-inside: avoid;
-                }
-                
-                body {
-                    background: white;
-                    color: black;
-                }
-                
-                .hero-title, .section-title, .feature-title {
-                    color: black;
-                }
-            }
-        `;
-        document.head.appendChild(printStyles);
-
-        // Final Initialization Message
-        console.log('%c✓ HMGS Academy Site Loaded Successfully', 'color: #4CAF50; font-size: 12px;');
-        console.log('%c✓ All animations initialized', 'color: #4CAF50; font-size: 12px;');
-        console.log('%c✓ Intersection Observer active', 'color: #4CAF50; font-size: 12px;');
-        console.log('%c✓ Scroll effects enabled', 'color: #4CAF50; font-size: 12px;');
     </script>
 </body>
 </html>
+User-agent: *
+Allow: /
+
+Sitemap: https://hmgsacademy.com/sitemap.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://hmgsacademy.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
