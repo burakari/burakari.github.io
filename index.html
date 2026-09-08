@@ -1,797 +1,375 @@
-<!DOCTYPE html>
-<html lang="tr">
+<!doctype html>
+<html lang="de">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SVV8PZFPTC"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-SVV8PZFPTC');
-    </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HMGS Academy | Hukuk Mesleğine Giriş Sınavı Hazırlık</title>
-    <meta name="description" content="HMGS Academy - Hukuk Mesleğine Giriş Sınavı (HMGS) için kapsamlı hazırlık platformu. 7188 sayılı kanunla gelen zorunlu ön eleme sınavına strateji ve içerik.">
-    <meta name="keywords" content="HMGS, Hukuk Mesleğine Giriş Sınavı, 7188 sayılı kanun, avukatlık stajı, hakim savcı adaylığı, noterlik stajı, hukuk fakültesi">
-    <meta name="author" content="HMGS Academy">
-    <meta property="og:title" content="HMGS Academy | Hukuk Mesleğine Giriş Sınavı Hazırlık">
-    <meta property="og:description" content="Hukuk fakültesi mezunları için zorunlu ön eleme sınavı HMGS'ye hazırlık platformu.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hmgsacademy.com">
-    <link rel="canonical" href="https://hmgsacademy.com/">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%96%EF%B8%8F%3C/text%3E%3C/svg%3E">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "HMGS Academy",
-      "url": "https://hmgsacademy.com",
-      "description": "Hukuk Mesleğine Giriş Sınavı (HMGS) hazırlık platformu.",
-      "sameAs": [
-        "https://youtube.com/@hmgs.academy",
-        "https://instagram.com/hmgs.academy",
-        "https://tiktok.com/@hmgs.academy"
-      ]
-    }
-    </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        :root {
-            --bg-primary: #0a0a0c;
-            --bg-secondary: #111114;
-            --bg-burgundy: #2d0a0a;
-            --gold: #c9a227;
-            --gold-light: #e0c158;
-            --gold-dark: #a08020;
-            --cream: #f5f0e6;
-            --cream-muted: #c4bdb0;
-            --text-muted: #8a8278;
-            --border-gold: rgba(201, 162, 39, 0.3);
-            --border-gold-hover: rgba(201, 162, 39, 0.6);
-            --shadow-gold: rgba(201, 162, 39, 0.15);
-            --success: #4CAF50;
-            --warning: #FF9800;
-            --danger: #f44336;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--cream);
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
-        .grain-overlay {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            pointer-events: none; z-index: 9999; opacity: 0.03;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-        }
-        .scroll-progress {
-            position: fixed; top: 0; left: 0; height: 3px;
-            background: linear-gradient(90deg, var(--gold), var(--gold-light));
-            z-index: 10001; transition: width 0.1s ease;
-        }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: var(--bg-primary); }
-        ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 0; }
-        ::-webkit-scrollbar-thumb:hover { background: var(--gold); }
-        ::selection { background: rgba(201, 162, 39, 0.3); color: var(--cream); }
-        .font-display { font-family: 'Cinzel', serif; }
-        .font-serif { font-family: 'Playfair Display', serif; }
-        .loading-overlay {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: var(--bg-primary); display: flex; flex-direction: column;
-            align-items: center; justify-content: center; z-index: 99999;
-            transition: opacity 0.5s ease, visibility 0.5s ease;
-        }
-        .loading-overlay.hidden { opacity: 0; visibility: hidden; }
-        .loading-spinner {
-            width: 60px; height: 60px; border: 2px solid var(--border-gold);
-            border-top-color: var(--gold); border-radius: 50%; animation: spin 1s linear infinite;
-        }
-        .loading-text {
-            margin-top: 1.5rem; font-family: 'Cinzel', serif; color: var(--gold);
-            letter-spacing: 0.2em; animation: pulse 1.5s ease-in-out infinite;
-        }
-        @keyframes spin { to { transform: rotate(360deg); } }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
-        .navbar {
-            position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1.2rem 4vw;
-            display: flex; justify-content: space-between; align-items: center;
-            background: linear-gradient(to bottom, rgba(10,10,12,0.98) 0%, transparent 100%);
-            backdrop-filter: blur(20px); border-bottom: 1px solid transparent; transition: all 0.4s ease;
-        }
-        .navbar.scrolled { background: rgba(10,10,12,0.98); border-bottom-color: var(--border-gold); padding: 0.8rem 4vw; }
-        .logo {
-            font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 700; letter-spacing: 0.15em;
-            color: var(--cream); text-decoration: none; display: flex; align-items: center; gap: 0.5rem;
-        }
-        .logo-icon { width: 40px; height: 40px; border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; }
-        .logo-icon i { color: var(--gold); font-size: 1rem; }
-        .logo span { color: var(--gold); }
-        .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-        .nav-links a {
-            color: var(--cream-muted); text-decoration: none; font-size: 0.8rem; font-weight: 500;
-            letter-spacing: 0.1em; text-transform: uppercase; position: relative; transition: color 0.3s ease; padding: 0.5rem 0;
-        }
-        .nav-links a::after {
-            content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px;
-            background: var(--gold); transition: width 0.3s ease;
-        }
-        .nav-links a:hover { color: var(--gold); }
-        .nav-links a:hover::after { width: 100%; }
-        .mobile-menu-btn { display: none; background: none; border: none; color: var(--cream); font-size: 1.5rem; cursor: pointer; padding: 0.5rem; }
-        .hero {
-            min-height: 100vh; position: relative; display: flex; align-items: center; justify-content: center;
-            overflow: hidden; background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-burgundy) 50%, var(--bg-primary) 100%);
-        }
-        .hero-bg-pattern {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.05;
-            background-image: linear-gradient(var(--gold) 1px, transparent 1px), linear-gradient(90deg, var(--gold) 1px, transparent 1px);
-            background-size: 50px 50px;
-        }
-        .hero-content { position: relative; z-index: 10; text-align: center; padding: 8rem 2rem 4rem; max-width: 1100px; }
-        .hero-badge {
-            display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.6rem 1.5rem;
-            background: rgba(201, 162, 39, 0.1); border: 1px solid var(--border-gold); font-size: 0.75rem;
-            letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 2rem; animation: fadeInDown 1s ease;
-        }
-        .hero-badge i { animation: pulse 2s infinite; }
-        .hero-title {
-            font-family: 'Cinzel', serif; font-size: clamp(2.2rem, 5vw, 4.5rem); font-weight: 700; line-height: 1.1;
-            letter-spacing: 0.03em; margin-bottom: 1.5rem; animation: fadeInUp 1s ease 0.2s both;
-        }
-        .hero-title .highlight { color: var(--gold); display: block; margin-top: 0.5rem; }
-        .hero-subtitle {
-            font-size: clamp(1rem, 1.5vw, 1.2rem); color: var(--cream-muted); max-width: 700px;
-            margin: 0 auto 2.5rem; line-height: 1.9; animation: fadeInUp 1s ease 0.4s both;
-        }
-        .hero-warning {
-            background: rgba(244, 67, 54, 0.1); border: 1px solid rgba(244, 67, 54, 0.3); padding: 1rem 2rem;
-            margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 1rem; animation: fadeInUp 1s ease 0.5s both;
-        }
-        .hero-warning i { color: var(--danger); font-size: 1.5rem; }
-        .hero-warning-text { color: var(--cream); font-size: 0.95rem; text-align: left; }
-        .hero-warning-text strong { color: var(--danger); }
-        .hero-stats { display: flex; justify-content: center; gap: 3rem; margin-bottom: 3rem; flex-wrap: wrap; animation: fadeInUp 1s ease 0.6s both; }
-        .stat-item { text-align: center; padding: 1.5rem 2rem; background: rgba(17, 17, 20, 0.6); border: 1px solid var(--border-gold); min-width: 150px; }
-        .stat-number { font-family: 'Cinzel', serif; font-size: 2.5rem; font-weight: 700; color: var(--gold); display: block; line-height: 1; }
-        .stat-label { font-size: 0.75rem; color: var(--text-muted); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.5rem; }
-        .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; animation: fadeInUp 1s ease 0.8s both; }
-        .btn {
-            display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2.5rem; font-size: 0.85rem;
-            font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border: none;
-            cursor: pointer; transition: all 0.4s ease; position: relative; overflow: hidden;
-        }
-        .btn-primary { background: var(--gold); color: var(--bg-primary); }
-        .btn-primary::before {
-            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); transition: left 0.5s ease;
-        }
-        .btn-primary:hover::before { left: 100%; }
-        .btn-primary:hover { background: var(--gold-light); transform: translateY(-3px); box-shadow: 0 15px 40px var(--shadow-gold); }
-        .btn-secondary { background: transparent; color: var(--cream); border: 1px solid var(--border-gold); }
-        .btn-secondary:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-3px); }
-        .scroll-indicator { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); animation: bounce 2s infinite; }
-        .scroll-indicator i { font-size: 1.5rem; color: var(--gold); }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-            40% { transform: translateX(-50%) translateY(-10px); }
-            60% { transform: translateX(-50%) translateY(-5px); }
-        }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
-        .section { padding: 7rem 4vw; position: relative; }
-        .section-header { text-align: center; max-width: 800px; margin: 0 auto 4rem; }
-        .section-label {
-            display: inline-block; font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase;
-            color: var(--gold); margin-bottom: 1rem; position: relative; font-weight: 600;
-        }
-        .section-label::before, .section-label::after { content: ''; position: absolute; top: 50%; width: 40px; height: 1px; background: var(--border-gold); }
-        .section-label::before { right: calc(100% + 15px); }
-        .section-label::after { left: calc(100% + 15px); }
-        .section-title { font-family: 'Cinzel', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 600; margin-bottom: 1.5rem; line-height: 1.2; }
-        .section-subtitle { color: var(--cream-muted); font-size: 1.05rem; line-height: 1.9; }
-        .info-section { background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%); }
-        .info-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: start; max-width: 1400px; margin: 0 auto; }
-        .info-content h3 { font-family: 'Cinzel', serif; font-size: 1.6rem; color: var(--gold); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem; }
-        .info-content h3 i { font-size: 1.2rem; }
-        .info-content p { color: var(--cream-muted); margin-bottom: 1.5rem; line-height: 1.9; font-size: 1rem; }
-        .info-highlight { background: linear-gradient(135deg, rgba(201, 162, 39, 0.15), rgba(201, 162, 39, 0.05)); border-left: 3px solid var(--gold); padding: 1.5rem 2rem; margin: 2rem 0; }
-        .info-highlight p { color: var(--cream); font-style: italic; margin: 0; font-size: 1.05rem; }
-        .info-card { background: rgba(17, 17, 20, 0.9); border: 1px solid var(--border-gold); padding: 2.5rem; position: relative; }
-        .info-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--gold), transparent); }
-        .info-card h4 { font-family: 'Cinzel', serif; font-size: 1.2rem; color: var(--cream); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
-        .info-card h4 i { color: var(--gold); }
-        .info-list { list-style: none; }
-        .info-list li { padding: 1rem 0; border-bottom: 1px solid rgba(201, 162, 39, 0.1); display: flex; align-items: flex-start; gap: 1rem; color: var(--cream-muted); font-size: 0.95rem; }
-        .info-list li:last-child { border-bottom: none; }
-        .info-list li i { color: var(--gold); margin-top: 0.3rem; font-size: 0.9rem; }
-        .info-list li strong { color: var(--cream); display: block; margin-bottom: 0.25rem; }
-        .warning-box { background: rgba(244, 67, 54, 0.08); border: 1px solid rgba(244, 67, 54, 0.3); padding: 1.5rem; margin: 2rem 0; display: flex; align-items: flex-start; gap: 1rem; }
-        .warning-box i { color: var(--danger); font-size: 1.5rem; flex-shrink: 0; }
-        .warning-box-content h4 { color: var(--danger); font-family: 'Cinzel', serif; margin-bottom: 0.5rem; }
-        .warning-box-content p { color: var(--cream-muted); margin: 0; font-size: 0.95rem; }
-        .timeline-section { background: var(--bg-secondary); position: relative; }
-        .timeline-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border-gold), transparent); }
-        .timeline { position: relative; max-width: 1000px; margin: 0 auto; }
-        .timeline::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); width: 2px; height: 100%; background: linear-gradient(to bottom, var(--gold), var(--gold-dark), transparent); }
-        .timeline-item { display: flex; justify-content: flex-end; padding-right: 50%; position: relative; margin-bottom: 3rem; }
-        .timeline-item:nth-child(even) { justify-content: flex-start; padding-right: 0; padding-left: 50%; }
-        .timeline-content { max-width: 420px; padding: 2rem; background: rgba(17, 17, 20, 0.95); border: 1px solid var(--border-gold); margin-right: 3rem; position: relative; }
-        .timeline-item:nth-child(even) .timeline-content { margin-right: 0; margin-left: 3rem; }
-        .timeline-content::after { content: ''; position: absolute; top: 50%; width: 16px; height: 16px; background: var(--gold); border: 3px solid var(--bg-primary); border-radius: 50%; }
-        .timeline-item:nth-child(odd) .timeline-content::after { right: -3.5rem; transform: translateY(-50%); }
-        .timeline-item:nth-child(even) .timeline-content::after { left: -3.5rem; transform: translateY(-50%); }
-        .timeline-date { font-family: 'Cinzel', serif; font-size: 0.9rem; color: var(--gold); margin-bottom: 0.5rem; letter-spacing: 0.1em; }
-        .timeline-title { font-family: 'Cinzel', serif; font-size: 1.2rem; color: var(--cream); margin-bottom: 0.75rem; }
-        .timeline-text { color: var(--cream-muted); font-size: 0.95rem; line-height: 1.8; }
-        .exam-section { background: linear-gradient(135deg, var(--bg-burgundy) 0%, var(--bg-primary) 100%); position: relative; overflow: hidden; }
-        .exam-section::before { content: ''; position: absolute; top: -30%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(201, 162, 39, 0.06) 0%, transparent 70%); pointer-events: none; }
-        .exam-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; max-width: 1400px; margin: 0 auto; }
-        .exam-content h3 { font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--cream); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
-        .exam-content h3 i { color: var(--gold); }
-        .exam-content p { color: var(--cream-muted); margin-bottom: 1.5rem; line-height: 1.9; }
-        .exam-stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
-        .exam-stat { background: rgba(17, 17, 20, 0.9); border: 1px solid var(--border-gold); padding: 1.5rem; text-align: center; }
-        .exam-stat-number { font-family: 'Cinzel', serif; font-size: 2rem; color: var(--gold); display: block; font-weight: 700; }
-        .exam-stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem; }
-        .subjects-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
-        .subjects-table th, .subjects-table td { padding: 1rem; text-align: left; border-bottom: 1px solid rgba(201, 162, 39, 0.15); }
-        .subjects-table th { font-family: 'Cinzel', serif; color: var(--gold); font-weight: 600; background: rgba(201, 162, 39, 0.05); }
-        .subjects-table td { color: var(--cream-muted); }
-        .subjects-table tr:hover td { color: var(--cream); background: rgba(201, 162, 39, 0.03); }
-        .weight-high { color: var(--gold); font-weight: 600; }
-        .exam-dates { background: rgba(17, 17, 20, 0.95); border: 1px solid var(--border-gold); padding: 2.5rem; }
-        .exam-dates h4 { font-family: 'Cinzel', serif; font-size: 1.3rem; color: var(--gold); margin-bottom: 2rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
-        .date-item { display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem; border-bottom: 1px solid rgba(201, 162, 39, 0.1); transition: all 0.3s ease; }
-        .date-item:hover { background: rgba(201, 162, 39, 0.05); }
-        .date-item:last-child { border-bottom: none; }
-        .date-icon { width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-gold); flex-shrink: 0; }
-        .date-icon i { color: var(--gold); font-size: 1.1rem; }
-        .date-content h5 { font-family: 'Cinzel', serif; color: var(--cream); margin-bottom: 0.25rem; font-size: 0.95rem; }
-        .date-content p { color: var(--gold); font-size: 0.9rem; margin: 0; }
-        .pass-rates-section { background: var(--bg-primary); position: relative; }
-        .pass-rates-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1000px; margin: 0 auto; }
-        .pass-rate-card { background: rgba(17, 17, 20, 0.9); border: 1px solid var(--border-gold); padding: 2.5rem; text-align: center; position: relative; overflow: hidden; }
-        .pass-rate-card.danger { border-color: rgba(244, 67, 54, 0.4); }
-        .pass-rate-card.danger .pass-rate-percentage { color: var(--danger); }
-        .pass-rate-year { font-family: 'Cinzel', serif; font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1rem; }
-        .pass-rate-percentage { font-family: 'Cinzel', serif; font-size: 4rem; font-weight: 700; color: var(--gold); line-height: 1; }
-        .pass-rate-label { color: var(--cream-muted); font-size: 0.9rem; margin-top: 1rem; }
-        .pass-rate-detail { color: var(--text-muted); font-size: 0.8rem; margin-top: 0.5rem; }
-        .features-section { background: var(--bg-secondary); }
-        .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1400px; margin: 0 auto; }
-        .feature-card { background: rgba(17, 17, 20, 0.7); border: 1px solid var(--border-gold); padding: 2.5rem 2rem; text-align: center; transition: all 0.4s ease; position: relative; overflow: hidden; }
-        .feature-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent); transform: translateX(-100%); transition: transform 0.6s ease; }
-        .feature-card:hover::before { transform: translateX(100%); }
-        .feature-card:hover { border-color: var(--border-gold-hover); transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
-        .feature-icon { width: 70px; height: 70px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-gold); position: relative; }
-        .feature-icon::before { content: ''; position: absolute; inset: 4px; border: 1px solid var(--border-gold); }
-        .feature-icon i { font-size: 1.6rem; color: var(--gold); }
-        .feature-title { font-family: 'Cinzel', serif; font-size: 1.15rem; color: var(--cream); margin-bottom: 1rem; }
-        .feature-text { color: var(--cream-muted); font-size: 0.9rem; line-height: 1.8; }
-        .process-section { background: var(--bg-primary); }
-        .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 3rem; }
-        .process-step { text-align: center; position: relative; }
-        .process-step:not(:last-child)::after { content: ''; position: absolute; top: 35px; right: -1rem; width: 2rem; height: 1px; background: var(--border-gold); }
-        .process-number { width: 70px; height: 70px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; border: 2px solid var(--gold); font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--gold); font-weight: 700; background: rgba(201, 162, 39, 0.05); }
-        .process-title { font-family: 'Cinzel', serif; color: var(--cream); margin-bottom: 0.5rem; font-size: 1.1rem; }
-        .process-text { color: var(--cream-muted); font-size: 0.9rem; line-height: 1.7; }
-        .testimonials-section { background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); }
-        .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .testimonial-card { background: rgba(17, 17, 20, 0.9); border: 1px solid var(--border-gold); padding: 2rem; position: relative; transition: all 0.4s ease; }
-        .testimonial-card::before { content: '"'; position: absolute; top: 0.5rem; right: 1rem; font-family: 'Playfair Display', serif; font-size: 4rem; color: var(--gold); opacity: 0.2; line-height: 1; }
-        .testimonial-card:hover { border-color: var(--gold); transform: translateY(-5px); }
-        .testimonial-text { color: var(--cream-muted); font-style: italic; line-height: 1.8; margin-bottom: 1.5rem; font-size: 0.95rem; }
-        .testimonial-author { display: flex; align-items: center; gap: 1rem; }
-        .testimonial-avatar { width: 45px; height: 45px; border-radius: 50%; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); display: flex; align-items: center; justify-content: center; font-family: 'Cinzel', serif; font-weight: 700; color: var(--bg-primary); font-size: 0.9rem; }
-        .testimonial-info h4 { font-family: 'Cinzel', serif; color: var(--cream); font-size: 0.95rem; }
-        .testimonial-info p { color: var(--gold); font-size: 0.8rem; }
-        .social-section { background: var(--bg-burgundy); text-align: center; position: relative; overflow: hidden; }
-        .social-section::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 800px; background: radial-gradient(circle, rgba(201, 162, 39, 0.08) 0%, transparent 60%); pointer-events: none; }
-        .social-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(201, 162, 39, 0.15); border: 1px solid var(--gold); padding: 0.6rem 1.2rem; font-size: 0.75rem; color: var(--gold); margin-bottom: 2rem; letter-spacing: 0.1em; }
-        .social-badge i { animation: bell-ring 2s infinite; }
-        @keyframes bell-ring { 0%, 100% { transform: rotate(0); } 10% { transform: rotate(15deg); } 20% { transform: rotate(-15deg); } 30% { transform: rotate(10deg); } 40% { transform: rotate(-10deg); } 50% { transform: rotate(0); } }
-        .social-grid { display: flex; justify-content: center; gap: 2rem; margin-top: 3rem; flex-wrap: wrap; position: relative; z-index: 1; }
-        .social-card { width: 260px; background: rgba(17, 17, 20, 0.95); border: 1px solid var(--border-gold); padding: 2.5rem 2rem; text-decoration: none; color: inherit; transition: all 0.4s ease; position: relative; }
-        .social-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--gold); transform: scaleX(0); transition: transform 0.4s ease; }
-        .social-card:hover::before { transform: scaleX(1); }
-        .social-card:hover { transform: translateY(-10px); border-color: var(--gold); box-shadow: 0 20px 50px rgba(201, 162, 39, 0.15); }
-        .social-icon-main { width: 60px; height: 60px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; border: 2px solid var(--border-gold); border-radius: 50%; transition: all 0.4s ease; }
-        .social-card:hover .social-icon-main { background: var(--gold); border-color: var(--gold); }
-        .social-icon-main i { font-size: 1.5rem; color: var(--gold); transition: color 0.4s ease; }
-        .social-card:hover .social-icon-main i { color: var(--bg-primary); }
-        .social-name { font-family: 'Cinzel', serif; font-size: 1.2rem; color: var(--cream); margin-bottom: 0.5rem; }
-        .social-handle { color: var(--gold); font-size: 0.85rem; letter-spacing: 0.05em; }
-        .social-desc { color: var(--cream-muted); font-size: 0.85rem; margin-top: 1rem; line-height: 1.6; }
-        .cta-section { background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-burgundy) 50%, var(--bg-primary) 100%); text-align: center; position: relative; overflow: hidden; }
-        .cta-section::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 700px; height: 700px; background: radial-gradient(circle, rgba(201, 162, 39, 0.06) 0%, transparent 60%); pointer-events: none; }
-        .cta-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
-        .cta-title { font-family: 'Cinzel', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); margin-bottom: 1.5rem; }
-        .cta-title span { color: var(--gold); }
-        .cta-text { color: var(--cream-muted); font-size: 1.05rem; margin-bottom: 2.5rem; line-height: 1.9; }
-        .contact-section { background: var(--bg-secondary); }
-        .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
-        .contact-card { background: rgba(17, 17, 20, 0.9); border: 1px solid var(--border-gold); padding: 2.5rem 2rem; text-align: center; transition: all 0.4s ease; text-decoration: none; color: inherit; }
-        .contact-card:hover { border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 15px 40px rgba(201, 162, 39, 0.1); }
-        .contact-icon { width: 55px; height: 55px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-gold); transition: all 0.3s ease; }
-        .contact-card:hover .contact-icon { background: var(--gold); border-color: var(--gold); }
-        .contact-icon i { font-size: 1.3rem; color: var(--gold); transition: color 0.3s ease; }
-        .contact-card:hover .contact-icon i { color: var(--bg-primary); }
-        .contact-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
-        .contact-value { font-family: 'Cinzel', serif; font-size: 1rem; color: var(--cream); }
-        .footer { background: var(--bg-primary); border-top: 1px solid var(--border-gold); padding: 4rem 4vw 2rem; }
-        .footer-content { max-width: 1200px; margin: 0 auto; text-align: center; }
-        .footer-logo { font-family: 'Cinzel', serif; font-size: 1.8rem; color: var(--cream); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
-        .footer-logo i { color: var(--gold); }
-        .footer-logo span { color: var(--gold); }
-        .footer-text { color: var(--text-muted); font-size: 0.95rem; max-width: 600px; margin: 0 auto 2rem; line-height: 1.8; }
-        .footer-social { display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; }
-        .footer-social a { width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-gold); color: var(--cream-muted); text-decoration: none; transition: all 0.3s ease; }
-        .footer-social a:hover { background: var(--gold); border-color: var(--gold); color: var(--bg-primary); }
-        .footer-bottom { padding-top: 2rem; border-top: 1px solid rgba(201, 162, 39, 0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-        .footer-copyright { color: var(--text-muted); font-size: 0.85rem; }
-        .footer-links { display: flex; gap: 2rem; }
-        .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; transition: color 0.3s ease; }
-        .footer-links a:hover { color: var(--gold); }
-        .back-to-top { position: fixed; bottom: 2rem; right: 2rem; width: 50px; height: 50px; background: var(--gold); border: none; color: var(--bg-primary); font-size: 1.2rem; cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.3s ease; z-index: 999; display: flex; align-items: center; justify-content: center; }
-        .back-to-top.visible { opacity: 1; visibility: visible; }
-        .back-to-top:hover { background: var(--gold-light); transform: translateY(-3px); }
-        .animate-on-scroll { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
-        .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
-        @media (max-width: 1024px) {
-            .info-grid, .exam-grid { grid-template-columns: 1fr; gap: 3rem; }
-            .features-grid { grid-template-columns: repeat(2, 1fr); }
-            .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
-            .pass-rates-grid { grid-template-columns: 1fr; }
-            .timeline::before { left: 30px; }
-            .timeline-item, .timeline-item:nth-child(even) { justify-content: flex-start; padding-right: 0; padding-left: 80px; }
-            .timeline-content, .timeline-item:nth-child(even) .timeline-content { margin-right: 0; margin-left: 0; max-width: 100%; }
-            .timeline-item:nth-child(odd) .timeline-content::after, .timeline-item:nth-child(even) .timeline-content::after { left: -53px; right: auto; }
-            .process-grid { grid-template-columns: repeat(2, 1fr); }
-            .process-step:not(:last-child)::after { display: none; }
-        }
-        @media (max-width: 768px) {
-            .navbar { padding: 1rem 4vw; }
-            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(10,10,12,0.98); flex-direction: column; padding: 2rem; gap: 1.5rem; border-top: 1px solid var(--border-gold); }
-            .nav-links.active { display: flex; }
-            .mobile-menu-btn { display: block; }
-            .hero-stats { gap: 1rem; }
-            .stat-item { min-width: 120px; padding: 1rem; }
-            .stat-number { font-size: 2rem; }
-            .features-grid, .testimonials-grid, .contact-grid { grid-template-columns: 1fr; }
-            .process-grid { grid-template-columns: 1fr; }
-            .hero-warning { flex-direction: column; text-align: center; }
-            .section { padding: 5rem 4vw; }
-            .footer-bottom { flex-direction: column; text-align: center; }
-            .subjects-table { font-size: 0.8rem; }
-            .subjects-table th, .subjects-table td { padding: 0.75rem 0.5rem; }
-        }
-        @media (max-width: 480px) {
-            .hero-title { font-size: 1.8rem; }
-            .pass-rate-percentage { font-size: 3rem; }
-            .social-grid { flex-direction: column; align-items: center; }
-            .social-card { width: 100%; max-width: 300px; }
-            .btn { padding: 0.9rem 1.8rem; font-size: 0.8rem; }
-        }
-        @media print {
-            .navbar, .scroll-indicator, .back-to-top, .footer-social, .loading-overlay, .scroll-progress { display: none !important; }
-            .hero { min-height: auto; padding: 2rem 0; }
-            .section { padding: 2rem 0; page-break-inside: avoid; }
-            body { background: white; color: black; }
-            .hero-title, .section-title, .feature-title { color: black; }
-        }
-    </style>
-<base target="_blank">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beyzade Baklava & Konditorei — Offenbach am Main</title>
+<meta name="description" content="Beyzade Baklava & Konditorei in Offenbach am Main: traditionelle türkische Baklava, Börek, Torten und Feiertagsboxen. Handwerk, frische Zutaten, besondere Momente.">
+<link rel="canonical" href="https://beyzadebaklava.de/">
+<link rel="alternate" hreflang="de" href="https://beyzadebaklava.de/">
+<link rel="alternate" hreflang="tr" href="https://beyzadebaklava.de/tr/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Beyzade Baklava & Konditorei">
+<meta property="og:title" content="Beyzade Baklava & Konditorei — Offenbach am Main">
+<meta property="og:description" content="Traditionelle türkische Baklava, Börek, Torten und Feiertagsboxen — handgemacht in Offenbach am Main.">
+<meta property="og:image" content="https://beyzadebaklava.de/assets/img/products/antep-serisi.webp">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0e2f22">
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "@id": "https://beyzadebaklava.de/#business",
+  "name": "Beyzade Baklava & Konditorei",
+  "image": "https://beyzadebaklava.de/assets/img/products/antep-serisi.webp",
+  "url": "https://beyzadebaklava.de/",
+  "telephone": "PLATZHALTER",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Herrnstr. 10",
+    "postalCode": "63065",
+    "addressLocality": "Offenbach am Main",
+    "addressCountry": "DE"
+  },
+  "sameAs": [
+    "https://www.instagram.com/beyzade.baklava/",
+    "https://www.tiktok.com/@beyzadebaklava"
+  ]
+}
+</script>
 </head>
 <body>
-    <div class="loading-overlay" id="loadingOverlay">
-        <div class="loading-spinner"></div>
-        <div class="loading-text">HMGS ACADEMY</div>
-    </div>
-    <div class="scroll-progress" id="scrollProgress"></div>
-    <div class="grain-overlay"></div>
 
-    <nav class="navbar" id="navbar">
-        <a href="#" class="logo">
-            <div class="logo-icon"><i class="fas fa-scale-balanced"></i></div>
-            HMGS <span>ACADEMY</span>
-        </a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#hmgs-nedir">HMGS Nedir?</a></li>
-            <li><a href="#tarihce">Tarihçe</a></li>
-            <li><a href="#sinav-yapisi">Sınav Yapısı</a></li>
-            <li><a href="#hazirlik">Hazırlık</a></li>
-            <li><a href="#sosyal">Sosyal Medya</a></li>
-            <li><a href="#iletisim">İletişim</a></li>
-        </ul>
-        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="/">
+      <img src="assets/img/emblem-sm.webp" width="52" height="52" alt="">
+      <span>
+        <span class="brand-word">beyzade</span>
+        <span class="brand-sub">BAKLAVA &amp; KONDITOREI</span>
+      </span>
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="#geschichte">Geschichte</a>
+      <a href="#produkte">Produkte</a>
+      <a href="#aschaffenburg">Aschaffenburg</a>
+      <a href="#bestellen">Bestellen</a>
+      <a href="#faq">Fragen</a>
     </nav>
+    <div class="topbar-actions">
+      <span class="lang-switch"><a class="active" href="/">DE</a><span>/</span><a href="/tr/">TR</a></span>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü">☰</button>
+    </div>
+  </div>
+</header>
 
-    <section class="hero">
-        <div class="hero-bg-pattern"></div>
-        <div class="hero-content">
-            <div class="hero-badge"><i class="fas fa-gavel"></i> 7188 Sayılı Kanun ile Getirildi</div>
-            <h1 class="hero-title">
-                Hukuk Mesleğine Giriş Sınavı (HMGS)
-                <span class="highlight">Hukuk Fakültesi Mezunları İçin Zorunlu Sınav</span>
-            </h1>
-            <p class="hero-subtitle">
-                24 Ekim 2019'dan sonra hukuk fakültesine kaydolan ve 31 Mart 2024'ten sonra mezun olan
-                herkes için zorunlu. Hakim/savcı adaylığı, avukatlık ve noterlik stajı için
-                geçmeniz gereken tek sınav.
-            </p>
-            <div class="hero-warning">
-                <i class="fas fa-exclamation-triangle"></i>
-                <div class="hero-warning-text">
-                    <strong>Kritik Bilgi:</strong> Hukuk fakültesini bitirmek artık yeterli değil.
-                    Bu sınavı geçmeden mesleğe başlayamazsınız!
-                </div>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item"><span class="stat-number">120</span><span class="stat-label">Soru Sayısı</span></div>
-                <div class="stat-item"><span class="stat-number">84</span><span class="stat-label">Geçme Barajı</span></div>
-                <div class="stat-item"><span class="stat-number">%11</span><span class="stat-label">2025 Geçme Oranı</span></div>
-            </div>
-            <div class="hero-cta">
-                <a href="#hmgs-nedir" class="btn btn-primary"><i class="fas fa-book-open"></i> Detaylı Bilgi Al</a>
-                <a href="#sosyal" class="btn btn-secondary"><i class="fas fa-users"></i> Bizi Takip Et</a>
-            </div>
-        </div>
-        <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
-    </section>
-    <section class="section info-section" id="hmgs-nedir">
-        <div class="section-header animate-on-scroll">
-            <span class="section-label">Bilgilendirme</span>
-            <h2 class="section-title">HMGS Nedir?</h2>
-            <p class="section-subtitle">
-                7188 sayılı kanunla 24 Ekim 2019'da yürürlüğe giren Hukuk Mesleğine Giriş Sınavı
-                hakkında bilmeniz gerekenler.
-            </p>
-        </div>
-        <div class="info-grid">
-            <div class="info-content animate-on-scroll">
-                <h3><i class="fas fa-landmark"></i> Sınavın Amacı ve Önemi</h3>
-                <p>
-                    <strong>Hukuk Mesleğine Giriş Sınavı (HMGS)</strong>, 7188 sayılı kanunla 24 Ekim 2019'da
-                    yürürlüğe giren ve hukuk fakültesi mezunları için zorunlu hale getirilen bir ön eleme sınavıdır.
-                    Bu sınavı geçmeden ne hakim/savcı adaylığı sınavına girebilir, ne de avukatlık veya noterlik
-                    stajına başlayabilirsiniz.
-                </p>
-                <div class="info-highlight">
-                    <p>
-                        "Hukuk fakültesini bitirsen bile bu sınavı geçmeden mesleğe başlayamazsın.
-                        Bu sınavı geçmek artık diplomandan önce geliyor."
-                    </p>
-                </div>
-                <h3><i class="fas fa-user-check"></i> Kimler Girmek Zorunda?</h3>
-                <p>
-                    <strong>24 Ekim 2019'dan sonra</strong> hukuk fakültesine kaydolan ve
-                    <strong>31 Mart 2024'ten sonra</strong> mezun olan herkes bu sınava girmek zorundadır.
-                    Bu tarihlerden önce kayıt veya mezuniyeti olanlar muaftır.
-                </p>
-                <div class="warning-box">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <div class="warning-box-content">
-                        <h4>Dikkat Edilmesi Gereken</h4>
-                        <p>Mezuniyet tarihiniz 31 Mart 2024'ten sonraysa, mesleğe başlamadan önce
-                        mutlaka HMGS'yi geçmeniz gerekmektedir. Sınav sonucunuz 3 yıl geçerlidir.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="info-card animate-on-scroll">
-                <h4><i class="fas fa-info-circle"></i> Sınav Hakkında Temel Bilgiler</h4>
-                <ul class="info-list">
-                    <li><i class="fas fa-check"></i><div><strong>Düzenleyen Kurum:</strong> ÖSYM (Ölçme, Seçme ve Yerleştirme Merkezi)</div></li>
-                    <li><i class="fas fa-check"></i><div><strong>Sınav Sıklığı:</strong> Yılda iki kez (Nisan ve Eylül aylarında)</div></li>
-                    <li><i class="fas fa-check"></i><div><strong>Soru Sayısı:</strong> 120 çoktan seçmeli soru</div></li>
-                    <li><i class="fas fa-check"></i><div><strong>Geçme Barajı:</strong> En az 84 doğru (70 puan)</div></li>
-                    <li><i class="fas fa-check"></i><div><strong>Sınav Formatı:</strong> Çoktan seçmeli test</div></li>
-                    <li><i class="fas fa-check"></i><div><strong>Yanlışlar:</strong> 4 yanlış 1 doğruyu götürür</div></li>
-                    <li><i class="fas fa-check"></i><div><strong>Sonuç Geçerlilik:</strong> 3 yıl</div></li>
-                    <li><i class="fas fa-check"></i><div><strong>Ders Sayısı:</strong> 18 farklı hukuk dersi</div></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <p class="hero-eyebrow">OFFENBACH AM MAIN · SEIT EINER NEUEN GENERATION</p>
+      <h1>Süße Tradition, <em>neu erlebt.</em></h1>
+      <p>Handgemachte Baklava, Börek und Torten aus Anatolien — mit
+         hochwertigen Zutaten und viel Geduld zubereitet, für die
+         Menschen, die Ihnen etwas bedeuten.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="#produkte">Unsere Produkte</a>
+        <a class="btn btn-ghost" href="https://wa.me/491511106060X" target="_blank" rel="noopener">Per WhatsApp bestellen</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/img/products/antep-serisi.webp" width="900" height="600" alt="Assortment Beyzade Baklava, Antep-Serie" loading="eager">
+      <div class="tag">„Tradition in jeder Schicht.“</div>
+    </div>
+  </div>
+</section>
 
-    <section class="section timeline-section" id="tarihce">
-        <div class="section-header animate-on-scroll">
-            <span class="section-label">Tarihçe</span>
-            <h2 class="section-title">HMGS'nin Kısa Tarihçesi</h2>
-            <p class="section-subtitle">7188 sayılı kanunun yürürlüğe girmesinden bugüne HMGS'nin gelişimi.</p>
-        </div>
-        <div class="timeline">
-            <div class="timeline-item animate-on-scroll">
-                <div class="timeline-content">
-                    <div class="timeline-date">24 EKİM 2019</div>
-                    <h4 class="timeline-title">Kanun Yürürlüğe Girdi</h4>
-                    <p class="timeline-text">7188 sayılı kanunla Hukuk Mesleğine Giriş Sınavı (HMGS) getirildi. Artık hukuk fakültesi mezunları, mesleğe başlamadan önce bu sınavı geçmek zorunda oldu.</p>
-                </div>
-            </div>
-            <div class="timeline-item animate-on-scroll">
-                <div class="timeline-content">
-                    <div class="timeline-date">2024</div>
-                    <h4 class="timeline-title">İlk Sınav Yapıldı</h4>
-                    <p class="timeline-text">31 Mart 2024'ten sonra mezun olanlar için ilk HMGS yapıldı. 9.142 adayın girdiği sınavda yalnızca %42,67'si (3.901 kişi) 70 puan barajını geçebildi.</p>
-                </div>
-            </div>
-            <div class="timeline-item animate-on-scroll">
-                <div class="timeline-content">
-                    <div class="timeline-date">2025</div>
-                    <h4 class="timeline-title">İkinci Sınav ve Düşük Başarı</h4>
-                    <p class="timeline-text">2025 yılında yapılan ikinci sınavda geçme oranı sadece %11,81'e düştü. Yaklaşık 11.700 adaydan sadece 1.386 kişi başarılı olabildi.</p>
-                </div>
-            </div>
-            <div class="timeline-item animate-on-scroll">
-                <div class="timeline-content">
-                    <div class="timeline-date">GÜNÜMÜZ</div>
-                    <h4 class="timeline-title">Zorunlu ve Kritik Sınav</h4>
-                    <p class="timeline-text">HMGS, hukuk fakültesi mezunları için mesleğe adım atmanın ilk ve en önemli engeli haline geldi. Düşük geçme oranları ve kapsamlı müfredatıyla ciddi bir hazırlık gerektiriyor.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="story" id="geschichte">
+  <div class="section-inner story-grid">
+    <div class="story-figure">
+      <img src="assets/img/products/katmer.webp" width="900" height="700" alt="Katmer mit Pistazie und Kaymak" loading="lazy">
+    </div>
+    <div>
+      <p class="eyebrow">UNSERE GESCHICHTE</p>
+      <p class="story-quote">„Der Name Beyzade, der aus dem Osmanischen
+        stammt und ‚noble Abstammung‘ bedeutet, symbolisiert unsere Werte:
+        Qualität, Eleganz und Tradition.“</p>
+      <p class="body">Unsere Wurzeln liegen in der malerischen Region
+        Anatolien — dort, wo Baklava seit Generationen von Hand geschichtet
+        wird. In Offenbach am Main bringen wir dieses Handwerk mit
+        derselben Sorgfalt auf den Teller: dünne Teigschichten, echte
+        Pistazien, der richtige Sirup. Kein Kompromiss, jeden Tag.</p>
+    </div>
+  </div>
+</section>
 
-    <section class="section exam-section" id="sinav-yapisi">
-        <div class="section-header animate-on-scroll">
-            <span class="section-label">Sınav Yapısı</span>
-            <h2 class="section-title">HMGS Sınav Yapısı ve Konular</h2>
-            <p class="section-subtitle">Sınavın detaylı yapısı, konu dağılımları ve başarıya ulaşmak için bilmeniz gerekenler.</p>
+<section class="badges" id="werte">
+  <div class="section-inner">
+    <div class="section-head center">
+      <p class="eyebrow">WARUM BEYZADE</p>
+      <h2>Vier Werte, jede Schicht.</h2>
+    </div>
+    <div class="badge-grid">
+      <div class="badge-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.35-9.5-9C.7 8.4 2 5 5.5 5c2 0 3.3 1.2 4 2.2C10.2 6.2 11.5 5 13.5 5 17 5 18.3 8.4 16.5 12 14 16.65 12 21 12 21z"/></svg>
+        <h3>Ausgewählte Zutaten</h3>
+        <p>Echte Pistazien, frische Butter, keine Abstriche.</p>
+      </div>
+      <div class="badge-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+        <h3>Traditionelle Rezepte</h3>
+        <p>Handwerk, das über Generationen weitergegeben wurde.</p>
+      </div>
+      <div class="badge-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 6.8L21 9l-5.5 4.2L17 21l-5-3.6L7 21l1.5-7.8L3 9l6.6-.2z"/></svg>
+        <h3>Premium Qualität</h3>
+        <p>Jedes Stück wird vor dem Verkauf geprüft.</p>
+      </div>
+      <div class="badge-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.35-9.5-9C.7 8.4 2 5 5.5 5c2 0 3.3 1.2 4 2.2C10.2 6.2 11.5 5 13.5 5 17 5 18.3 8.4 16.5 12 14 16.65 12 21 12 21z"/></svg>
+        <h3>Für besondere Momente</h3>
+        <p>Von der Verlobung bis zum Firmengeschenk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="showcase" id="produkte">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="eyebrow">UNSER SORTIMENT</p>
+      <h2>Was bei uns entsteht.</h2>
+      <p>Eine Auswahl aus unserem Sortiment. Genaue Verfügbarkeit,
+        Größen und Preise erfahren Sie gerne direkt bei uns —
+        <a href="#bestellen" style="color:var(--forest); text-decoration:underline;">per WhatsApp, Telefon oder im Laden</a>.</p>
+    </div>
+
+    <div class="cat-tabs" id="catTabs" role="tablist">
+      <button class="cat-tab" data-cat="all" aria-selected="true">Alle</button>
+      <button class="cat-tab" data-cat="baklava">Baklava</button>
+      <button class="cat-tab" data-cat="borek">Börek &amp; Gözleme</button>
+      <button class="cat-tab" data-cat="torten">Torten &amp; Feiern</button>
+      <button class="cat-tab" data-cat="genuss">Eis, Kaffee &amp; mehr</button>
+      <button class="cat-tab" data-cat="box">Geschenkboxen</button>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+
+      <article class="product-card" data-cat="baklava">
+        <div class="thumb"><img src="assets/img/products/antep-serisi-sm.webp" width="440" height="330" alt="Antep-Serie Baklava" loading="lazy"></div>
+        <div class="body"><h3>Antep-Serie</h3><p>Klassische Baklava-Variationen nach original Antep-Rezeptur.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
+
+      <article class="product-card" data-cat="baklava">
+        <div class="thumb"><img src="assets/img/products/baklava-dondurma-sm.webp" width="440" height="330" alt="Baklava mit Eis" loading="lazy"></div>
+        <div class="body"><h3>Baklava mit Eis</h3><p>Warme Baklava, kaltes Pistazieneis — Tradition trifft Genuss.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
+
+      <article class="product-card" data-cat="baklava">
+        <div class="thumb"><img src="assets/img/products/katmer-sm.webp" width="440" height="330" alt="Katmer mit Pistazie" loading="lazy"></div>
+        <div class="body"><h3>Katmer</h3><p>Hauchdünner Blätterteig, Pistazie, ein Löffel Kaymak.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
+
+      <article class="product-card" data-cat="baklava">
+        <div class="thumb"><img src="assets/img/products/dubai-cikolata-sm.webp" width="440" height="330" alt="Dubai Schokolade" loading="lazy"></div>
+        <div class="body"><h3>Dubai Schokolade</h3><p>Knuspriger Kadayıf, cremige Pistazie, feinste Schokolade.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
+
+      <article class="product-card" data-cat="borek">
+        <div class="thumb"><img src="assets/img/products/borek-cesitleri-sm.webp" width="440" height="330" alt="Börek Vielfalt" loading="lazy"></div>
+        <div class="body"><h3>Börek-Vielfalt</h3><p>Spinat, Hackfleisch, Käse, Kartoffel — täglich frisch gebacken.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
+
+      <article class="product-card" data-cat="borek">
+        <div class="thumb"><img src="assets/img/products/gozleme-sm.webp" width="440" height="330" alt="Gözleme" loading="lazy"></div>
+        <div class="body"><h3>Gözleme</h3><p>Von Hand ausgerollt, auf der Platte gebacken.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
+
+      <article class="product-card" data-cat="borek">
+        <div class="thumb"><img src="assets/img/products/cigkofte-sm.webp" width="440" height="330" alt="Çiğköfte" loading="lazy"></div>
+        <div class="body"><h3>Çiğköfte</h3><p>100% pflanzlich, mit Granatapfelsoße und frischem Salat.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
+
+      <article class="product-card" data-cat="torten">
+        <div class="thumb"><img src="assets/img/products/dugun-pastasi-sm.webp" width="440" height="330" alt="Hochzeitstorte" loading="lazy"></div>
+        <div class="body"><h3>Hochzeitstorten</h3><p>Individuell gestaltet, mit Namen und Datum Ihrer Wahl.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
+
+      <article class="product-card" data-cat="torten">
+        <div class="thumb"><img src="assets/img/products/kiz-isteme-tepsi-sm.webp" width="440" height="330" alt="Verlobungstablett" loading="lazy"></div>
+        <div class="body"><h3>Verlobungstablett</h3><p>Eine süße Tradition für den Antrag — elegant arrangiert.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
+
+      <article class="product-card" data-cat="torten">
+        <div class="thumb"><img src="assets/img/products/kiz-isteme-cikolata-sm.webp" width="440" height="330" alt="Verlobungspralinen" loading="lazy"></div>
+        <div class="body"><h3>Verlobungspralinen</h3><p>Feinste Pralinen, liebevoll für besondere Anlässe komponiert.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
+
+      <article class="product-card" data-cat="torten">
+        <div class="body" style="padding:26px 22px;">
+          <h3>Themen-Torten nach Wunsch</h3>
+          <p>Lieblingsverein, Lieblingsserie, Lieblingsfarbe — erzählen
+             Sie uns Ihr Thema, wir setzen es in Fondant und Schokolade um.
+             Aus urheberrechtlichen Gründen zeigen wir hier keine
+             Beispiele mit fremden Marken oder Figuren.</p>
+          <span class="price">Preis auf Anfrage</span>
         </div>
-        <div class="exam-grid">
-            <div class="exam-content animate-on-scroll">
-                <h3><i class="fas fa-list-ol"></i> Dersler ve Soru Dağılımı</h3>
-                <p>HMGS, toplam 18 farklı hukuk dersinden oluşan kapsamlı bir sınavdır. Her dersin sınavdaki ağırlığı farklıdır.</p>
-                <table class="subjects-table">
-                    <thead><tr><th>Ders Adı</th><th>Ağırlık</th><th>Yaklaşık Soru</th></tr></thead>
-                    <tbody>
-                        <tr><td>Medeni Hukuk</td><td class="weight-high">%7,5</td><td class="weight-high">~9</td></tr>
-                        <tr><td>Borçlar Hukuku</td><td class="weight-high">%7,5</td><td class="weight-high">~9</td></tr>
-                        <tr><td>Ticaret Hukuku</td><td class="weight-high">%7,5</td><td class="weight-high">~9</td></tr>
-                        <tr><td>Hukuk Yargılama Usulü</td><td class="weight-high">%7,5</td><td class="weight-high">~9</td></tr>
-                        <tr><td>Ceza Hukuku</td><td class="weight-high">%7,5</td><td class="weight-high">~9</td></tr>
-                        <tr><td>Anayasa Hukuku</td><td>%5</td><td>~6</td></tr>
-                        <tr><td>İdare Hukuku</td><td>%5</td><td>~6</td></tr>
-                        <tr><td>Ceza Yargılama Usulü</td><td>%5</td><td>~6</td></tr>
-                        <tr><td>İcra-İflas Hukuku</td><td>%5</td><td>~6</td></tr>
-                        <tr><td>İş Hukuku</td><td>%5</td><td>~6</td></tr>
-                        <tr><td colspan="3" style="text-align:center;color:var(--text-muted);">+ 8 ders daha (%2,5 ağırlıkla ~3'er soru)</td></tr>
-                    </tbody>
-                </table>
-                <div class="exam-stats-grid">
-                    <div class="exam-stat"><span class="exam-stat-number">120</span><span class="exam-stat-label">Toplam Soru</span></div>
-                    <div class="exam-stat"><span class="exam-stat-number">84</span><span class="exam-stat-label">Geçme (70%)</span></div>
-                    <div class="exam-stat"><span class="exam-stat-number">4→1</span><span class="exam-stat-label">Yanlış/Doğru</span></div>
-                    <div class="exam-stat"><span class="exam-stat-number">18</span><span class="exam-stat-label">Ders Sayısı</span></div>
-                </div>
-            </div>
-            <div class="exam-dates animate-on-scroll">
-                <h4><i class="fas fa-calendar-alt"></i> 2026 Sınav Takvimi</h4>
-                <div class="date-item"><div class="date-icon"><i class="fas fa-file-signature"></i></div><div class="date-content"><h5>Nisan Sınavı Başvurusu</h5><p>Şubat-Mart 2026</p></div></div>
-                <div class="date-item"><div class="date-icon"><i class="fas fa-pencil-alt"></i></div><div class="date-content"><h5>Nisan Sınavı</h5><p>Nisan 2026</p></div></div>
-                <div class="date-item"><div class="date-icon"><i class="fas fa-file-signature"></i></div><div class="date-content"><h5>Eylül Sınavı Başvurusu</h5><p>Temmuz-Ağustos 2026</p></div></div>
-                <div class="date-item"><div class="date-icon"><i class="fas fa-pencil-alt"></i></div><div class="date-content"><h5>Eylül Sınavı</h5><p>Eylül 2026</p></div></div>
-            </div>
+      </article>
+
+      <article class="product-card" data-cat="genuss">
+        <div class="thumb"><img src="assets/img/products/dondurma-sm.webp" width="440" height="330" alt="Eiscreme" loading="lazy"></div>
+        <div class="body"><h3>Eiscreme</h3><p>Pistazie, Vanille, Schokolade, Erdbeere und mehr — täglich frisch.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
+
+      <article class="product-card" data-cat="genuss">
+        <div class="thumb"><img src="assets/img/products/kahve-sm.webp" width="440" height="330" alt="Kaffee-Vielfalt" loading="lazy"></div>
+        <div class="body"><h3>Kaffee-Vielfalt</h3><p>Türkischer Kaffee, Espresso, Latte-Kreationen — für jeden Moment.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
+
+      <article class="product-card" data-cat="genuss">
+        <div class="body" style="padding:26px 22px;">
+          <h3>Glutenfreie Produkte</h3>
+          <p>Ausgewählte Baklava-, Kuchen- und Tortenvarianten ohne
+             Gluten — Genuss ohne Kompromisse.</p>
+          <span class="price">Preis auf Anfrage</span>
         </div>
-    </section>
+      </article>
 
-    <section class="section pass-rates-section">
-        <div class="section-header animate-on-scroll">
-            <span class="section-label">Gerçekler</span>
-            <h2 class="section-title">Geçme Oranları: Ne Kadar Zor?</h2>
-            <p class="section-subtitle">HMGS'nin ne kadar zor olduğunu resmi sayılar gösteriyor. İşte son sınavların geçme oranları:</p>
-        </div>
-        <div class="pass-rates-grid">
-            <div class="pass-rate-card animate-on-scroll"><div class="pass-rate-year">2024 İlk Sınav</div><div class="pass-rate-percentage">%42,67</div><div class="pass-rate-label">Geçme Oranı</div><div class="pass-rate-detail">9.142 adaydan 3.901 kişi başarılı oldu</div></div>
-            <div class="pass-rate-card danger animate-on-scroll"><div class="pass-rate-year">2025 İkinci Sınav</div><div class="pass-rate-percentage">%11,81</div><div class="pass-rate-label">Geçme Oranı</div><div class="pass-rate-detail">~11.700 adaydan sadece 1.386 kişi başarılı oldu</div></div>
-            <div class="pass-rate-card animate-on-scroll"><div class="pass-rate-year">Ortalama</div><div class="pass-rate-percentage">~%27</div><div class="pass-rate-label">Genel Ortalama</div><div class="pass-rate-detail">Her 4 kişiden sadece 1'i geçiyor</div></div>
-        </div>
-        <div class="warning-box animate-on-scroll" style="max-width: 800px; margin: 3rem auto 0;">
-            <i class="fas fa-brain"></i>
-            <div class="warning-box-content">
-                <h4>Sınav Nasıl Bir Sınav?</h4>
-                <p>HMGS salt bilgi soran bir sınav değil — <strong>hukuki olayları yorumlama yeteneğini</strong> ölçüyor. Kanun maddelerini ezberlemek yerine her hukuk dalının temel prensiplerini, kurumlarını ve mantığını kavramak esas.</p>
-            </div>
-        </div>
-    </section>
+      <article class="product-card" data-cat="box">
+        <div class="thumb"><img src="assets/img/products/box-set-sm.webp" width="440" height="330" alt="Baklava Box und Snack Box" loading="lazy"></div>
+        <div class="body"><h3>Baklava Box &amp; Snack Box</h3><p>Die perfekte Mitbringsel-Box — Tradition in jeder Box.</p><span class="price">Preis auf Anfrage</span></div>
+      </article>
 
-    <section class="section features-section" id="hazirlik">
-        <div class="section-header animate-on-scroll">
-            <span class="section-label">Hazırlık</span>
-            <h2 class="section-title">Nasıl Hazırlanmalısınız?</h2>
-            <p class="section-subtitle">Düşük geçme oranlarına rağmen başarıya ulaşmak için izlemeniz gereken stratejiler.</p>
-        </div>
-        <div class="features-grid">
-            <div class="feature-card animate-on-scroll"><div class="feature-icon"><i class="fas fa-book-reader"></i></div><h3 class="feature-title">Kavrama, Ezber Değil</h3><p class="feature-text">Kanun maddelerini ezberlemek yerine hukuk dallarının temel prensiplerini, kurumlarını ve mantığını kavrayın.</p></div>
-            <div class="feature-card animate-on-scroll"><div class="feature-icon"><i class="fas fa-link"></i></div><h3 class="feature-title">İlişkileri Görün</h3><p class="feature-text">Hukuk dalları birbiriyle ilişkilidir. Borçlar Hukuku sorusu Ticaret Hukuku veya İcra-İflas bilgisiyle entegre olabilir.</p></div>
-            <div class="feature-card animate-on-scroll"><div class="feature-icon"><i class="fas fa-balance-scale"></i></div><h3 class="feature-title">Yorumlama Yeteneği</h3><p class="feature-text">HMGS salt bilgi sormuyor. Hukuki olayları analiz etme ve yorumlama yeteneğinizi geliştirin.</p></div>
-            <div class="feature-card animate-on-scroll"><div class="feature-icon"><i class="fas fa-question-circle"></i></div><h3 class="feature-title">Çok Soru Çözün</h3><p class="feature-text">Farklı kaynaklardan bol bol soru çözün. Özellikle çıkmış soruları tekrar tekrar inceleyin.</p></div>
-            <div class="feature-card animate-on-scroll"><div class="feature-icon"><i class="fas fa-clock"></i></div><h3 class="feature-title">Zaman Yönetimi</h3><p class="feature-text">120 soruyu zamanında bitirmek için pratik yapın. Zor soruları atlayıp sona bırakma stratejisi geliştirin.</p></div>
-            <div class="feature-card animate-on-scroll"><div class="feature-icon"><i class="fas fa-redo"></i></div><h3 class="feature-title">Düzenli Tekrar</h3><p class="feature-text">18 dersi unutmamak için düzenli tekrar programı yapın. Spaced repetition tekniğini kullanın.</p></div>
-        </div>
-        <div class="process-grid">
-            <div class="process-step animate-on-scroll"><div class="process-number">1</div><h4 class="process-title">Analiz</h4><p class="process-text">Mevcut bilgi düzeyinizi ve zayıf yönlerinizi tespit edin</p></div>
-            <div class="process-step animate-on-scroll"><div class="process-number">2</div><h4 class="process-title">Planlama</h4><p class="process-text">18 ders için ağırlıklara göre çalışma planı oluşturun</p></div>
-            <div class="process-step animate-on-scroll"><div class="process-number">3</div><h4 class="process-title">Uygulama</h4><p class="process-text">Düzenli çalışma ve bol soru pratiği yapın</p></div>
-            <div class="process-step animate-on-scroll"><div class="process-number">4</div><h4 class="process-title">Tekrar</h4><p class="process-text">Öğrendiklerinizi düzenli aralıklarla tekrarlayın</p></div>
-        </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="section testimonials-section">
-        <div class="section-header animate-on-scroll">
-            <span class="section-label">Başarı Hikayeleri</span>
-            <h2 class="section-title">Başarılı Adayların Sözleri</h2>
-            <p class="section-subtitle">HMGS'yi başarıyla geçen adayların deneyimleri ve tavsiyeleri.</p>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card animate-on-scroll"><p class="testimonial-text">"Ezber yapmak yerine kavramaya odaklandım. Her dersin mantığını anlamaya çalıştım. Özellikle ağır derslere daha fazla zaman ayırdım."</p><div class="testimonial-author"><div class="testimonial-avatar">AK</div><div class="testimonial-info"><h4>Ahmet K.</h4><p>HMGS 2024 Başarılı</p></div></div></div>
-            <div class="testimonial-card animate-on-scroll"><p class="testimonial-text">"Soru çözmekten asla vazgeçmedim. Son 3 ayda her gün en az 100 soru çözdüm. Bu pratik zaman yönetimimi de geliştirdi."</p><div class="testimonial-author"><div class="testimonial-avatar">SY</div><div class="testimonial-info"><h4>Selin Y.</h4><p>HMGS 2024 Başarılı</p></div></div></div>
-            <div class="testimonial-card animate-on-scroll"><p class="testimonial-text">"Hukuk dalları arasındaki ilişkileri görmeye çalıştım. Bir dersi tek başına değil, diğerleriyle bağlantılı olarak öğrendim."</p><div class="testimonial-author"><div class="testimonial-avatar">MC</div><div class="testimonial-info"><h4>Mehmet C.</h4><p>HMGS 2025 Başarılı</p></div></div></div>
-        </div>
-    </section>
+<section class="expansion" id="aschaffenburg">
+  <div class="section-inner expansion-inner">
+    <div>
+      <span class="expansion-badge">✦ NEUE ERÖFFNUNG</span>
+      <h2>Was in Offenbach begann, kommt jetzt nach Aschaffenburg.</h2>
+      <p>Eine neue Geschichte beginnt. Dieselbe Qualität, derselbe
+        Anspruch — jetzt auch in Aschaffenburg.</p>
+      <ul class="expansion-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Dasselbe handgemachte Sortiment</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Eröffnungstermin folgt in Kürze</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Folgen Sie uns für die Eröffnung</li>
+      </ul>
+      <div class="hero-ctas" style="margin-top:28px;">
+        <a class="btn btn-gold" href="https://www.instagram.com/beyzade.baklava/" target="_blank" rel="noopener">Auf Instagram folgen</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/img/products/dubai-cikolata.webp" width="900" height="700" alt="Beyzade Produkte" loading="lazy">
+    </div>
+  </div>
+</section>
 
-    <section class="section social-section" id="sosyal">
-        <div class="section-header animate-on-scroll">
-            <span class="section-label">Sosyal Medya</span>
-            <h2 class="section-title">Bizi Sosyal Medyada Takip Edin</h2>
-            <p class="section-subtitle">Günlük hukuki ipuçları, sınav stratejileri ve güncel duyurular için bizi takip edin.</p>
-        </div>
-        <div class="social-badge animate-on-scroll"><i class="fas fa-bell"></i> Her gün yeni içeriklerle karşınızdayız!</div>
-        <div class="social-grid">
-            <a href="https://youtube.com/@hmgs.academy" target="_blank" class="social-card animate-on-scroll"><div class="social-icon-main"><i class="fab fa-youtube"></i></div><h3 class="social-name">YouTube</h3><p class="social-handle">@hmgs.academy</p><p class="social-desc">Detaylı ders anlatımları, soru çözümleri ve uzman konuşmaları</p></a>
-            <a href="https://instagram.com/hmgs.academy" target="_blank" class="social-card animate-on-scroll"><div class="social-icon-main"><i class="fab fa-instagram"></i></div><h3 class="social-name">Instagram</h3><p class="social-handle">@hmgs.academy</p><p class="social-desc">Günlük hukuki bilgiler, motivasyon paylaşımları ve hikayeler</p></a>
-            <a href="https://tiktok.com/@hmgs.academy" target="_blank" class="social-card animate-on-scroll"><div class="social-icon-main"><i class="fab fa-tiktok"></i></div><h3 class="social-name">TikTok</h3><p class="social-handle">@hmgs.academy</p><p class="social-desc">Kısa ve öz hukuki ipuçları, eğlenceli içerikler</p></a>
-        </div>
-    </section>
+<section class="order" id="bestellen">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="eyebrow">BESTELLEN</p>
+      <h2>Drei Wege zu Ihrer Bestellung.</h2>
+    </div>
+    <div class="order-grid">
+      <div class="order-card">
+        <h3>WhatsApp</h3>
+        <p>Schreiben Sie uns Ihren Wunsch — wir melden uns mit Verfügbarkeit und Preis.</p>
+        <a class="order-cta" href="https://wa.me/491511106060X?text=Hallo%2C%20ich%20habe%20eine%20Frage%20zu%20Ihren%20Produkten." target="_blank" rel="noopener">WhatsApp öffnen</a>
+      </div>
+      <div class="order-card">
+        <h3>Telefon</h3>
+        <p>Rufen Sie uns während der Öffnungszeiten an — wir beraten Sie gerne persönlich.</p>
+        <a class="order-cta" href="tel:PLATZHALTER">Nummer im Laden erfragen</a>
+      </div>
+      <div class="order-card">
+        <h3>Vor Ort</h3>
+        <p>Herrnstr. 10, 63065 Offenbach am Main — schauen Sie einfach vorbei.</p>
+        <a class="order-cta" href="https://maps.google.com/?q=Herrnstr.+10,+63065+Offenbach+am+Main" target="_blank" rel="noopener">Route planen</a>
+      </div>
+    </div>
+    <p class="order-note">Hinweis: Für Torten, Verlobungstabletts und individuelle Bestellungen empfehlen wir eine Anfrage mit mindestens einigen Tagen Vorlauf.</p>
+  </div>
+</section>
 
-    <section class="section cta-section">
-        <div class="cta-content animate-on-scroll">
-            <h2 class="cta-title">HMGS'ye Hazır mısınız? <span>Başarı Sizin Elinizde</span></h2>
-            <p class="cta-text">Her yıl binlerce adayın girdiği HMGS'de başarılı olmak için şimdi hazırlığa başlayın. Doğru strateji, düzenli çalışma ve etkili pratik ile siz de başarabilirsiniz.</p>
-            <div class="hero-cta">
-                <a href="https://hmgsacademy.com" target="_blank" class="btn btn-primary"><i class="fas fa-rocket"></i> Web Sitemizi Ziyaret Et</a>
-                <a href="mailto:info@hmgsacademy.com" class="btn btn-secondary"><i class="fas fa-envelope"></i> Bize Ulaşın</a>
-            </div>
-        </div>
-    </section>
+<section class="faq" id="faq">
+  <div class="faq-inner">
+    <div class="section-head center">
+      <p class="eyebrow">HÄUFIGE FRAGEN</p>
+      <h2>Gut zu wissen.</h2>
+    </div>
+    <div class="qa-list">
+      <details class="qa">
+        <summary>Wo finde ich Beyzade Baklava &amp; Konditorei?</summary>
+        <p>Sie finden uns in der Herrnstr. 10, 63065 Offenbach am Main.</p>
+      </details>
+      <details class="qa">
+        <summary>Kann ich Torten und Tabletts individuell gestalten lassen?</summary>
+        <p>Ja — von Hochzeitstorten bis Verlobungstabletts gestalten wir
+          nach Ihren Wünschen. Sprechen Sie uns per WhatsApp oder im
+          Laden an.</p>
+      </details>
+      <details class="qa">
+        <summary>Gibt es vegane oder glutenfreie Optionen?</summary>
+        <p>Ja, wir führen ausgewählte vegane und glutenfreie Produkte.
+          Fragen Sie uns nach der aktuellen Auswahl.</p>
+      </details>
+      <details class="qa">
+        <summary>Eröffnet wirklich eine zweite Filiale in Aschaffenburg?</summary>
+        <p>Ja. Den genauen Eröffnungstermin und die Adresse geben wir
+          in Kürze über unsere Social-Media-Kanäle bekannt.</p>
+      </details>
+      <details class="qa">
+        <summary>Kann ich für eine Feier oder ein Unternehmen grössere Mengen bestellen?</summary>
+        <p>Gerne. Kontaktieren Sie uns im Voraus, damit wir genug Zeit
+          für die Zubereitung haben.</p>
+      </details>
+    </div>
+  </div>
+</section>
 
-    <section class="section contact-section" id="iletisim">
-        <div class="section-header animate-on-scroll">
-            <span class="section-label">İletişim</span>
-            <h2 class="section-title">Bizimle İletişime Geçin</h2>
-            <p class="section-subtitle">Sorularınız, önerileriniz veya daha fazla bilgi almak için bizimle iletişime geçin.</p>
-        </div>
-        <div class="contact-grid">
-            <a href="mailto:info@hmgsacademy.com" class="contact-card animate-on-scroll"><div class="contact-icon"><i class="fas fa-envelope"></i></div><p class="contact-label">E-posta</p><p class="contact-value">info@hmgsacademy.com</p></a>
-            <a href="https://hmgsacademy.com" target="_blank" class="contact-card animate-on-scroll"><div class="contact-icon"><i class="fas fa-globe"></i></div><p class="contact-label">Web Sitesi</p><p class="contact-value">hmgsacademy.com</p></a>
-            <div class="contact-card animate-on-scroll"><div class="contact-icon"><i class="fas fa-hashtag"></i></div><p class="contact-label">Sosyal Medya</p><p class="contact-value">@hmgs.academy</p></div>
-        </div>
-    </section>
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand"><img src="assets/img/emblem-sm.webp" alt=""><span>beyzade</span></div>
+      <p>Traditionelle türkische Baklava, Börek und Torten — handgemacht
+        in Offenbach am Main.</p>
+    </div>
+    <div>
+      <h4>KONTAKT</h4>
+      <ul>
+        <li>Herrnstr. 10, 63065 Offenbach am Main</li>
+        <li><span class="placeholder">Telefon folgt</span></li>
+        <li><span class="placeholder">E-Mail folgt</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>SOCIAL &amp; MEHR</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/beyzade.baklava/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@beyzadebaklava" target="_blank" rel="noopener">TikTok</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Beyzade Baklava &amp; Konditorei</span>
+    <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+  </div>
+</footer>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo"><i class="fas fa-scale-balanced"></i> HMGS <span>ACADEMY</span></div>
-            <p class="footer-text">Hukuk Mesleğine Giriş Sınavı'na hazırlık için bilgi ve strateji platformu. Başarıya giden yolda yanınızdayız.</p>
-            <div class="footer-social">
-                <a href="https://youtube.com/@hmgs.academy" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://instagram.com/hmgs.academy" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://tiktok.com/@hmgs.academy" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-copyright">© 2026 HMGS Academy. Tüm hakları saklıdır.</p>
-                <div class="footer-links"><a href="#">Gizlilik Politikası</a><a href="#">Kullanım Koşulları</a></div>
-            </div>
-        </div>
-    </footer>
+<a class="wa-fab" href="https://wa.me/491511106060X?text=Hallo%2C%20ich%20habe%20eine%20Frage%20zu%20Ihren%20Produkten." target="_blank" rel="noopener" aria-label="Per WhatsApp fragen">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.02h-.01c-1.5 0-2.98-.4-4.27-1.17l-.31-.18-3.17.83.85-3.09-.2-.32a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.3-8.11 8.3z"/></svg>
+  <span>Per WhatsApp fragen</span>
+</a>
 
-    <button class="back-to-top" id="backToTop" aria-label="Yukarı çık"><i class="fas fa-chevron-up"></i></button>
-
-    <script>
-        window.addEventListener('load', () => {
-            const loadingOverlay = document.getElementById('loadingOverlay');
-            if (loadingOverlay) {
-                setTimeout(() => {
-                    loadingOverlay.classList.add('hidden');
-                    setTimeout(() => loadingOverlay.remove(), 500);
-                }, 800);
-            }
-        });
-
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
-        mobileMenuBtn.addEventListener('click', () => { navLinks.classList.toggle('active'); });
-
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) { navbar.classList.add('scrolled'); } else { navbar.classList.remove('scrolled'); }
-        });
-
-        const scrollProgress = document.getElementById('scrollProgress');
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.pageYOffset;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = (scrollTop / docHeight) * 100;
-            scrollProgress.style.width = scrollPercent + '%';
-        });
-
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) { backToTop.classList.add('visible'); } else { backToTop.classList.remove('visible'); }
-        });
-        backToTop.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
-
-        const animateElements = document.querySelectorAll('.animate-on-scroll');
-        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } });
-        }, observerOptions);
- animateElements.forEach(el => observer.observe(el));
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    navLinks.classList.remove('active');
-                }
-            });
-        });
-
-        const statNumbers = document.querySelectorAll('.stat-number');
-        const animateCounter = (element) => {
-            const text = element.textContent;
-            const hasPercent = text.includes('%');
-            const target = parseInt(text.replace(/\D/g, ''));
-            const suffix = hasPercent ? '%' : '';
-            const duration = 2000;
-            const step = target / (duration / 16);
-            let current = 0;
-            const timer = setInterval(() => {
-                current += step;
-                if (current >= target) {
-                    element.textContent = text;
-                    clearInterval(timer);
-                } else {
-                    element.textContent = Math.floor(current) + suffix;
-                }
-            }, 16);
-        };
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounter(entry.target);
-                    statsObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-        statNumbers.forEach(stat => statsObserver.observe(stat));
-
-        console.log('%cHMGS Academy', 'font-size: 24px; font-weight: bold; color: #c9a227;');
-        console.log('%cHukuk Mesleğine Giriş Sınavı Hazırlık Platformu', 'font-size: 14px; color: #f5f0e6;');
-        console.log('%chttps://hmgsacademy.com', 'font-size: 12px; color: #8a8278;');
-    </script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
-User-agent: *
-Allow: /
-
-Sitemap: https://hmgsacademy.com/sitemap.xml
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://hmgsacademy.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-</urlset>
