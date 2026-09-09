@@ -1,3 +1,39 @@
+# beyzadebaklava.de — v1.1
+
+## GÜNCELLEME (bu turda eklenenler)
+
+Burak'ın gönderdiği 14 yeni poster görselinden temiz "hero" kareler
+çıkarıldı (birkaç deneme-yanılma turu ile — çoğunda ilk kırpma denemesinde
+hâlâ kalıntı Almanca metin/rozet vardı, ikinci/üçüncü turda temizlendi)
+ve sitede yeni ürün kartları olarak kullanıldı:
+
+- **Baklava sekmesi:** Soğuk Baklava, Baklava (VEGAN etiketli), Türkiye'nin
+  Tatlısı (bayrak desenli, "SEZONLUK" etiketli)
+- **Börek sekmesi:** eski düşük kaliteli börek görseli, yeni temiz
+  görselle (`tuzlular-yeni`) değiştirildi
+- **Pasta sekmesi:** Türkiye Pastası (bayrak+cami silüeti), Nice
+  Zaferlere Pastası (milli takım temalı — jenerik forma/top, kulüp
+  logosu yok), Pasta (VEGAN etiketli)
+- **YENİ sekme "Tatlılar & Meyve":** Kurabiye, Lokum, Waffle, Meyve
+  Tabakları, Sütlü Tatlılar (geniş banner formatında)
+- **YENİ sekme "İçecekler":** Maden Suyu Çeşitleri, Taze Sıkılmış Meyve
+  Suları (ikisi de geniş banner formatında — kare karta sıkıştırmak
+  görüntüyü bozacağı için CSS'e `.thumb-wide` + `.span-all` eklendi)
+
+**One_Piece_Pasta.png KULLANILMADI** — aynı gerekçeyle (aşağıdaki madde 3,
+telifli karakter/franchise riski). Türkiye Pastası'ndaki milli takım
+forması jenerik (sadece "10" numarası, kulüp logosu yok) olduğu için
+o kullanıldı.
+
+**Hâlâ yapılmadı / dikkat:** Bu turdaki kırpmalar görsel olarak kontrol
+edildi ama siteye tam render halinde (canlı tarayıcıda) test edilmedi —
+yayına almadan önce bir ekran görüntüsü turu önerilir. Ayrıca birkaç
+görselde (Kurabiye, Soğuk Baklava, Waffle, Maden Suyu, Meyve Suyu)
+köşede hâlâ çok küçük bir kalp ikonu/metin kırıntısı kalmış olabilir —
+göz ardı edilebilir seviyede ama mükemmel değil.
+
+---
+
 # beyzadebaklava.de — v1 (iskelet)
 
 ## Bu paket ne içeriyor
