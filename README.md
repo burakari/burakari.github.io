@@ -1,3 +1,42 @@
+# beyzadebaklava.de — v1.3
+
+## GÜNCELLEME (bu turda eklenenler)
+
+**BOZUK GÖRSEL BULGUSU:** Ekran görüntülerinde gösterdiğin siteye
+(hmgsacademy.com üzerinde önizleme) göre Kek & Cheesecake kartları ile
+Profiterol/Şişe Meyve Suyu kartlarının görselleri YÜKLENMİYORDU (sadece
+alt metni görünüyordu). Bu turda o dosyaları (`kek-cikolata-sm.webp`,
+`kek-findikli-sm.webp`, `kek-meyveli-sm.webp`, `kek-limon-sm.webp`,
+`profiterol-kule-sm.webp`, `meyve-suyu-sise-sm.webp`) tek tek açıp
+doğruladım — hepsi geçerli, sorunsuz WebP dosyaları ve HTML'deki her
+`src` yolu bu zip içinde karşılığını buluyor (script ile çift kontrol
+edildi). Yani **sorun bu zip'te değil** — hmgsacademy.com'a yüklerken
+bu 6 dosyanın atlanmış/yüklenmemiş olması muhtemel. Bu zip'i olduğu
+gibi yeniden yükleyip tekrar kontrol etmen gerekiyor.
+
+**Premium yükseltme (Burak'ın gönderdiği gerçek mağaza/kahvaltı
+görselleriyle):**
+- Hero görseli değişti: eski ürün kolajı yerine artık gerçek mağaza
+  vitrini fotoğrafı (Beyzade tabelası arka planda görünüyor)
+- YENİ bölüm "Unser Laden / Mağazamız": vitrinin tam boy fotoğrafı +
+  adres + "Route planen" butonu — Bestellen'den önce eklendi
+- YENİ bölüm "Frühstück / Kahvaltı Sofrası": tamamen farklı bir hizmet
+  olarak tanıtıldı (2-10 kişilik, önceden sipariş, WhatsApp CTA) —
+  ürün gridine değil, Aschaffenburg gibi ayrı bir editoryal bölüme
+  konuldu çünkü bu bir "ürün" değil bir "deneyim/hizmet"
+- Tatlılar sekmesine "Pistazien-Croissant" eklendi
+- Hediye kutusu görseli, kurdeleli kutu+poşet+meyve suyu şişesi olan
+  daha zengin bir kompozisyonla değişti (otomatik, dosya adı aynı)
+- Nav menüsüne "Unser Laden / Mağazamız" linki eklendi
+
+**Henüz yapılmadı:** Tam bir görsel kimlik/tasarım sistemi revizyonu
+(renk paleti, tipografi, layout mimarisi) — Burak "çok kalitesiz"
+dediği için bunun ayrıca değerlendirilmesi gerekiyor; bu tur içerik ve
+hero/vitrine odaklı hızlı ama etkili bir yükseltmeydi, kapsamlı bir
+tasarım yenilemesi değil.
+
+---
+
 # beyzadebaklava.de — v1.2
 
 ## GÜNCELLEME (bu turda eklenenler)
