@@ -155,9 +155,13 @@ section{padding:88px 24px;}
 .product-card h3{font-size:1.28rem; display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
 .product-card p{color:rgba(28,26,20,.62); font-size:.9rem; margin:8px 0 0;}
 .product-card .price{
-  display:inline-block; margin-top:12px; font-family:var(--sans); font-size:.78rem;
+  display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-family:var(--sans); font-size:.78rem;
   font-weight:600; letter-spacing:.03em; color:var(--gold); border-top:1px solid var(--line); padding-top:12px; width:100%;
+  text-decoration:none; cursor:pointer; transition:color 150ms;
 }
+.product-card .price::after{content:"→"; transition:transform 150ms;}
+.product-card .price:hover{color:var(--gold-bright);}
+.product-card .price:hover::after{transform:translateX(3px);}
 .tag-pill{
   display:inline-block; font-family:var(--sans); font-size:.62rem; font-weight:700; letter-spacing:.05em;
   color:var(--forest-deep); background:var(--gold); padding:3px 9px; border-radius:999px; vertical-align:middle;

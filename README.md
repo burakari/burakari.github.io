@@ -1,3 +1,36 @@
+# beyzadebaklava.de — v1.6
+
+## GÜNCELLEME (bu turda eklenenler)
+
+1. **"Fiyat için sorunuz" artık tıklanabilir** — her üründeki fiyat
+   etiketi (40 kart × 2 dil) artık gerçek bir link, doğrudan WhatsApp'a
+   gidiyor (hazır bir karşılama metniyle). Hover'da ok işareti kayıyor.
+   **ÖNEMLİ:** Bu link hâlâ `wa.me/491511106060X` placeholder numarasını
+   kullanıyor — sondaki "X" gerçek bir numara DEĞİL, v1 iskeletinden
+   kalma bir yer tutucu. Gerçek WhatsApp numaranı verirsen tek seferde
+   (5 farklı yerde) değiştiririm.
+2. **Sütlü Tatlılar görseli değişti** — eski hâli çok düşük çözünürlüklü
+   bir şeritten (180px yükseklik) zorla genişletildiği için bulanık
+   duruyordu; orijinal poster görselinden temiz bir "Kazandibi" karesi
+   çıkarıldı, kart normal boy/oranlara döndürüldü (artık `span-all`
+   değil).
+3. **Hikayemiz bölümü görseli değişti** — katmer yerine, hiç logo/metin
+   kalıntısı olmayan, yuvarlak tepside ortada fıstık sepetiyle sunulan
+   çok daha editoryal bir baklava tepsisi fotoğrafı kullanıldı.
+4. **Google Maps eklendi**: paylaştığın share.google linki footer'a
+   ("Google Maps"/"Google Haritalar") ve "Route planen"/"Yol tarifi al"
+   butonlarına eklendi (önceden generic bir maps.google arama linkiydi).
+   **TikTok zaten sitede vardı** (footer + JSON-LD) — @beyzadebaklava,
+   senin verdiğin linkle aynı hesap, ek işlem gerekmedi. Facebook için
+   net bir sayfa linki bulamadım (sadece tek bir fotoğraf paylaşımı
+   linki çıktı arama sonuçlarında) — gerçek sayfa linkini verirsen
+   ekleyebilirim.
+
+`assets/img/products/`: 44 dosya, sıfır eksik referans (script ile
+doğrulandı).
+
+---
+
 # beyzadebaklava.de — v1.5
 
 ## GÜNCELLEME (bu turda eklenenler)
