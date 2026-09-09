@@ -1,3 +1,28 @@
+# beyzadebaklava.de — v1.4
+
+## GÜNCELLEME (bu turda eklenenler)
+
+GitHub üzerinden tek seferde en fazla 100 dosya yüklenebildiği için,
+`assets/img/products/` klasöründeki **kullanılmayan 57 dosya silindi**
+(103 → 46 dosya). Silinenler: eski poster-kırpma görselleri (kurabiye,
+lokum, waffel, mineralwasser, frische-saefte, milchdesserts,
+obstteller, bayrak-baklava, vegan-baklava, vegan-torte,
+turkiye-pasta*, tuzlular-yeni, soguk-baklava, baklava-fan,
+baklava-sarma-tepsi, kadayif-sarma, baklava-kesit-transparent, box-set,
+glutensiz, borek-cesitleri*, borek-tabak, tema-pasta-1/2/3, dondurma,
+kahve, kiz-isteme-*), her ürünün artık kullanılmayan "büyük" (-sm
+olmayan) versiyonları (baklava-dondurma, dugun-pastasi, gozleme,
+cigkofte, turkiye-pasta-fussball, kek-*, profiterol-kule,
+meyve-suyu-sise, pasta-babyshower, cikolata-kutusu, hediye-kutusu,
+kruvasan) ve hiç kullanılmamış olanlar (hikaye-ambiyans,
+kahvalti-sofrasi-2, magaza-vitrini-sm).
+
+Silme öncesi script ile HTML'deki her `src` yolu tek tek doğrulandı —
+sıfır eksik referans kaldı. Şu an klasörde sadece gerçekten
+kullanılan 46 dosya var.
+
+---
+
 # beyzadebaklava.de — v1.3
 
 ## GÜNCELLEME (bu turda eklenenler)
