@@ -1,3 +1,32 @@
+# beyzadebaklava.de — v1.5
+
+## GÜNCELLEME (bu turda eklenenler)
+
+Yeni gönderdiğin "logolu*" ön ekli görseller — hepsi arka planı
+kaldırılmış (gerçek şeffaflık), üzerinde tutarlı küçük bir logo
+etiketi olan versiyonlar — şu ürünlerin yerine kullanıldı (otomatik
+üzerine yazma, HTML değişmedi): Katmer (hikaye bölümü — özellikle
+istediğin "daha premium foto"), Çiğköfte, Dubai Çikolatası (hem kart
+hem Aschaffenburg görseli), Gözleme, Kız İsteme Tepsisi, Kadayıf
+Rulo, Şişe Meyve Suyu, Baby Shower Pastası, Düğün Pastası, Fındıklı
+Pasta, Meyveli Pasta, Klasik Hediye Kutusu, Baklava Hediye Kutusu,
+Baklava Sortiment (artık açık kutu kompozisyonu), Çikolata Kutusu,
+Baklava+Dondurma.
+
+**Yeni eklenen:** Mermer Kek (Kek & Cheesecake sekmesine 5. kart).
+
+**KALDIRILDI — kalitesiz bulduğun görseller:** Maden Suyu Çeşitleri
+ve Taze Sıkılmış Meyve Suları banner kartları (eski poster-kırpma,
+üzerinde çok metin/rozet vardı) tamamen kaldırıldı. Bunların yerine
+iyi bir banner alternatifi gelmediği için "İçecekler" sekmesi de
+kaldırıldı; şişelenmiş meyve suyu kartı (artık yeni, temiz logolu
+görselle) Tatlılar sekmesine taşındı.
+
+`assets/img/products/` yine sadece kullanılan dosyaları içeriyor:
+64 → 44 dosya (script ile doğrulanan sıfır eksik referans).
+
+---
+
 # beyzadebaklava.de — v1.4
 
 ## GÜNCELLEME (bu turda eklenenler)
