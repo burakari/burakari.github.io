@@ -1,3 +1,39 @@
+# beyzadebaklava.de — v1.2
+
+## GÜNCELLEME (bu turda eklenenler)
+
+Burak'ın toplu gönderdiği 76 AI-üretimi görselden 23 tanesi seçilip işlendi
+(çoğu zaten temiz stüdyo çekimi kalitesindeydi, ekstra kırpma gerekmedi).
+
+**ÖNEMLİ UYARI — sahte logo:** Bu 76 görselin çoğunda ChatGPT'nin kendi
+ürettiği, gerçek Beyzade logosuyla BİREBİR UYUŞMAYAN bir "BEYZADE" rozeti var
+(farklı font, farklı ikon oranı — gerçek logo `Logo.png`'de duruyor). Burak
+"görsel kalitesi iyiyse dert etme" dedi, o yüzden bu turda düzeltilmedi —
+ama marka tutarlılığı için ileride fark edilmesi gereken bir nokta.
+
+**Otomatik değişen (aynı dosya adıyla üzerine yazıldı, HTML değişmedi):**
+turkiye-pasta, dugun-pastasi, baklava-dondurma, dubai-cikolata, gozleme,
+cigkofte, katmer, lokum — hepsi çok daha yüksek kaliteli yeni görsellerle
+değişti.
+
+**Yeni eklenen ürün kartları:**
+- Baklava: Kadayıf Rulo, Baklava Sarma, Baklava Çeşitleri, + gerçek şeffaf
+  arka planlı bir "kesit" makro görseliyle "Katman Katman El İşçiliği"
+  vurgu kartı (bu görselin arka planı orijinalde damalı/checker desenliydi,
+  scipy ile bağlı bileşen analizi yapılıp gerçek şeffaflığa çevrildi)
+- YENİ sekme "Kek & Cheesecake": Çikolatalı Pasta, Fındıklı Pasta,
+  Meyveli Pasta, Limonlu Cheesecake
+- Torten: Kutlama Pastaları (baby shower/doğum günü teması)
+- Tatlılar: Profiterol
+- Getränke: Şişe Meyve Suyu (Nar/Portakal/Elma)
+- Hediye Kutuları: Baklava kutusu görseli yenilendi, Çikolata Kutusu eklendi
+
+**Kullanılmadı / beklemede:** `hikaye-ambiyans` görseli (çay eşliğinde
+ambiyans çekimi) işlendi ama henüz siteye yerleştirilmedi — Hikayemiz
+bölümüne ikinci görsel olarak eklenebilir, layout değişikliği gerektiriyor.
+
+---
+
 # beyzadebaklava.de — v1.1
 
 ## GÜNCELLEME (bu turda eklenenler)
